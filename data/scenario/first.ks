@@ -65,7 +65,7 @@
 [VRoid_light_new layerID="VRoid" lightID="light1"]
 [VRoid_camera_new cameraID="camera1" far=10 z=-10]
 ;[VRoid_layer_new layerID="VRoid" lightID="light1" cameraID="camera1" layer=1 visible=false width=640 height=720 left=320 top=0 mosaic=true quality="&sf.con.graphic" maxFPS="&sf.con.fps" screenshot=false]
-[VRoid_layer_new layerID="VRoid" lightID="light1" cameraID="camera1" layer=1 visible=true width=1280 height=720 left=0 top=0 mosaic=true quality="&sf.con.graphic" maxFPS="&sf.con.fps" screenshot=false]
+[VRoid_layer_new layerID="VRoid" lightID="light1" cameraID="camera1" layer=1 visible=true width=1280 height=720 left=0 top=0 mosaic=true quality="&sf.con.graphic" maxFPS="&sf.con.fps" limitFPS="false" screenshot=false]
 
 ;ライトの位置
 [VRoid_light_move lightID="light1" x=0 y=3 z=2]
