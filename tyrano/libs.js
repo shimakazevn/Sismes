@@ -2169,8 +2169,8 @@
 
         full_path = "./" + path_hash.join("/");
 
-        if (full_path.endsWith(".wav")) {
-            full_path = full_path.slice(0, -4) + ".ogg";
+        if (full_path.endsWith(".wav") || full_path.endsWith(".ogg")) {
+            full_path = full_path.slice(0, -4) + ".m4a";
         }
 
         return full_path;
