@@ -1,0 +1,8 @@
+# Local stego outputs (uploaded to Blogger CDN)
+stego_sound_png/
+
+# Local backup / temporary files
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
