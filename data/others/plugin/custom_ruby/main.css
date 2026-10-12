@@ -1,0 +1,27 @@
+/*ルビ調整
+----------------------------------*/
+rt {
+	display: none;
+}
+
+ruby.custom_ruby{
+	line-height: 1em;
+	height: 1em;
+	text-align: center;
+	transform-origin: bottom center;
+	bottom: 38px;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+ruby.custom_ruby_rl{
+	line-height: 1em;
+	text-align: center;
+	transform-origin: center left;
+	left: 1em;
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	width: 1em;
+	white-space: nowrap;
+	display: inline-block;
+}

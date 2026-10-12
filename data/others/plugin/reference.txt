@@ -1,0 +1,2619 @@
+==================================================================
+ティラノスクリプト向けVRoidプラグイン  タグリファレンス
+==================================================================
+
+■タグ一覧
+
+・レイヤー表示関係
+
+[VRoid_layer_new]           旧互換タグ：[VRoid_new]
+[VRoid_layer_show]
+[VRoid_layer_hide]
+[VRoid_layer_move]
+[VRoid_layer_dispose]
+[VRoid_layer_config]
+
+[VRoid_subLayer_new]           ※VRoid_subLayer系のタグは現在実験的な機能として実装しています。
+[VRoid_subLayer_show]            VRoid_subLayerは現在のThree.js r176 ＋ three-vrm.js v3.4.1 の環境にて
+[VRoid_subLayer_hide]            VRMの描画に特定の不具合が発生する為、その不具合に対する回避コードが組まれている状態です。
+[VRoid_subLayer_move]            その回避の為の処理が非常に重たいため、パフォーマンスに影響が出る可能性があります。
+[VRoid_subLayer_dispose]         （VRoid_subLayerを使用すると使用していないときより4～5倍ほど処理が重くなる可能性があります）
+
+[VRoid_light_new]
+[VRoid_light_add]
+[VRoid_light_delete]
+[VRoid_light_dispose]
+[VRoid_light_move]          旧互換タグ：[VRoid_light]
+[VRoid_shadow]
+
+[VRoid_camera_new]
+[VRoid_camera_change]
+[VRoid_camera_dispose]
+[VRoid_camera_move]
+
+[VRoid_mosaicLayer_config]
+
+
+・モデル操作関係
+
+[VRoid_load]
+[VRoid_open]
+[VRoid_add]
+[VRoid_delete]
+[VRoid_show]
+[VRoid_hide]
+[VRoid_dispose]
+[VRoid_config]              旧互換タグ：[VRoid_model_config]
+[VRoid_move]                旧互換タグ：[VRoid_model_move]
+[VRoid_pose]
+[VRoid_emo]
+[VRoid_lookAt]
+
+
+・演出関係
+
+[VRoid_monitorInLayer_new]
+[VRoid_monitorInLayer_show]
+[VRoid_monitorInLayer_hide]
+[VRoid_monitorInLayer_dispose]
+[VRoid_monitorInLayer_move]
+
+[VRoid_fog_add]
+[VRoid_fog_delete]
+[VRoid_fog_move]
+
+[VRoid_effect_preload]
+[VRoid_effect]
+[VRoid_effect_delete]
+
+[VRoid_wind]
+[VRoid_stop_wind]
+
+
+・おさわり関係
+[VRoid_osawari_add]
+[VRoid_osawari_config]
+[VRoid_osawari_delete]
+
+
+・マテリアル、テクスチャー関係
+
+[VRoid_material]
+[VRoid_change_texture]
+[VRoid_change_color]
+
+[VRoid_blend_texture]
+[VRoid_blend_delete_texture]
+
+
+・モーション再生関係
+
+[VRoid_animation]
+[VRoid_stop_animation]
+
+
+・目パチ口パク関係
+
+[VRoid_lip_config]
+[VRoid_blink_config]
+
+
+・画像、3Dデータ表示関係
+
+[VRoid_background_load]
+[VRoid_background_visible]
+[VRoid_background_dispose]
+[VRoid_background_move]
+
+[VRoid_img_add]
+[VRoid_img_delete]
+[VRoid_img_show]
+[VRoid_img_hide]
+[VRoid_img_move]
+
+[VRoid_obj3D_load]
+[VRoid_obj3D_add]
+[VRoid_obj3D_delete]
+[VRoid_obj3D_dispose]
+[VRoid_obj3D_show]
+[VRoid_obj3D_hide]
+[VRoid_obj3D_move]
+
+[VRoid_mosaic_add]
+[VRoid_mosaic_delete]
+[VRoid_mosaic_show]
+[VRoid_mosaic_hide]
+[VRoid_mosaic_move]
+
+[VRoid_mirror_add]
+[VRoid_mirror_delete]
+[VRoid_mirror_show]
+[VRoid_mirror_hide]
+[VRoid_mirror_move]
+
+
+・追加ファイル関係
+
+[VRoid_import_blinkSetting]
+[VRoid_import_emotion]
+[VRoid_import_pose]
+[VRoid_import_animation]
+[VRoid_import_anim_emo_timeline]
+
+
+・デバッグ関係
+
+[VRoid_capture]
+[VRoid_emo_maker]
+[VRoid_materialChecker]
+[VRoid_camera_test]
+
+
+■タグリファレンス
+
+[VRoid_layer_new]
+
+  VRoid表示用のレイヤーを作成します。
+
+    layerID     [必  須] 任意のレイヤーのIDを設定します。複数VRoid_layer_newする場合はユニークなIDを割り振ってください。
+    cameraID    [省略可] VRoid_camera_newで作成したcameraIDを設定します。省略した場合はcamera1というIDが新たに作成されます。
+    lightID     [省略可] VRoid_light_newで作成したlightIDを設定します。省略した場合はlight1というIDが新たに作成されます
+    layer       [省略可] デフォルト：0　指定した前景レイヤーに表示されます。
+    zindex      [省略可] デフォルト：10
+    visible     [省略可] デフォルト：true
+    antialias   [省略可] デフォルト：auto　auto、またはアンチエイリアスのサンプル数を指定します。高ければ高いほどアンチエイリアスが綺麗にかかりますが、負荷は高くなりフレームレートが下がります。
+                                     仕様上2、4、8、16などの2のべき乗の数値が推奨されます。
+                                     16以上はかなり負荷があがります。画質の目安は、低画質：2　中画質：4　高画質：8　超高画質：16　0を指定するとアンチエイリアスが無効になります。
+                                     autoの場合はPCで実行時に4、それ以外のデバイスで実行している時は0が自動的に設定されます。
+    quality     [省略可] デフォルト：auto　レイヤーの表示クオリティを設定します。auto、autoHigh、autoLow、normal、high、lowの他、直接数値を指定することも可能です。
+    
+                                           auto     …… PCの場合：1.25　それ以外のデバイス：1
+                                           autoHigh …… PCの場合：1.5 　それ以外のデバイス：1.25
+                                           autoLow  …… PCの場合：1   　それ以外のデバイス：0.8
+                                           normal   …… PCの場合：1
+                                           high     …… PCの場合：1.25
+                                           low      …… PCの場合：0.8
+    
+                                           auto推奨です。PCでは高画質（quality=1.25）、それ以外のデバイス（スマホ）などでは中画質（quality=1）で表示されます。
+                                           
+                                           0.8など1未満を設定するとモデルが粗くなりますが負荷は下がり、フレームレートが上がります。1.25などにすると逆に画質と負荷が上がり、フレームレートが下がります。
+                                           特にモデルの位置をカメラから遠ざけたときに画質の差が顕著に現れます。
+                                           直接指定の場合、2から0.1までの値が設定可能です。（それ以上それ以下に設定すると2～0.1に補正されます）
+                                           
+    maxFPS      [省略可] デフォルト：0   　最大FPSを設定します。0で無制限です。
+    limitFPS    [省略可] デフォルト：auto　trueでFPSを1/2に制限で低負荷。falseで制限なしで高負荷になります。（antialiasと逆なので注意してください）
+                                           autoを指定した場合はPCで実行時にfalse、それ以外のデバイスで実行している時はtrueに自動的に設定されます。
+                                           maxFPSを設定した場合は、maxFPSの数値からlimitFPSが適用されます。
+    showFPS     [省略可] デフォルト：true　falseに設定するとFPS計測画面を表示しません。※ティラノスタジオ上のリロードボタンがある場合のみ動作します。ゲームパッケージにエクスポートした場合は自動的に無効になります。
+    screenshot  [省略可] デフォルト：true　falseに設定するとパフォーマンスが上がりますが、セーブスロットのサムネイルや画面キャプチャープラグインを使った撮影などでこのレイヤーは映らなくなります。
+                                           セーブスロットのサムネイルを使用していない場合はfalse推奨です。
+    vsync       [省略可] デフォルト：true　垂直同期を設定します。とくに理由がない場合はtrue推奨です。
+
+    width       [省略可] デフォルト：0　レイヤーを表示する横幅をpx単位で指定します。0の場合はゲームプロジェクトの解像度が参照されます。
+    height      [省略可] デフォルト：0　レイヤーを表示する縦幅をpx単位で指定します。0の場合はゲームプロジェクトの解像度が参照されます。
+    top         [省略可] デフォルト：0　レイヤーの表示位置を画面上で縦方向にずらす値をpx単位で指定します。0の場合は画面の上端に配置されます。
+    left        [省略可] デフォルト：0　レイヤーの表示位置を画面上で横方向にずらす値をpx単位で指定します。0の場合は画面の左端に配置されます。
+    mosaic      [省略可] デフォルト：false　trueを設定するとモザイクレイヤーが有効になります。[VRoid_material]に設定したマテリアルをモザイクレイヤーで表示することが可能です。
+                                          　モザイクレイヤーを使用中は若干負荷が上がる為、使用しない場合はfalse推奨です。後述の[VRoid_mosaicLayer_config]でもモザイクレイヤーの有効無効を切り替えられます。
+                                          　また、[VRoid_mosaic_add]で追加するモザイクとは別物で両方が重なった領域がある場合は[VRoid_mosaic_add]での描画が優先されます。
+
+
+  ・使用例
+    IDを"VRoid"に設定する
+    [VRoid_layer_new layerID="VRoid"]
+    
+    
+    ※前景レイヤーを使用するため、標準タグの[freeimage]などを使用すると、[VRoid_layer_new]で作成したレイヤーも削除される仕様です。
+      ただしVRoidプラグインの一連の表示はレンダリングコストが高いため、例えばlayer=1をVRoidプラグイン専用レイヤーとして確保し
+      [freeimage]で削除せずに、後述のVRoidプラグイン専用タグを使用した表示非表示を行って運用することをお勧めします。
+
+
+
+
+[VRoid_layer_show]
+
+  非表示状態のVRoidレイヤーを表示します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+    easing     [省略可] デフォルト：easeInOutQuart　methodでfadeInを指定した時のみ有効。timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+
+  ・使用例
+    "VRoid"レイヤーを2秒かけてフェードイン
+    [VRoid_layer_show layerID="VRoid" time=2000]
+
+
+
+[VRoid_layer_hide]
+
+  表示状態のVRoidレイヤーを非表示します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+    easing     [省略可] デフォルト：easeInOutQuart　methodでfadeOutを指定した時のみ有効。timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+
+  ・使用例
+    "VRoid"レイヤーを2秒かけてフェードアウト
+    [VRoid_layer_hide layerID="VRoid" time=2000]
+
+
+
+[VRoid_layer_move]
+
+  レイヤーのtopとleftの位置を変更します。
+
+    layerID    [省略可] 変更するレイヤーのlayerIDを指定します。
+    top        [省略可] 　レイヤーの表示位置を画面上で縦方向にずらす値をpx単位で変更します。指定しない場合は現在の値を引き継ぎます。+=50　-=50 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    left       [省略可] 　レイヤーの表示位置を画面上で横方向にずらす値をpx単位で変更します。指定しない場合は現在の値を引き継ぎます。+=50　-=50 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "VRoid"レイヤーを1秒かけて左端から100pxの位置へ移動
+    [VRoid_layer_move layerID="VRoid" left=100 time=1000]
+
+
+
+[VRoid_layer_dispose]
+
+  VRoid_layer_newで作成したレイヤーを破棄します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    all        [省略可] デフォルト：true　レイヤー内に存在しているオブジェクトも全てdisposeします。
+
+  ・使用例
+    "VRoid"レイヤーを破棄
+    [VRoid_dispose layerID="VRoid"]
+
+
+
+[VRoid_layer_config]
+
+  VRoid表示用のレイヤーの設定を変更します。
+  指定しなかったパラメーターは前回の設定を引き継ぎます。
+  （antialiasなどのレンダラーの再作成が必要なパラメーターの変更はできません）
+
+    layerID     [必  須] VRoid_layer_newで指定したIDを入力してください。
+    layer       [省略可] 指定した前景レイヤーに表示されます。
+    zindex      [省略可] 
+    quality     [省略可] レイヤーの表示クオリティを設定します。auto、autoHigh、autoLow、normal、high、lowの他、直接数値を指定することも可能です。
+    
+                         auto     …… PCの場合：1.25　それ以外のデバイス：1
+                         autoHigh …… PCの場合：1.5 　それ以外のデバイス：1.25
+                         autoLow  …… PCの場合：1   　それ以外のデバイス：0.8
+                         normal   …… PCの場合：1
+                         high     …… PCの場合：1.25
+                         low      …… PCの場合：0.8
+    
+                         auto推奨です。PCでは高画質（quality=1.25）、それ以外のデバイス（スマホ）などでは中画質（quality=1）で表示されます。
+                         
+                         0.8など1未満を設定するとモデルが粗くなりますが負荷は下がり、フレームレートが上がります。1.25などにすると逆に画質と負荷が上がり、フレームレートが下がります。
+                         特にモデルの位置をカメラから遠ざけたときに画質の差が顕著に現れます。
+                         直接指定の場合、2から0.1までの値が設定可能です。（それ以上それ以下に設定すると2～0.1に補正されます）
+                                           
+    maxFPS      [省略可] 最大FPSを設定します。0で無制限です。
+    limitFPS    [省略可] trueでFPSを1/2に制限で低負荷。falseで制限なしで高負荷になります。（antialiasと逆なので注意してください）
+                         autoを指定した場合はPCで実行時にfalse、それ以外のデバイスで実行している時はtrueに自動的に設定されます。
+                         maxFPSを設定した場合は、maxFPSの数値からlimitFPSが適用されます。
+    showFPS     [省略可] falseに設定するとFPS計測画面を表示しません。※ティラノスタジオ上のリロードボタンがある場合のみ動作します。ゲームパッケージにエクスポートした場合は自動的に無効になります。
+    vsync       [省略可] 垂直同期を設定します。とくに理由がない場合はtrue推奨です。
+
+
+
+[VRoid_subLayer_new]
+
+  VRoid_layer_newで作成したレイヤーを別のカメラから映した映像を出力するレイヤー作成します。
+
+    layerID     [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    subID       [必  須] サブレイヤーに割り当てるユニークなIDを入力してください。
+    cameraID    [省略可] VRoid_camera_newで作成したcameraIDを設定します。
+    layer       [省略可] デフォルト：0　指定した前景レイヤーに表示されます。
+    zindex      [省略可] デフォルト：20
+    visible     [省略可] デフォルト：true
+    width       [省略可] デフォルト：0　レイヤーを表示する横幅をpx単位で指定します。0の場合はゲームプロジェクトの解像度が参照されます。
+    height      [省略可] デフォルト：0　レイヤーを表示する縦幅をpx単位で指定します。0の場合はゲームプロジェクトの解像度が参照されます。
+    top         [省略可] デフォルト：0　レイヤーの表示位置を画面上で縦方向にずらす値をpx単位で指定します。0の場合は画面の上端に配置されます。
+    left        [省略可] デフォルト：0　レイヤーの表示位置を画面上で横方向にずらす値をpx単位で指定します。0の場合は画面の左端に配置されます。
+
+
+
+  ・使用例
+    VRoidレイヤーを元にsub1のサブレイヤーを作成する
+    [VRoid_subLayer_new layerID="VRoid" subID="sub1" cameraID="camera2" width=480 height=480 left=800 layer=2]
+
+
+
+[VRoid_subLayer_show]
+
+  非表示状態のサブレイヤーを表示します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    subID      [必  須] VRoid_subLayer_newで指定したIDを入力してください。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+    easing     [省略可] デフォルト：easeInOutQuart　methodでfadeInを指定した時のみ有効。timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+
+  ・使用例
+    [VRoid_subLayer_show layerID="VRoid" subID="sub1" time=1000]
+
+
+
+[VRoid_subLayer_hide]
+
+  表示状態のサブレイヤーを非表示します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    subID      [必  須] VRoid_subLayer_newで指定したIDを入力してください。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+    easing     [省略可] デフォルト：easeInOutQuart　methodでfadeOutを指定した時のみ有効。timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+
+  ・使用例
+    [VRoid_subLayer_hide layerID="VRoid" subID="sub1" time=1000]
+
+
+
+[VRoid_subLayer_move]
+
+  サブレイヤーのtopとleftの位置を変更します。
+
+    layerID    [省略可] 変更するレイヤーのlayerIDを指定します。
+    subID      [必  須] VRoid_subLayer_newで指定したIDを入力してください。
+    top        [省略可] 　レイヤーの表示位置を画面上で縦方向にずらす値をpx単位で変更します。指定しない場合は現在の値を引き継ぎます。+=50　-=50 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    left       [省略可] 　レイヤーの表示位置を画面上で横方向にずらす値をpx単位で変更します。指定しない場合は現在の値を引き継ぎます。+=50　-=50 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    [VRoid_subLayer_move layerID="VRoid" subID="sub1" left=920 top=0 time=1000]
+
+
+
+
+[VRoid_subLayer_dispose]
+
+  VRoid_layer_newで作成したレイヤーを破棄します。
+
+    layerID    [必  須] VRoid_layer_newで指定したIDを入力してください。
+    subID      [必  須] VRoid_subLayer_newで指定したIDを入力してください。
+
+  ・使用例
+    "VRoid"レイヤーを破棄
+    [VRoid_subLayer_dispose layerID="VRoid" subID="sub1"]
+
+
+
+[VRoid_light_new]
+
+  ライトを作成します。
+  指定したtypeによって設定できるパラメーターが変化します。
+
+    lightID    [必  須] 任意のライトのIDを設定します。複数VRoid_light_newする場合はユニークなIDを割り振ってください。
+    type       [省略可] デフォルト：directional　ライトの種類を設定します。
+                        ambient、directional、hemisphere、point、rectarea、spotが選べます。
+                        ライトの特徴などは https://ics.media/tutorial-three/light_variation/ などを参考にしてください。
+                        また、ライトの詳しいパラメーターなどはthree.js公式リファレンスの https://threejs.org/docs/index.html#api/en/lights/Light を参考にしてみてください。
+
+  ■全ライト共通パラメーター
+    r          [省略可] デフォルト：1　赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g          [省略可] デフォルト：1　緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b          [省略可] デフォルト：1　青を調整します。1を100%とした数字を指定します（0.5で50%）。
+    val        [省略可] デフォルト：1　光の強さを調整します。1を100%とした数字を指定します（0.5で50%）。200%など通常よりも明るくするなどが可能です。
+
+  ■ambient以外の共通パラメーター
+    x          [省略可] デフォルト：0　ライトのX軸（横）を調整します。
+    y          [省略可] デフォルト：0　ライトのY軸（縦）を調整します。
+    z          [省略可] デフォルト：0　ライトのZ軸（奥）を調整します。
+
+  ■directionalとspotのパラメーター
+    targetX    [省略可] デフォルト：0　ライトのX軸（横）の向け先を調整します。
+    targetY    [省略可] デフォルト：0　ライトのY軸（縦）の向け先を調整します。
+    targetZ    [省略可] デフォルト：0　ライトのZ軸（奥）の向け先を調整します。
+
+  ■hemisphereのみのパラメーター
+    r2         [省略可] デフォルト：1　下方向からの赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g2         [省略可] デフォルト：1　下方向からの緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b2         [省略可] デフォルト：1　下方向からの青を調整します。1を100%とした数字を指定します（0.5で50%）。
+
+  ■rectareaのみのパラメーター
+    width      [省略可] デフォルト：10　ライトの横幅を設定します。
+    height     [省略可] デフォルト：10　ライトの縦幅を設定します。
+    lookAtX    [省略可] デフォルト：0　ライトのX軸（横）の向け先を調整します。
+    lookAtY    [省略可] デフォルト：0　ライトのY軸（縦）の向け先を調整します。
+    lookAtZ    [省略可] デフォルト：0　ライトのZ軸（奥）の向け先を調整します。
+
+  ■pointとspotのパラメーター
+    decay      [省略可] デフォルト：2　ライトの距離に応じてライトが暗くなる量を設定します。
+    distance   [省略可] デフォルト：0　ライトの最大範囲を設定します。
+
+  ■spotのみのパラメーター
+    angle      [省略可] デフォルト：Math.PI/3　ライトの方向からの光分散の最大角度を設定します。
+    penumbra   [省略可] デフォルト：0　スポットライト円錐のうち、半影によって減衰される割合を設定します。
+
+
+
+  ・使用例
+    light2を作成。
+    [VRoid_light_new lightID="light2"]
+
+
+
+[VRoid_light_add]
+
+  ライトをレイヤーに追加します。
+  
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    lightID    [必  須] VRoid_light_newで指定したlightIDを入力してください。
+
+
+  ・使用例
+    "VRoid"レイヤーに"light2"のライトを追加。
+    [VRoid_light_add layerID="VRoid" lightID="light2"]
+
+
+
+[VRoid_light_delete]
+
+  ライトをレイヤーから削除します。
+  
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    lightID    [必  須] VRoid_light_newで指定したlightIDを入力してください。
+
+
+  ・使用例
+    "VRoid"レイヤーに"light2"のライトを削除。
+    [VRoid_light_delete layerID="VRoid" lightID="light2"]
+
+
+
+[VRoid_light_dispose]
+
+  ライトを破棄します。
+  
+  
+    lightID    [必  須] VRoid_light_newで指定したlightIDを入力してください。
+
+
+  ・使用例
+    "light2"を破棄。
+    [VRoid_light_dispose lightID="light2"]
+
+
+
+[VRoid_light_move]
+
+  ライトの設定を変更します。ライトのtypeによって使用可能なパラメーターが変化します。
+  layerIDもしくはlightIDのどちらかを指定してください。
+
+  ■全ライト共通パラメーター
+    layerID    [省略可] 変更するレイヤーのlayerIDを指定します。複数のライトが追加されていた場合は全ての設定が適用されます。
+    lightID    [省略可] 変更するlightIDを指定します。
+    r          [省略可] デフォルト：1　赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    g          [省略可] デフォルト：1　緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    b          [省略可] デフォルト：1　青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    val        [省略可] デフォルト：1　光の強さを調整します。1を100%とした数字を指定します（0.5で50%）。200%など通常よりも明るくするなどが可能です。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ■ambient以外の共通パラメーター
+    x          [省略可] デフォルト：0　ライトのX軸（横）を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] デフォルト：0　ライトのY軸（縦）を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] デフォルト：0　ライトのZ軸（奥）を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+  ■directionalとspotのパラメーター
+    targetX    [省略可] デフォルト：0　ライトのX軸（横）の向け先を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    targetY    [省略可] デフォルト：0　ライトのY軸（縦）の向け先を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    targetZ    [省略可] デフォルト：0　ライトのZ軸（奥）の向け先を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+  ■hemisphereのみのパラメーター
+    r2         [省略可] デフォルト：1　下方向からの赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    g2         [省略可] デフォルト：1　下方向からの緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    b2         [省略可] デフォルト：1　下方向からの青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+  ■rectareaのみのパラメーター
+    width      [省略可] デフォルト：10　ライトの横幅を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    height     [省略可] デフォルト：10　ライトの縦幅を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+  ■pointとspotのパラメーター
+    decay      [省略可] デフォルト：2　ライトの距離に応じてライトが暗くなる量を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    distance   [省略可] デフォルト：0　ライトの最大範囲を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+  ■spotのみのパラメーター
+    angle      [省略可] デフォルト：Math.PI/3　ライトの方向からの光分散の最大角度を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    penumbra   [省略可] デフォルト：0　スポットライト円錐のうち、半影によって減衰される割合を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+
+  ・使用例
+    "VRoid"レイヤーのライトをゆっくりと動きながら赤みがかった色に変更。（昼から夕方になるような演出）
+    [VRoid_light_move layerID="VRoid" x=-1.2 y=-1 g=0.5 b=0.5 val=1.5 time=8000]
+
+
+[VRoid_shadow]
+
+  モデルが別のオブジェクトに対して落とす影の設定を行います。（モデル自体に描画される影とは別物です）
+  後述のVRoid_obj3D系でオブジェクトを追加した際に主に表示されます。
+  また、ライトのtypeがdirectionalまたはpointの場合のみ有効です。
+  （※本来spotでも使用可能ですが、現在ライブラリの不具合の為spotでは影が表示されません）
+
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    visible    [省略可] モデルが落とす影を表示する場合はtrue、表示しない場合はfalseを設定します。初期状態では表示されていません。
+    quality    [省略可] auto、autoHigh、autoLow、normal、high、lowから設定します。
+                        auto系を指定するとPC以外のデバイスで実行された際に自動的に負荷の低い影が設定されます。
+                        初期状態ではautoが設定されています。
+    radius     [省略可] デフォルト：1　qualityがautoもしくはnormalの時のみ有効です。1以上の数字を指定し、数字が大きいほど影の輪郭をぼかします。
+    val        [省略可] デフォルト：1　1を基準にして影の濃さを調整します。
+    rangeRatio [省略可] デフォルト：1　1を基準にして影の表示範囲を調整します。大きな数字を設定するとライトから離れた位置にも影が生成されますが、処理が重くなります。
+                                       逆に0.5などを設定して限られた範囲に表示させ、処理を軽くすることも可能です。
+    
+
+  ・使用例
+    "VRoid"レイヤーのオブジェクトに対する影を有効にする。
+    [VRoid_shadow layerID="VRoid" visible=true]
+
+
+[VRoid_camera_new]
+
+  カメラを作成します。
+  
+    cameraID    [必  須] 任意のカメラのIDを設定します。複数cameraIDする場合はユニークなIDを割り振ってください。
+    perspective [省略可] デフォルト：true　trueで遠近感が適用されるカメラ、falseで平行投影が適用されるカメラが指定可能です。
+                                           ※falseにした場合、各タグのz軸のパラメーターを指定しても見た目の変化がありません。（モデル同士の重なりには影響します）
+    fov         [省略可] デフォルト：30　視野角が設定可能です。
+                                         perspectiveがtrueの場合は、大きな数字にすると広角に、小さな数字にすると望遠となります。
+                                         falseの場合は、大きな数字にするとモデルが小さく、小さな数字にするとモデルが大きくなります。
+    near        [省略可] デフォルト：0.01　手前に表示されるモデルの閾値を設定します。
+    far         [省略可] デフォルト：100 　奥に表示されるモデルの閾値を設定します。
+    x           [省略可] デフォルト：0　カメラのX軸（横）の移動を調整します。
+    y           [省略可] デフォルト：0　カメラのY軸（縦）の移動を調整します。
+    z           [省略可] デフォルト：0　カメラのZ軸（奥）の移動を調整します。
+    rotX        [省略可] デフォルト：0　カメラのX軸（横）の回転を調整します。
+    rotY        [省略可] デフォルト：0　カメラのY軸（縦）の回転を調整します。
+    rotZ        [省略可] デフォルト：0　カメラのZ軸（奥）の回転を調整します。
+    scaleX      [省略可] デフォルト：1　カメラのX軸（横）の縮尺を調整します。マイナスの値は指定できません。
+    scaleY      [省略可] デフォルト：1　カメラのY軸（縦）の縮尺を調整します。マイナスの値は指定できません。
+    scaleZ      [省略可] デフォルト：1　カメラのZ軸（奥）の縮尺を調整します。マイナスの値は指定できません。
+    scale       [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    zoom        [省略可] デフォルト：1　1を基準にカメラの倍率を指定します。
+
+
+  ・使用例
+    camera2を作成。
+    [VRoid_camera_new cameraID="camera2"]
+
+
+[VRoid_camera_change]
+
+  カメラを切り替えます。
+  
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    cameraID   [必  須] VRoid_camera_newで指定したcameraIDを入力してください。
+    subID      [任  意] VRoid_subLayer_newで指定したIDを入力してください。subIDを指定した場合はsubIDのカメラを切り替えます。
+
+
+  ・使用例
+    "VRoid"レイヤーのカメラをcamera2に変更
+    [VRoid_camera_change layerID="VRoid" cameraID="camera2"]
+
+
+[VRoid_camera_dispose]
+
+  カメラを破棄します。現在使用しているcameraIDは削除できません。
+  
+  
+    cameraID    [必  須] VRoid_camera_newで指定したcameraIDを入力してください。
+
+
+  ・使用例
+    "camera2"を削除。
+    [VRoid_camera_dispose cameraID="camera2"]
+
+
+[VRoid_camera_move]
+
+  指定したlayerID、もしくはcameraIDのカメラの位置を変更します。
+  layerIDを指定した場合は現在そのレイヤーで使用されているカメラにパラメーターが設定されます。
+  別のcameraIDも同時にVRoid_camera_moveしながら交互に切り替えることで多彩なカメラワークの演出が可能です。
+
+
+    layerID    [省略可] VRoid_layer_newで指定したIDを入力してください。
+    cameraID   [省略可] VRoid_camera_newで指定したIDを入力してください。
+    fov        [省略可] 視野角が設定可能です。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+                                         perspectiveがtrueの場合は、大きな数字にすると広角に、小さな数字にすると望遠となります。
+                                         falseの場合は、大きな数字にするとモデルが小さく、小さな数字にするとモデルが大きくなります。
+    near       [省略可] 手前に表示されるモデルの閾値を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    far        [省略可] 奥に表示されるモデルの閾値を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    x          [省略可] カメラのX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] カメラのY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] カメラのZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] カメラのX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] カメラのY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] カメラのZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] カメラのX軸（横）の縮尺を調整します。マイナスの値は指定できません。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] カメラのY軸（縦）の縮尺を調整します。マイナスの値は指定できません。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] カメラのZ軸（奥）の縮尺を調整します。マイナスの値は指定できません。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    zoom       [省略可] 1を基準にカメラの倍率を指定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    "VRoid"レイヤーのカメラを高くして、引きで設定。
+    [VRoid_camera_move layerID="VRoid" y=1.3 z=1]
+
+
+    ※注意：カメラのデフォルトは x=0 y=0 z=0 となっています。
+            この値は後述で使用するVRMモデルのデフォルトと同じ値となっているため、
+            どちらもこの数字のままだと重なってうまく表示されていないように見えます。
+            その為、まずは上記の使用例のタグ通りに設定し、モデルの大きさに合わせて調整することをお勧めします。 
+            
+            カメラのscaleパラメーターは癖が強いため、基本的にはzoomによる操作を推奨します。
+
+
+
+[VRoid_mosaicLayer_config]
+
+  マテリアル毎にモザイクをかけるレイヤーの設定を行います。
+  [VRoid_material]タグで設定したマテリアルがモザイク専用のレイヤーで描画されます。
+  [VRoid_mosaic_add]で追加するモザイクとは別物で両方が重なった領域がある場合は[VRoid_mosaic_add]での描画が優先されます。
+
+  マテリアル名に大文字小文字問わず"mosaic"を含むマテリアルは初期状態でmosaicがtrueに設定されます。
+  また、VRoid_materialタグでmosaicをtrueに設定した場合、VRoid_layer_newやVRoid_mosaicLayer_configでモザイクレイヤーを有効化する必要があります。
+  （有効化していないとモザイクレイヤーに設定されたマテリアルは非表示になります）
+
+  値を入力しなかったものは前回の状態を引き継ぎます。
+
+
+    layerID     [必  須] VRoid_layer_newで指定したIDを入力してください。
+    pixel       [省略可] 　モザイクの粗さを1以上の数字で設定します。数字が大きいほどモザイクが薄く（細かく）、小さいほど厚く（粗く）なります。初期値：64
+    brightness  [省略可] 　1～-1の範囲でモザイクの明るさを調整します。1で真っ白に、-1で真っ黒になります。初期値：0
+    visible     [省略可] 　trueに設定することでモザイクレイヤーが表示されます。初期値：false
+    autoAdjust  [省略可] 　カメラが引くとモザイクが細かく、カメラが寄るとモザイクが粗くなるように自動補正をかけます。初期値：true
+    ratio       [省略可] 　モザイクのレンダリング解像度の比率を設定します。1にするとパキッとしたモザイク、0.1などにするとボヤっとします。
+                           この設定はVRoid_mosaic_addタグで追加したモザイクにも影響します。
+                           数字が低いほどモザイクのレンダリング負荷が下がります。初期値：0.2
+
+
+  ・使用例
+    VRoidレイヤーのモザイク用レイヤーを有効化し、薄めのモザイクを設定
+    [VRoid_mosaicLayer_config layerID="VRoid" pixelSize=128 visible=true]
+
+
+
+[VRoid_load]
+
+  指定したvrmファイルをロードします。
+  ロードしただけではレイヤーに表示されません。
+  ロードに失敗した場合は tf._VRoid_load に false が設定されます。
+
+    modelID             [必  須] 任意のモデルIDを設定します。複数VRoid_loadする場合はユニークなIDを割り振ってください。
+    storage             [必  須] モデルファイルを指定します。 data/others/plugin/vrm/model フォルダに.vrmを置いて指定してください。
+    wait                [省略可] デフォルト：true　trueの場合はモデルのロードを待って次のタグへ移ります。falseだと待ちません。
+    renderOrder         [省略可] デフォルト：0　各マテリアルのrenderOrderに指定した値を加算します。
+    alphaToCoverage     [省略可] デフォルト：false　マテリアルのalphaToCoverageを設定します。
+    premultipliedAlpha  [省略可] デフォルト：false　マテリアルのpremultipliedAlphaを設定します。
+    helper              [省略可] デフォルト：auto　ロード時にVRMの各種helperを読み込みます。
+                                                   読み込んだhelperはテストカメラで表示非表示が可能となり、リアルタイムでコライダーやスプリングボーンの動きを可視化が確認できます。
+                                                   autoの場合、ティラノスタジオまたはティラノビルダー上ではtrue、ゲームリリース時にはfalseになります。
+
+
+  ・使用例
+    モデルのIDを"model1"に設定し、sample.vrmをロードする。
+    [VRoid_load modelID="model1" storage="sample.vrm"]
+
+
+
+[VRoid_open]
+
+  vrmファイルをダイアログから選択して開きます。
+  PC版でのみ使用可能です。（ブラウザでは動作しません）
+  ダイアログをキャンセルやロードに失敗した場合は tf._VRoid_load に false が設定されます。
+
+    modelID    [必  須] 任意のモデルIDを設定します。複数VRoid_loadする場合はユニークなIDを割り振ってください。
+
+  ・使用例
+    ダイアログで開いたVRMをを"model2"に設定する。
+    [VRoid_open modelID="model2"]
+
+
+
+[VRoid_add]
+
+  ロード済みのモデルをレイヤーに追加します。
+  
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    pose       [省略可] デフォルト："pose0001"　レイヤーに初期表示する際のポーズを指定できます。
+    visible    [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    x          [省略可] デフォルト：0　モデルの横方向の移動を設定します。
+    y          [省略可] デフォルト：0　モデルの縦方向の移動を設定します。
+    z          [省略可] デフォルト：0　モデルの奥方向の移動を設定します。
+    rotX       [省略可] デフォルト：0　モデルの横方向の回転を設定します。
+    rotY       [省略可] デフォルト：0　モデルの縦方向の回転を設定します。
+    rotZ       [省略可] デフォルト：0　モデルの奥方向の回転を設定します。
+    scaleX     [省略可] デフォルト：1　モデルの横方向の縮尺を設定します。-1を設定すると左右反転します。
+    scaleY     [省略可] デフォルト：1　モデルの縦方向の縮尺を設定します。-1を設定すると上下反転します。
+    scaleZ     [省略可] デフォルト：1　モデルの奥方向の縮尺を設定します。
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    firstShake [省略可] デフォルト：false　trueの場合はモデルの表示時に揺れ物が揺れます。
+    shake      [省略可] デフォルト：true　trueの場合はモデルの揺れ物が揺れます。
+    shakeSpeed [省略可] デフォルト：1　1を基準に、揺れ物の揺れる速度を設定します。1.5だと早く揺れ、0.5だとゆっくり揺れます。
+                                      （大きな数字で重力が増え、小さな数字は重力が軽くなるイメージです）
+    lookingCamera         [省略可] デフォルト：false　trueの場合はモデルが常にカメラの方向に目線を合わせるようになります。
+    waitingAnimation      [省略可] デフォルト：true　trueの場合はモデルの上半身が僅かに前後して呼吸をしているような動きをします。
+    waitingAnimationVal   [省略可] デフォルト：15　前後の動きを調整できます。大きな数字を指定しすぎると人間離れした動きになります。
+    waitingAnimationSpeed [省略可] デフォルト：1　1を基準とした倍率で前後する動きの速度を調整します。
+
+    attachModelID         [省略可] attachModelIDとattachBoneName両方を既述した場合、既に追加済みのモデルに対して、ここで指定したモデルをattachBoneNameで指定したboneに追加します。
+    attachBoneName        [省略可] アタッチ先のボーン名を指定します。
+
+
+  ・使用例
+    "VRoid"レイヤーに"model1"モデルを追加して表示する。
+    [VRoid_add layerID="VRoid" modelID="model1"]
+
+・アタッチ可能なボーン名
+hips
+spine
+chest
+upperChest
+neck
+head
+leftEye
+rightEye
+jaw
+leftUpperLeg
+leftLowerLeg
+leftFoot
+leftToes
+rightUpperLeg
+rightLowerLeg
+rightFoot
+rightToes
+leftShoulder
+leftUpperArm
+leftLowerArm
+leftHand
+rightShoulder
+rightUpperArm
+rightLowerArm
+rightHand
+leftThumbMetacarpal
+leftThumbProximal
+leftThumbDistal
+leftIndexProximal
+leftIndexIntermediate
+leftIndexDistal
+leftMiddleProximal
+leftMiddleIntermediate
+leftMiddleDistal
+leftRingProximal
+leftRingIntermediate
+leftRingDistal
+leftLittleProximal
+leftLittleIntermediate
+leftLittleDistal
+rightThumbMetacarpal
+rightThumbProximal
+rightThumbDistal
+rightIndexProximal
+rightIndexIntermediate
+rightIndexDistal
+rightMiddleProximal
+rightMiddleIntermediate
+rightMiddleDistal
+rightRingProximal
+rightRingIntermediate
+rightRingDistal
+rightLittleProximal
+rightLittleIntermediate
+rightLittleDistal
+
+
+[VRoid_delete]
+
+  VRoid_addしたモデルを削除します。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+
+  ・使用例
+    "model1"モデルを削除する。
+    [VRoid_delete modelID="model1"]
+
+
+
+[VRoid_show]
+
+  VRoid_addした非表示状態のモデルを表示状態にします。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    
+    
+  ・使用例
+    [VRoid_show modelID="model1"]
+
+
+[VRoid_hide]
+
+  VRoid_addした表示状態のモデルを非表示状態にします。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+  ・使用例
+    [VRoid_hide modelID="model1"]
+
+
+[VRoid_dispose]
+
+  モデルを破棄します。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+  ・使用例
+    [VRoid_dispose modelID="model1"]
+
+
+[VRoid_config]
+
+  VRoid_addしたモデルの状態を変更します。
+  値を入力しなかったものは前回の状態を引き継ぎます。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    shake      [省略可] trueの場合はモデルの揺れ物が揺れます。
+    shakeSpeed [省略可] 1を基準に、揺れ物の揺れる速度を設定します。1.5だと早く揺れ、0.5だとゆっくり揺れます。
+                                      （大きな数字で重力が増え、小さな数字は重力が軽くなるイメージです）
+    lookingCamera         [省略可] trueの場合はモデルが常にカメラの方向に目線を合わせるようになります。
+    waitingAnimation      [省略可] trueの場合はモデルの上半身が僅かに前後して呼吸をしているような動きをします。
+    waitingAnimationVal   [省略可] 前後の動きを調整できます。大きな数字を指定しすぎると人間離れした動きになります。
+    waitingAnimationSpeed [省略可] 1を基準とした倍率で前後する動きの速度を調整します。
+
+
+  ・使用例
+    "model1"モデルの待機モーションを激しくする
+    [VRoid_config modelID="model1" waitingAnimationVal=30 waitingAnimationSpeed=1.5]
+
+
+
+[VRoid_move]
+
+  モデルの立ち位置を移動します。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    x          [省略可] モデルのX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] モデルのY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] モデルのZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] モデルのX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] モデルのY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] モデルのZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] モデルのX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] モデルのY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] モデルのZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    モデルを奥へ1秒かけて移動
+    [VRoid_move modelID="model1" z=-0.5 time=1000]
+
+
+
+
+[VRoid_pose]
+
+  モデルのポーズを変更します。
+  
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    pose       [省略可] デフォルト："pose1001"　変更するポーズ名を指定します。
+    emo        [省略可] 登録されている表情を指定します。emoとemoIDが両方指定されていた場合はnameが無視されます。指定可能なemoは後述の[VRoid_emo]にて。
+    emoID      [省略可] 登録されている表情パーツを指定します。
+    emoval     [省略可] デフォルト：1　登録されている表情パーツの値を指定します。
+    emo_diff   [省略可] デフォルト：false　falseの場合は、今回指定した表情の値で全て上書きします。trueの場合は今回変更した値のパーツのみ上書きします。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+    se_storage     [省略可] 指定するとポーズの変更と同時に[playse]タグのstorageを指定したときと同じ動きをします。
+                            カンマ区切りで複数指定することが可能で、その場合ランダムでひとつが再生されます。　（例： se_storage="se1.mp3, se2.mp3"　と指定した場合、se1かse2のどちらかがランダムで再生されます）
+    se_buf         [省略可] 以下のパラメーターもplayseと同等のものが指定可能です。
+    se_loop        [省略可] [playse]の各パラメーターについてはティラノスクリプト公式のタグリファレンスを参照してください。
+    se_sprite_time [省略可] 
+    se_clear       [省略可] 
+    se_volume      [省略可] 
+    se_html5       [省略可] 
+
+
+
+  ・使用例
+    "model1"モデルのポーズを2秒かけて変更する
+    [VRoid_pose modelID="model1" pose="pose1002" time=2000]
+
+
+
+[VRoid_emo]
+
+  モデルの表情を変更します。
+  後述の[VRoid_emo_maker]や[VRoid_import_emotion]を使用して、デフォルト以外の表情を指定することが可能です。
+
+  
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    emo        [省略可] 登録されている表情を指定します。emoとemoIDが両方指定されていた場合はemoが無視されます。指定可能なemoは後述にて。
+    emoID      [省略可] 登録されている表情パーツを指定します。
+    emoval     [省略可] デフォルト：1　登録されている表情パーツの値を指定します。
+    diff       [省略可] デフォルト：false　falseの場合は、今回指定した表情の値で全て上書きします。trueの場合は今回変更した値のパーツのみ上書きします。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+    se_storage     [省略可] 指定するとポーズの変更と同時に[playse]タグのstorageを指定したときと同じ動きをします。
+                            カンマ区切りで複数指定することが可能で、その場合ランダムでひとつが再生されます。　（例： se_storage="se1.mp3, se2.mp3"　と指定した場合、se1かse2のどちらかがランダムで再生されます）
+    se_buf         [省略可] 以下のパラメーターもplayseと同等のものが指定可能です。
+    se_loop        [省略可] [playse]の各パラメーターについてはティラノスクリプト公式のタグリファレンスを参照してください。
+    se_sprite_time [省略可] 
+    se_clear       [省略可] 
+    se_volume      [省略可] 
+    se_html5       [省略可] 
+
+
+  ・使用例
+    "model1"モデルの表情を2秒かけて笑顔にする
+    [VRoid_emo modelID="model1" emo="happy" time=2000]
+
+
+   ■[VRoid_pose]や、[VRoid_emo]のemoパラメータにデフォルトで指定可能な値は下記の通りです。
+     また、このパラメータは後述の[VRoid_import_emotion]で任意の表情の追加が可能です。
+   
+   値          備考
+   happy       喜
+   angry       怒
+   sad         哀
+   relaxed     楽
+   Surprised   驚    (※VRM0.xで使用可能)
+   surprised   驚    (※VRM1.0で使用可能)　VRMのバージョンでSの大文字小文字が異なる点に注意してください。
+   
+   blink       目を閉じる
+   blinkLeft   左目を閉じる
+   blinkRight  右目を閉じる
+   
+   aa          あの口の開き
+   ih          いの口の開き
+   ou          うの口の開き
+   ee          えの口の開き
+   ou          おの口の開き
+   
+   default     デフォルトに戻す
+
+
+
+[VRoid_lookAt]
+
+  モデルの目線を指定した位置に変更します。
+
+    modelID         [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    lookingCamera   [省略可] true、false、またはcameraIDを入力します。
+                             trueだと現在のカメラ目線に、falseでカメラ目線の解除、cameraIDで指定されたカメラ目線になります。
+                             xやyを指定する場合はfalseの状態にする必要があります。
+                             また、lookingCameraに指定がある場合、timeパラメーターは強制的に0が指定されます。
+    x               [省略可] 目線の方向、X軸（横）を調整します。-1～1の範囲で指定してください。プラスはモデルから見て左に目線が移動します。
+    y               [省略可] 目線の方向、Y軸（縦）を調整します。-1～1の範囲で指定してください。プラスはモデルから見て下に目線が移動します。
+    easing          [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time            [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait            [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip            [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "model1"モデルの目線を２秒かけてカメラ正面から見て右上に変更する
+    [VRoid_lookAt modelID="model1" x=1 y=1 time=2000]
+
+
+
+[VRoid_monitorInLayer_new]
+
+  レイヤーの中にレイヤーを映すモニターを作ります。
+  monitorInLayerはひとつのレイヤーにひとつまで作成可能です。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    cameraID   [省略可] レイヤーとは別のカメラを指定することも可能です。
+    x          [省略可] デフォルト：0 モニターのX軸（横）の移動を調整します。
+    y          [省略可] デフォルト：0 モニターのY軸（縦）の移動を調整します。
+    z          [省略可] デフォルト：0 モニターのZ軸（奥）の移動を調整します。
+    rotX       [省略可] デフォルト：0 モニターのX軸（横）の回転を調整します。
+    rotY       [省略可] デフォルト：0 モニターのY軸（縦）の回転を調整します。
+    rotZ       [省略可] デフォルト：0 モニターのZ軸（奥）の回転を調整します。
+    scaleX     [省略可] デフォルト：1 モニターのX軸（横）の縮尺を調整します。
+    scaleY     [省略可] デフォルト：1 モニターのY軸（縦）の縮尺を調整します。
+    scaleZ     [省略可] デフォルト：1 モニターのZ軸（奥）の縮尺を調整します。
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    visible    [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    loop       [省略可] デフォルト：false　trueにするとモニターの映像が鏡合わせしたようにループします。
+    trimAspectX  [省略可] trimAspectYと同時に設定します。指定した値に映像がトリミングされます。
+    trimAspectY  [省略可] trimAspectXと同時に設定します。指定した値に映像がトリミングされます。
+
+
+  ・使用例
+    "VRoid"レイヤーに14:9にトリミングしたモニターを設置する
+    [VRoid_monitorInLayer_new layerID="VRoid" trimAspectX=14 trimAspectY=9 x=0 y=2.6 z=-3]
+
+
+
+[VRoid_monitorInLayer_show]
+
+  monitorInLayerを表示状態にします。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    
+    
+  ・使用例
+    [VRoid_monitorInLayer_show layerID="VRoid"]
+
+
+[VRoid_monitorInLayer_hide]
+
+  monitorInLayerを非表示状態にします。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+
+  ・使用例
+    [VRoid_monitorInLayer_hide layerID="VRoid"]
+
+
+[VRoid_monitorInLayer_dispose]
+
+  monitorInLayerを破棄します。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+
+  ・使用例
+    [VRoid_monitorInLayer_dispose layerID="VRoid"]
+
+
+[VRoid_monitorInLayer_move]
+
+  monitorInLayerを移動します。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    x          [省略可] モニターのX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] モニターのY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] モニターのZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] モニターのX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] モニターのY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] モニターのZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] モニターのX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] モニターのY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] モニターのZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    モニターを奥へ1秒かけて移動
+    [VRoid_monitorInLayer_move layerID="VRoid" z=-0.5 time=1000]
+
+
+
+[VRoid_fog_add]
+
+  霧のような効果をレイヤーに与えます。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    r          [省略可] デフォルト：1　赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g          [省略可] デフォルト：1　緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b          [省略可] デフォルト：1　青を調整します。1を100%とした数字を指定します（0.5で50%）。
+    near       [省略可] デフォルト：-1　霧の手前の表示範囲を指定します。
+    far        [省略可] デフォルト：10 　霧の奥の表示範囲を指定します。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    [VRoid_fog_add layerID="VRoid" far=40 near=1]
+
+
+[VRoid_fog_delete]
+
+  fogを削除します。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    [VRoid_fog_delete layerID="VRoid"]
+
+
+[VRoid_fog_move]
+
+  霧効果の値を変更します。
+
+    layerID    [必  須] VRoid_newで指定したIDを入力してください。
+    r          [省略可] デフォルト：1　赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    g          [省略可] デフォルト：1　緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    b          [省略可] デフォルト：1　青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    near       [省略可] デフォルト：-1　霧の手前の表示範囲を指定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    far        [省略可] デフォルト：10 　霧の奥の表示範囲を指定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    [VRoid_fog_move layerID="VRoid" r=0 g=0 b=0 time=2000]
+
+
+[VRoid_effect_preload]
+
+  エフェクトに必要なモジュールを事前にロードします。
+  事前にロードしておくことにより、エフェクト使用時のラグが緩和されます。
+  （プリロードなしでもエフェクトの使用は可能です）
+
+    name  [必  須] 事前に読み込むエフェクトの名前を指定します。使用可能なエフェクトの一覧は後述にて。
+
+
+  ・使用例
+    ドットスクリーン効果をもつエフェクトのプリロード
+    [VRoid_effect_preload name="DotScreen"]
+
+
+
+[VRoid_effect]
+
+  レイヤーにエフェクトを追加します。
+  エフェクトは重ねて表示することも可能ですが、順番によっては見え方が変わります。
+
+
+    layerID  [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    name     [必  須] 使用するエフェクトの名前を指定します。使用可能なエフェクトの一覧は後述にて。
+
+
+    VRoid_effectはnameによって使用可能なパラメーターが変わります。
+    パラメーターの指定は全て任意です。
+    エフェクトに使用可能なnameと、そのパラメーターは下記のとおりです。
+    
+    
+    ・Afterimage        残像を残すエフェクト
+
+        damp        デフォルト：0.96    残像の強度(1未満を入力)
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Afterimage" damp=0.96]
+
+
+    ・Bloom             明るい部分に輝きを加えるエフェクト
+
+        strength    デフォルト：1.25    輝きの強さ
+        kernelSize  デフォルト：5       輝きの広がり
+        sigma       デフォルト：0.5     ぼかし強度
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Bloom" strength=1.25 kernelSize=5 sigma=0.5]
+
+
+    ・Bokeh             被写界深度を追加し、焦点の当たっていない部分をぼかすエフェクト
+
+        focus       デフォルト：1.5     焦点の場所    modelIDを指定可能
+        aperture    デフォルト：0.01    ぼかしの強度
+        maxblur     デフォルト：1       ぼかしの範囲
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Bokeh" focus=1.5 aperture=0.01 maxblur=1]
+        
+        focusは数値の代りにmodelIDを指定するとそのモデルに焦点が合います。
+        
+        ※このエフェクトを使用すると、VRoid_img_addで背景を覆わない限り背景が黒く表示されます。
+        　またVRoid_img_addの画像にやモデルに透過情報があった場合は正常に描画されないため、使いどころに注意してください。
+
+
+    ・DotScreen         ドット状のパターンをかけるエフェクト
+
+        centerX     デフォルト：0.5     ドットパターンの中心位置を制御するX座標
+        centerY     デフォルト：0.5     ドットパターンの中心位置を制御するY座標
+        angle       デフォルト：1.57    ドットパターンの回転角度をラジアンで指定
+        scale       デフォルト：1       ドットのサイズ
+
+        例：
+        [VRoid_effect layerID="VRoid" name="DotScreen" centerX=0.5 centerY=0.5 angle=1.57 scale=1]
+
+
+    ・Film              古いフィルムのようなノイズや点滅を与えるエフェクト
+
+        intensity   デフォルト：1       エフェクトの強度
+        grayscale   デフォルト：true    モノクロを有効　falseでカラーのままエフェクトを適用
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Film" intensity=1 grayscale=true]
+
+
+    ・Glitch            映像が破損したような視覚的効果をかけるエフェクト
+
+        dt_size     デフォルト：64      歪みの大きさ
+        goWild      デフォルト：false   trueにすると常に映像が乱れる
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Glitch" dt_size=64 goWild=false]
+
+
+    ・RenderPixelated   ドット絵風のビジュアルやモザイク効果をかけるエフェクト
+
+        pixelSize   デフォルト：12      1ドットのサイズ
+
+        例：
+        [VRoid_effect layerID="VRoid" name="RenderPixelated" pixelSize=12]
+
+
+
+    ・UnrealBloom    発光効果を与えるエフェクト
+
+        strength    デフォルト：0.2     光の強さ
+        radius      デフォルト：1       光の広がり　大きくするとよりボヤっと広がる
+        threshold   デフォルト：0.8     閾値（1～0）
+
+        例：
+        [VRoid_effect layerID="VRoid" name="UnrealBloom" strength=0.2 radius=1 threshold=0.8]
+
+
+
+    ・HorizontalBlur    水平方向のブラー効果を与えるエフェクト
+
+        パラメーターなし
+
+        例：
+        [VRoid_effect layerID="VRoid" name="HorizontalBlur"]
+
+
+
+    ・Mirror            画面中央から鏡合わせにしたような効果を与えるエフェクト
+
+        パラメーターなし
+
+        例：
+        [VRoid_effect layerID="VRoid" name="Mirror"]
+
+
+
+[VRoid_effect_delete]
+
+  レイヤーに表示したエフェクトを削除します。
+
+    layerID  [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    name     [必  須] 削除するエフェクトの名前を指定します。
+
+
+  ・使用例
+    ;VRoidレイヤーのDotScreenエフェクトを削除
+    [VRoid_effect_delete layerID="VRoid" name="DotScreen"]
+
+
+
+[VRoid_wind]
+
+  モデルに風をあてます。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    x          [省略可] 風の方向、X軸（横）を調整します。0を基準にプラスで右方向、マイナスで左方向です。指定しない場合は現在の値を引き継ぎます。初期値は1。
+    y          [省略可] 風の方向、Y軸（縦）を調整します。0を基準にプラスで上方向、マイナスで下方向です。指定しない場合は現在の値を引き継ぎます。初期値は0。
+    z          [省略可] 風の方向、Z軸（奥）を調整します。0を基準にプラスで手前方向、マイナスで奥方向です。指定しない場合は現在の値を引き継ぎます。初期値は0。
+    val        [省略可] 風の強さを調整します。0が無風。0.1で微風、1で強風くらいのイメージです。1以上やマイナス値も指定可能です。指定しない場合は現在の値を引き継ぎます。初期値は0.5。
+    speed      [省略可] 1を基準とした倍率で前後する動きの速度を調整します。指定しない場合は現在の値を引き継ぎます。初期値は1。
+    excl       [省略可] カンマ（,）区切りで風の影響を受けさせたくないボーン名に含まれた文字列を指定します。初期値は"Bust"。
+                        VRoidStudio製の場合、例えば"Bust, Skirt"と設定すると髪だけを風に揺らすことが可能です。逆に胸にも風をあてたい場合はexcl=""を指定してください。
+    minRatio   [省略可] valで指定した値を基準に倍率で風の最低値を設定します。初期値は0.5。
+                        1にすると重力が固定された感じに。1以上に設定すると基準以上に、マイナス値を設定するとvalの反対方向にも揺れ物が動き、値によって多彩な動かし方が可能となります。
+    forceWind  [省略可] trueを指定するとモデルに設定されている揺れ物の重力を無視して風を当てます。（Ver3.2.0以前と同じ挙動にしたい場合もtrueを設定してください）
+
+
+  ・使用例
+    "model1"モデルに風をあてる。（初期の状態で x=1 y=0 z=0 val=0.5 speed=1 が設定されています）
+    [VRoid_wind modelID="model1"]
+    
+    "model1"モデルに左側、やや上空、やや奥側へ向けて強風をあてる。
+    [VRoid_wind modelID="model1" x=-1 y=0.5 z=-0.5  val=1 speed=2]
+
+
+
+[VRoid_stop_wind]
+
+  モデルにあてた風をとめます。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+
+  ・使用例
+    "model1"モデルにあてた風をとめる。
+    [VRoid_stop_wind modelID="model1"]
+
+
+
+[VRoid_osawari_add]
+
+  モデルにおさわり判定用の領域を設定します。
+  領域をドラッグすることで指定したボーンを動かすことが可能です。タップ操作にも対応しています。
+  モデルに使用されているボーン名については、モデリングツールなどを使用して確認してください。
+  ※Hipsに当たるボーンのみ、ライブラリの仕様上設定できません。（VRoidの場合、J_Bip_C_Hipsには設定できません）
+  
+  おさわり用の領域をドラッグすると、下記の変数が格納されます。
+  f.osawari[modelID][rawBoneName].x      //横方向にドラッグした結果の現在値
+  f.osawari[modelID][rawBoneName].y      //縦方向にドラッグした結果の現在値
+  f.osawari[modelID][rawBoneName].count  //ドラッグが発生した回数の値
+  f.osawari[modelID][rawBoneName].point  //一回のドラッグで動かした値
+  f.osawari[modelID][rawBoneName].total  //ドラッグで動かした合計値
+  （modelIDが"model1"、rawBoneNameが"J_Sec_L_Bust1"の場合、 f.osawari["model1"]["J_Sec_L_Bust1"] にデータが格納されます ）
+  
+  
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    rawBoneName [必  須] ドラッグで移動可能にするボーンを指定します。モデルのボーン名はモデリングツールなどを使用して確認してください。
+
+    enable      [省略可] デフォルト：true　falseにするとドラッグに反応しなくなりますが、opacityが0以外だと領域の表示はされたままになります。
+    r           [省略可] デフォルト：1　赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g           [省略可] デフォルト：1　緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b           [省略可] デフォルト：1　青を調整します。1を100%とした数字を指定します（0.5で50%）。
+    opacity     [省略可] デフォルト：1　透過度を設定します。1で不透明、0で透明になります。
+
+    x           [省略可] デフォルト：0　領域の横方向の移動を設定します。
+    y           [省略可] デフォルト：0　領域の縦方向の移動を設定します。
+    z           [省略可] デフォルト：0　領域の奥方向の移動を設定します。
+    rotX        [省略可] デフォルト：0　領域の横方向の回転を設定します。
+    rotY        [省略可] デフォルト：0　領域の縦方向の回転を設定します。
+    rotZ        [省略可] デフォルト：0　領域の奥方向の回転を設定します。
+    scaleX      [省略可] デフォルト：1　領域の横方向の縮尺を設定します。
+    scaleY      [省略可] デフォルト：1　領域の縦方向の縮尺を設定します。
+    scaleZ      [省略可] デフォルト：0　領域の奥方向の縮尺を設定します。
+
+    type        [省略可] デフォルト："sphere"　sphere、box、capsuleのいずれかを設定します。それぞれ球体、直方体、カプセル型の領域が生成されます。
+    radius      [省略可] デフォルト：0.1　直径の大きさを設定します。sphere及びcapsuleのtypeを設定している時に有効です。
+    width       [省略可] デフォルト：0.1　横幅を設定します。boxのtypeを設定している時に有効です。
+    height      [省略可] デフォルト：0.1　縦幅を設定します。box及びcapsuleのtypeを設定している時に有効です。
+    depth       [省略可] デフォルト：0.1　奥行を設定します。boxのtypeを設定している時に有効です。
+
+    keep           [省略可] デフォルト：false　ドラッグ終了後も位置を保持するかどうかを指定します。trueにするとドラッグ終了後もボーンや領域が移動したままになります。
+    initX          [省略可] デフォルト：0　おさわり領域の横方向の初期値を設定します。ドラッグ開始前の基準位置として使用されます。
+    initY          [省略可] デフォルト：0　おさわり領域の縦方向の初期値を設定します。ドラッグ開始前の基準位置として使用されます。
+    initCount      [省略可] デフォルト：0　ドラッグが発生したカウントの初期値を設定します。
+    initPoint      [省略可] デフォルト：0　1回のドラッグでの移動量の初期値を設定します。
+    initTotal      [省略可] デフォルト：0　ドラッグによる累計移動量の初期値を設定します。
+    thresholdMinX  [省略可] デフォルト：-1　横方向のドラッグ範囲の最小値を設定します。
+    thresholdMaxX  [省略可] デフォルト：1　横方向のドラッグ範囲の最大値を設定します。
+    thresholdMinY  [省略可] デフォルト：-1　縦方向のドラッグ範囲の最小値を設定します。
+    thresholdMaxY  [省略可] デフォルト：1　縦方向のドラッグ範囲の最大値を設定します。
+    sensitivityX   [省略可] デフォルト：1　横方向のドラッグ感度を設定します。値を大きくすると少ないマウス移動でも大きく動きます。
+    sensitivityY   [省略可] デフォルト：1　縦方向のドラッグ感度を設定します。値を大きくすると少ないマウス移動でも大きく動きます。
+
+    dragXposX      [省略可] デフォルト：0.02　横方向のドラッグによってボーンのX軸に与える影響量を設定します。
+    dragXposY      [省略可] デフォルト：0　横方向のドラッグによってボーンのY軸に与える影響量を設定します。
+    dragXposZ      [省略可] デフォルト：0　横方向のドラッグによってボーンのZ軸に与える影響量を設定します。
+
+    dragYposX      [省略可] デフォルト：0　縦方向のドラッグによってボーンのX軸に与える影響量を設定します。
+    dragYposY      [省略可] デフォルト：0.02　縦方向のドラッグによってボーンのY軸に与える影響量を設定します。
+    dragYposZ      [省略可] デフォルト：0　縦方向のドラッグによってボーンのZ軸に与える影響量を設定します。
+
+    followRate     [省略可] デフォルト：1　領域表示のボーンの追従率を設定します。0にするとドラッグしてもおさわり領域が固定化されて動かなくなります。
+
+    onCursor       [省略可] デフォルト："pointer"　ドラッグ対象上にカーソルがある時のマウスカーソルを指定します。
+                                        onCursor及びdragCursorはCSSのcursorに準拠します。使用可能な設定値は下記のURLを参照してください。
+                                        https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/cursor
+    dragCursor     [省略可] デフォルト："grab"　ドラッグ中に表示されるマウスカーソルを指定します。
+
+    exclusive      [省略可] デフォルト：true　他のドラッグ対象と排他にするかを設定します。おさわり領域が重なっている時、true が存在する場合はその中から１つだけ対象になります。
+                                            　priorityが設定されている場合は、priorityの最も値が小さいものが優先され、同一priorityが複数ある場合はカメラから最も近いものが対象になります。
+
+    priority       [省略可] デフォルト：10　exclusiveがtrueの場合の優先度を指定します。数値が小さいほど優先されます。同一の場合はカメラから最も近いものが対象になります。
+
+    startStorage   [省略可] デフォルト：""　ドラッグ開始時にjumpタグのstorageと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    startTarget    [省略可] デフォルト：""　ドラッグ開始時にjumpタグのtargetと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    endStorage     [省略可] デフォルト：""　ドラッグ終了時にjumpタグのstorageと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    endTarget      [省略可] デフォルト：""　ドラッグ終了時にjumpタグのtargetと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+
+    pointerLock    [省略可] デフォルト：false　trueにするとPointer Lock APIを使用したドラッグ操作に切り替わります。
+                                               falseの場合は、マウスカーソルが画面端に達した際に、それ以上ドラッグ操作がおさわりに反映されませんが、
+                                               Pointer Lock APIの場合はドラッグしてもマウスカーソルはドラッグした時点の座標で固定される為、無制限にドラッグ移動が可能となります。
+                                               また、マウスカーソル自体がドラック中は消える為、dragCursorで変更したマウスカーソルは表示されません。
+                                               Pointer Lock APIが使用できない場合はfalseと同様の処理にフォールバックされます。
+
+
+[VRoid_osawari_config]
+
+  モデルにおさわり判定用の領域の設定を変更します。
+  指定しなかったパラメーターは前回の値を引き継ぎます。
+  
+  
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    rawBoneName [省略可] ドラッグで移動可能にするボーンを指定します。モデルのボーン名はモデリングツールなどを使用して確認してください。
+                         指定を省略した場合は、VRoid_osawari_addで追加したrawBoneName全てに対して変更が実行されます。
+
+    enable      [省略可] 　falseにするとドラッグに反応しなくなりますが、opacityが0以外だと領域の表示はされたままになります。
+    r           [省略可] 　赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g           [省略可] 　緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b           [省略可] 　青を調整します。1を100%とした数字を指定します（0.5で50%）。
+    opacity     [省略可] 　透過度を設定します。1で不透明、0で透明になります。
+
+    x           [省略可] 　領域の横方向の移動を設定します。
+    y           [省略可] 　領域の縦方向の移動を設定します。
+    z           [省略可] 　領域の奥方向の移動を設定します。
+    rotX        [省略可] 　領域の横方向の回転を設定します。
+    rotY        [省略可] 　領域の縦方向の回転を設定します。
+    rotZ        [省略可] 　領域の奥方向の回転を設定します。
+    scaleX      [省略可] 　領域の横方向の縮尺を設定します。
+    scaleY      [省略可] 　領域の縦方向の縮尺を設定します。
+    scaleZ      [省略可] 　領域の奥方向の縮尺を設定します。
+
+    type        [省略可] 　sphere、box、capsuleのいずれかを設定します。それぞれ球体、直方体、カプセル型の領域が生成されます。
+    radius      [省略可] 　直径の大きさを設定します。sphere及びcapsuleのtypeを設定している時に有効です。
+    width       [省略可] 　横幅を設定します。boxのtypeを設定している時に有効です。
+    height      [省略可] 　縦幅を設定します。box及びcapsuleのtypeを設定している時に有効です。
+    depth       [省略可] 　奥行を設定します。boxのtypeを設定している時に有効です。
+
+    keep           [省略可] 　ドラッグ終了後も位置を保持するかどうかを指定します。trueにするとドラッグ終了後もボーンや領域が移動したままになります。
+    initX          [省略可] 　おさわり領域の横方向の初期値を設定します。ドラッグ開始前の基準位置として使用されます。
+    initY          [省略可] 　おさわり領域の縦方向の初期値を設定します。ドラッグ開始前の基準位置として使用されます。
+    initCount      [省略可] 　ドラッグが発生したカウントの初期値を設定します。
+    initPoint      [省略可] 　1回のドラッグでの移動量の初期値を設定します。
+    initTotal      [省略可] 　ドラッグによる累計移動量の初期値を設定します。
+    thresholdMinX  [省略可] 　横方向のドラッグ範囲の最小値を設定します。
+    thresholdMaxX  [省略可] 　横方向のドラッグ範囲の最大値を設定します。
+    thresholdMinY  [省略可] 　縦方向のドラッグ範囲の最小値を設定します。
+    thresholdMaxY  [省略可] 　縦方向のドラッグ範囲の最大値を設定します。
+    sensitivityX   [省略可] 　横方向のドラッグ感度を設定します。値を大きくすると少ないマウス移動でも大きく動きます。
+    sensitivityY   [省略可] 　縦方向のドラッグ感度を設定します。値を大きくすると少ないマウス移動でも大きく動きます。
+
+    dragXposX      [省略可] 　横方向のドラッグによってボーンのX軸に与える影響量を設定します。
+    dragXposY      [省略可] 　横方向のドラッグによってボーンのY軸に与える影響量を設定します。
+    dragXposZ      [省略可] 　横方向のドラッグによってボーンのZ軸に与える影響量を設定します。
+
+    dragYposX      [省略可] 　縦方向のドラッグによってボーンのX軸に与える影響量を設定します。
+    dragYposY      [省略可] 　縦方向のドラッグによってボーンのY軸に与える影響量を設定します。
+    dragYposZ      [省略可] 　縦方向のドラッグによってボーンのZ軸に与える影響量を設定します。
+
+    followRate     [省略可] 　領域表示のボーンの追従率を設定します。0にするとドラッグしてもおさわり領域が固定化されて動かなくなります。
+
+    onCursor       [省略可] 　ドラッグ対象上にカーソルがある時のマウスカーソルを指定します。
+                              onCursor及びdragCursorはCSSのcursorに準拠します。使用可能な設定値は下記のURLを参照してください。
+                              https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/cursor
+    dragCursor     [省略可] 　ドラッグ中に表示されるマウスカーソルを指定します。
+
+    exclusive      [省略可] 　他のドラッグ対象と排他にするかを設定します。おさわり領域が重なっている時、カメラから一番近いtrueのものが１つだけ対象になります。
+
+    startStorage   [省略可] 　ドラッグ開始時にjumpタグのstorageと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    startTarget    [省略可] 　ドラッグ開始時にjumpタグのtargetと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    endStorage     [省略可] 　ドラッグ終了時にjumpタグのstorageと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+    endTarget      [省略可] 　ドラッグ終了時にjumpタグのtargetと同等のイベントを設定できます。複数の領域が重なっている場合、カメラから一番近い１つだけ（exclusiveがあればそちらが優先）jumpイベントが発生します。
+
+
+[VRoid_osawari_delete]
+
+  おさわり領域を削除します。
+  削除後もf.osawari[modelID][rawBoneName]に格納された各種値は保持されます。
+  
+  
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    rawBoneName [省略可] 指定したrawBoneNameの領域を削除します。削除するとkeepに設定されたボーンの移動もリセットされます。
+                         指定しない場合は全てのおさわり領域を削除します。
+
+
+
+[VRoid_material]
+
+  モデルのマテリアル毎の表示非表示の制御や、モザイクレイヤーに設定するマテリアルを指定できます。
+  モデルの構造によってはアクセサリーの一部や、重ね着のアウターだけを非表示することなどが可能です。
+  
+  マテリアル名に大文字小文字問わず"mosaic"を含むマテリアルは初期状態でmosaicがtrueに設定されます。
+  また、VRoid_materialタグでmosaicをtrueに設定した場合、VRoid_layer_newやVRoid_mosaicLayer_configでモザイクレイヤーを有効化する必要があります。
+  （有効化していないとモザイクレイヤーに設定されたマテリアルは非表示になります）
+
+    modelID      [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    materialID   [省略可] デフォルト：null　表示状態を変更するマテリアルのIDを指定します。使用可能なIDは後述の[VRoid_materialChecker]タグで確認できます。
+                                        　カンマ区切りで複数同時に指定が可能です。（例：materialID="1,4,6"）
+                                        　materialIDとmaterialNameのどちらも指定しない場合は全てのマテリアルに対して処理を行います。つまり、指定せずにvisibleをtrueにすると全てのマテリアルを表示、falseにすると全て非表示となりモデルが見えなくなります。
+    materialName [省略可] デフォルト：null　表示状態を変更するマテリアル名を指定します。使用可能な名前は後述の[VRoid_materialChecker]タグで確認できます。
+                                        　カンマ区切りで複数同時に指定が可能です。（例：materialName="N00_001_02_Accessory_Tie_01_CLOTH (Instance), N00_001_01_Tops_01_CLOTH (Instance)"）
+                                        　materialIDとmaterialNameのどちらも指定しない場合は全てのマテリアルに対して処理を行います。つまり、指定せずにvisibleをtrueにすると全てのマテリアルを表示、falseにすると全て非表示となりモデルが見えなくなります。
+    mosaic       [省略可] デフォルト：null　モザイク用レイヤーに映すマテリアルを設定します。trueでモザイクに、falseで通常表示です。モザイクは必ずアウトラインを含んで処理され、outlineオプションは無視されます。
+    visible      [省略可] デフォルト：null　表示状態を指定します。trueが表示、falseが非表示です。指定しない場合は変更しません。
+    outline      [省略可] デフォルト：true　対応したoutlineが存在する場合は同時に表示状態を変更します。
+
+
+  ・使用例
+    "model1"モデルのmaterialIDが0の表示状態を非表示にする
+    [VRoid_material modelID="model1" materialID=0 visible=false]
+
+
+
+[VRoid_change_texture]
+
+  モデルのマテリアルに設定しているテクスチャーを変更します。
+  該当マテリアルのメッシュと対応しているテクスチャーが必要です。
+
+    ※タグ設定前のモデルのデフォルトテクスチャーに戻したい場合は、
+      元のテクスチャー画像を用意してこのタグを使用する必要があります。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    materialID [必  須] テクスチャーを変更するマテリアルのIDを指定します。使用可能なIDは後述の[VRoid_materialChecker]タグで確認できます。
+    storage    [必  須] テクスチャーファイルを指定します。 data/others/plugin/vrm/_texture フォルダにテクスチャー画像(png or jpeg)を置いて指定してください。
+    outline    [省略可] デフォルト：true　対応したoutlineが存在する場合は同時にテクスチャーを変更します。
+
+
+  ・使用例
+    "model1"モデルのmaterialIDが0のテクスチャーを変更する
+    [VRoid_change_texture modelID="model1" materialID=0 storage="skirt01.png"]
+
+
+
+[VRoid_change_color]
+
+  モデルのマテリアルに設定しているカラーを変更します。
+  指定されたマテリアルがアウトラインの場合はrgbのみ対応します。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    materialID [必  須] テクスチャーを変更するマテリアルのIDを指定します。使用可能なIDは後述の[VRoid_materialChecker]タグで確認できます。
+    r          [省略可] テクスチャーの赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    g          [省略可] テクスチャーの緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    b          [省略可] テクスチャーの青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    shadeR     [省略可] テクスチャーの影色の赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    shadeG     [省略可] テクスチャーの影色の緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    shadeB     [省略可] テクスチャーの影色の青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "model1"モデルのmaterialIDが0のテクスチャ―の赤色と影の赤色を1秒かけて0に変更する
+    [VRoid_change_color modelID="model1" materialID=0 r=0 shadeR=0 time=1000]
+
+
+
+[VRoid_animation]
+
+  インポート済みのVRMAファイルやFBXファイルを再生します。
+  VRoid Project公式のサンプルファイルは下記からダウンロード可能です。
+  https://booth.pm/ja/items/5512385
+
+  FBXファイルはAdobeアカウントを作成（無料）すると下記のサイトからサンプルやサンプルを元に様々な動作が作成可能です。
+  https://www.mixamo.com/
+  (上記のサイトからFBXファイルをダウンロードする際は、Skinの項目を「Without Skin」に設定してダウンロードすると余計なデータを含まないファイルが入手できます。)
+  
+  このタグを実行する前に、後述の[VRoid_import_animation]タグでファイルを登録する必要があります。
+  
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    name        [必  須] [VRoid_import_animation]タグでインポートしたファイル名を指定してください。
+    rate        [省略可] デフォルト：1　1を基準とした速度を設定します。2で2倍速。0.5で半分のスピードで再生。
+    loop        [省略可] デフォルト：false　trueで永久ループ、falseで1度再生します。また数字を指定することも可能です。
+                                          　2を指定すると2回再生。1は1回再生（falseと同等）。0を指定すると無限ループ（trueと同等）となります。
+                                          　また、永久ループ(0 or true)を指定した場合は、waitが強制的にfalseの扱いとなります。
+    fadeIn      [省略可] デフォルト：0　ミリ秒指定。指定された秒数をかけて、現在のポーズからFBXで指定された動きへと遷移します。
+    fadeOut     [省略可] デフォルト：0　ミリ秒指定。指定された秒数をかけて、アクションの終了時のポーズから通常のポーズへ遷移します。
+    fadeLoop    [省略可] デフォルト：0　ミリ秒指定。指定された秒数をかけて、アクションのループ時に終了のポーズから開始のポーズへ遷移します。
+    wait        [省略可] デフォルト：true　trueの場合はアクションの終了を待ってから次のタグへ移ります。falseだと待ちません。
+    skip        [省略可] デフォルト：false　trueを指定した際に、ユーザーがテキストスキップを行った場合に高速で再生されます。
+    keep        [省略可] デフォルト：false　trueを指定するとファイルを再生した後、最終フレームの状態でポーズが止まります。
+    startTime   [省略可] デフォルト：0　指定した秒数からアニメーションファイルが再生されます。
+    endTime     [省略可] デフォルト：0　指定した秒数までアニメーションが再生されます。
+    emoTimeline [省略可] [VRoid_import_anim_emo_timeline]で登録したタイムライン名を指定します。
+    resetHips   [省略可] デフォルト：true　前回のアニメーションの終了位置のHipsのポジションをリセットします。
+                                         　falseにした場合、前回のHipsポジションを設定してからアニメーションを再生しますが、アニメーションの作りによっては正常に動作しない為、基本true推奨です。
+
+
+  ・使用例
+    "model1"でVRMA_01を再生(fadeInとfadeOutに500msくらいを指定すると初めと終わりのアクションが滑らかに遷移します)
+    [VRoid_animation modelID="model1" name="VRMA_01" fadeIn=500 fadeOut=500]
+
+
+
+[VRoid_stop_animation]
+
+  再生中の[VRoid_animation]を停止します。
+  このタグで指定した場合は[VRoid_animation]で指定したfadeOutの値は無視されます。
+  
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    fadeOut    [省略可] デフォルト：0　ミリ秒指定。指定された秒数をかけて、アクションの終了時のポーズから通常のポーズへ遷移します。
+    wait       [省略可] デフォルト：true　trueの場合はアクションの終了を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定した際に、ユーザーがテキストスキップを行った場合にfadeOutで指定した秒数が短縮されます。
+    keep       [省略可] デフォルト：false　trueを指定するとVRoid_stop_animationを実行した時点のポーズで止まります。
+  
+  
+  ・使用例
+    "model1"の[VRoid_animation]を停止
+    [VRoid_stop_animation modelID="model1"]
+
+
+
+[VRoid_lip_config]
+
+  モデルのリップシンクを設定します。再生したボイスデータの音量に合わせて設定した量の口が開きます。
+  値を入力しなかったものは前回の状態を引き継ぎます。
+
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    isSync      [省略可] デフォルト：false　trueにした状態でbufに設定したseが再生されるとリップシンクが開始されます。無効にする場合はfalseを設定します。
+    buf         [省略可] デフォルト：null　リップシンク対象とするseのbufを設定してください。nullを入力すると解除されます。
+    micVolume   [省略可] デフォルト：2　入力感度を1を基準とした倍率で設定してください。2で2倍の感度。例えばボイス音量が小さいデータを使用している時に口を大きく反応させたいときは3や4等の数字を設定して調整してください。
+    micMinLevel [省略可] デフォルト：0　入力の閾値を設定します。ノイズの多い音声で話していないのに口が空いてしまう場合は、0.05～0.1などの小さな値を設定してみてください。
+    micMix      [省略可] デフォルト：0.75　リップシンクに設定した表情データに値が入っていた際に、この数字の割合分小さく変動します。
+    fadeOut     [省略可] デフォルト：500　リップシンクが終わった際に、設定されてある元の表情データに戻るまでのフェード時間をミリ秒単位で指定します。
+    invalidList [省略可] デフォルト：invalidList　リップシンク中に無効化する表情データをカンマ区切りで入力します。
+    aa          [省略可] デフォルト：1　「あ」の口の大きさを0～1の間で設定します。例えば0.5に設定すると大きな音量のファイルを使用しても半開きまでしか口があかなくなります。
+    ih          [省略可] デフォルト：0　「い」の口の大きさを0～1の間で設定します。
+    ou          [省略可] デフォルト：0　「う」の口の大きさを0～1の間で設定します。
+    ee          [省略可] デフォルト：0　「え」の口の大きさを0～1の間で設定します。
+    oh          [省略可] デフォルト：0　「お」の口の大きさを0～1の間で設定します。
+    isSyncPos   [省略可] デフォルト：false　isSyncが有効な場合、isSyncPosをtrueにするとカメラの位置から見てモデルの頭からリップシンクした音声が流れるようになります。
+                                            この機能を有効にした状態でモデルを移動させると立体音響のような効果が得られます。
+    posRate     [省略可] デフォルト：3　isSyncPosの左右上下の感度があがり、数字を大きくするとより大きくそれぞれの位置へ音が移動しやすくなります。
+                                        ただし大きな値にしすぎると音が遠くなり音量自体が小さくなるので注意してください。
+
+    ※aa～ohは複合して設定されます。aa=0.5 oh=0.5にすると、「あ」と「お」を合わせた表情でリップシンクします。
+
+
+  ・使用例
+    モデルをbuf1のSEを再生させた時にリップシンクさせる
+    [VRoid_lip_config modelID="model1" isSync=true buf=1]
+    
+    [playse storage=voice01.ogg buf=1]
+    ;※別途voice01.oggを用意してください。
+    
+    ;playseにlipSync=falseを指定すると、そのplayseのbufにリップシンクが設定されていても無視することが可能です。
+    [playse storage=voice01.ogg buf=1 lipSync=false]
+
+
+
+[VRoid_blink_config]
+
+  モデルのブリンクを設定します。
+  値を入力しなかったものは前回の状態を引き継ぎます。
+
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    enable      [省略可] デフォルト：true　falseを指定するとブリンクを無効化できます。
+    stroke      [省略可] デフォルト：1　ブリンクするストロークを設定できます。2にすると次のブリンクまでの間隔が長く、0.5などにすると短くなります。
+    speed       [省略可] デフォルト：1　ブリンクの速度を設定します。大きな値を設定すると素早くブリンクします。
+
+
+  ・使用例
+    ;モデルをブリンクの間隔を長めにし、素早く瞼を開閉させる
+    [VRoid_blink_config modelID="model1" stroke=2 speed=5]
+
+
+
+[VRoid_background_load]
+
+  レイヤーの背景に画像を表示します。
+  png、jpg、jpeg、gif、bmp、webpの画像ファイルの他、
+  HDRI（高ダイナミックレンジ画像）の.hdrと.exrに対応しています。
+  
+  HDRIは　https://polyhaven.com/hdris
+  からアカウント不要で多種多様な背景が入手可能です。
+  polyhaven.comから入手できるすべてのアセットはCC0ライセンスの下でリリースされます。
+  つまり、商用利用を含め、あらゆる目的に使用できます。（参照：https://docs.polyhaven.com/ja/faq）
+  
+  
+    layerID     [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    storage     [必  須] 背景ファイルを指定します。 data/others/plugin/vrm/_background フォルダに対応画像を置いて指定してください。
+    background  [省略可] デフォルト：true　falseだと背景を非表示状態でレイヤーに追加できます。
+    environment [省略可] デフォルト：true　falseだと環境光を非表示状態でレイヤーに追加できます。環境光の設定が不要な場合はfalseにすると処理が軽くなります。
+                                           逆にbackgroundをfalseにして環境光のみ取り込むことも可能です。
+    rotX       [省略可] デフォルト：0　背景のX軸（横）の回転を調整します。
+    rotY       [省略可] デフォルト：0　背景のY軸（縦）の回転を調整します。
+    rotZ       [省略可] デフォルト：0　背景のZ軸（奥）の回転を調整します。
+    blurriness [省略可] デフォルト：0　背景にブラーをかけます。0から1の間の数値を指定し、数字が大きいほどブラー効果が強くなります。
+    intensity  [省略可] デフォルト：1　1を基準に背景の明るさを設定します。
+    wait        [省略可] デフォルト：true　trueの場合は読み込みを待ってから次のタグへ移ります。falseだと待ちません。
+
+
+  ・使用例
+    [VRoid_background_load layerID="VRoid" storage="rustig_koppie_puresky_4k.hdr"]
+
+
+
+[VRoid_background_visible]
+
+  VRoid_background_loadで設定したbackgroundやenvironmentの表示状態を変更します。
+  
+    layerID     [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    background  [省略可] 背景を表示状態をtrueかfalseで切り替えます。省略した場合は変更しません。
+    environment [省略可] 環境光を表示状態をtrueかfalseで切り替えます。省略した場合は変更しません。
+
+
+  ・使用例
+    [VRoid_background_visible layerID="VRoid" background=false]
+
+
+
+[VRoid_background_dispose]
+
+  VRoid_background_loadで読み込んだ背景を破棄します。
+  
+    layerID     [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+
+
+  ・使用例
+    [VRoid_background_dispose layerID="VRoid"]
+
+
+
+[VRoid_background_move]
+
+
+  VRoid_background_loadで読み込んだ背景を移動します。
+
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    rotX       [省略可] 背景のX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] 背景のY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] 背景のZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    blurriness [省略可] 背景にブラーをかけます。0から1の間の数値を指定し、数字が大きいほどブラー効果が強くなります。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    intensity  [省略可] 1を基準に背景の明るさを設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    背景を1秒かけて約180度回転
+    [VRoid_background_move layerID="VRoid" rotY=3.14 time=1000]
+
+
+
+[VRoid_img_add]
+
+  レイヤーに画像を追加します。
+  
+  
+    layerID     [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    imgID       [必  須] 画像のIDを割り振ります。同じIDが既にあった場合はそのIDの画像に上書きします。
+    storage     [必  須] 表示するファイルを指定します。 ./dataから始まるパスを指定してください。
+    visible     [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    x           [省略可] デフォルト：0　画像の横方向の移動を設定します。
+    y           [省略可] デフォルト：0　画像の縦方向の移動を設定します。
+    z           [省略可] デフォルト：0　画像の奥方向の移動を設定します。
+    rotX        [省略可] デフォルト：0　画像の横方向の回転を設定します。
+    rotY        [省略可] デフォルト：0　画像の縦方向の回転を設定します。
+    rotZ        [省略可] デフォルト：0　画像の奥方向の回転を設定します。
+    scaleX      [省略可] デフォルト：1　画像の横方向の縮尺を設定します。-1を設定すると左右反転します。
+    scaleY      [省略可] デフォルト：1　画像の縦方向の縮尺を設定します。-1を設定すると上下反転します。
+    scaleZ      [省略可] デフォルト：0　画像の奥方向の縮尺を設定します。
+    scale       [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    opacity     [省略可] デフォルト：1　透過度を設定します。1で不透明、0で透明になります。
+    easing      [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time        [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけてフェードインします。
+    wait        [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip        [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+    cache       [省略可] デフォルト：true　使用した画像をキャッシュします。
+    side        [省略可] デフォルト："DoubleSide"　FrontSide、BackSide、DoubleSideを指定できます。FrontSideは正面からのみ描画、BackSideは背面からのみ描画、DoubleSideは両面を描画します。
+                                                　例えば背景に使用する用途であればFrontSideを指定することで背面からの描画がなくなり負荷が軽減されます。
+    renderOrder [省略可] デフォルト：0　画像のレンダー順を設定します。VRMの透過マテリアルが浮き出てくる場合などは999など描画順を後にすることで改善します。
+
+
+  ・使用例
+    "VRoid"レイヤーに"background"画像を追加して大きさや位置を調整して表示する。
+    [VRoid_img_add layerID="VRoid" imgID="background" storage="./data/bgimage/room.jpg" y=1 z=-2 scaleX=3 scaleY=3]
+
+
+
+[VRoid_img_delete]
+
+  レイヤーに追加した画像を消去します。
+  
+  
+    imgID      [必  須] VRoid_img_addで指定したimgIDを入力してください。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけてフェードアウトします。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "VRoid"レイヤーの"background"画像を1000ミリ秒かけてフェードアウト後に消去する。
+    [VRoid_img_delete imgID="background" time=1000]
+
+
+
+[VRoid_img_show]
+
+  VRoid_img_hideで非表示にした画像を表示します。
+  
+  
+    imgID      [必  須] VRoid_img_addで指定したimgIDを入力してください。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけてフェードインします。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "非表示中の"background"画像を1000ミリ秒かけて表示する。
+    [VRoid_img_show imgID="background" time=1000]
+
+
+
+[VRoid_img_hide]
+
+
+  表示中の画像を非表示にします。
+  
+  
+    imgID      [必  須] VRoid_img_addで指定したimgIDを入力してください。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけてフェードアウトします。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+
+  ・使用例
+    "表示中の"background"画像を1000ミリ秒かけて非表示にする。
+    [VRoid_img_hide imgID="background" time=1000]
+
+
+
+[VRoid_img_move]
+
+
+  画像を移動します。
+
+    imgID      [必  須] VRoid_img_addで指定したimgIDを入力してください。
+    x          [省略可] 画像のX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] 画像のY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] 画像のZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] 画像のX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] 画像のY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] 画像のZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] 画像のX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] 画像のY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] 画像のZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    opacity    [省略可] 透過度を設定します。1で不透明、0で透明になります。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    モデルを奥へ1秒かけて移動
+    [VRoid_img_move imgID="background" z=-0.5 time=1000]
+
+
+[VRoid_obj3D_load]
+
+  3Dオブジェクトを読み込みます。
+  3Dデータ.gltf　.glb　.fbx　.vrm　.obj　.3dsの読み込みと、画像データ.png .jpeg .jpg .gif .bmp .webpの読み込みが可能です。
+
+    storage        [必  須] ロードするファイルをdata/others/plugin/vrm/_obj3D に配置して指定してください。
+    name           [省略可] 読み込んだ3Dオブジェクトを管理する名前を入力します。省略した場合はファイル名がnameとして扱われます。
+    wait           [省略可] デフォルト：true　trueの場合は3Dオブジェクトのロードを待って次のタグへ移ります。falseだと待ちません。
+    forceLight     [省略可] デフォルト：false　trueにすると読み込んだ3Dオブジェクトに対して強制的にライトの設定が反映されます。
+                                           ※オブジェクトのマテリアルによってはデフォルトの状態でライトが反映されないことがあります。その際はtrueに設定してみてください。
+    forceMaterial  [省略可] 3Dオブジェクトに設定されているマテリアルを強制的に変更します。
+                            toon、basic、normal、standard、lambert、phong、matcap、depthが設定可能です。
+                            toonに設定するとVRMと親和性が高くなります。
+                            マテリアルによっては変換できない部分が発生します。
+                            完全に変更できなかった場合は元のデータの状態で読み込み処理を続行します。また、forceMaterialを設定した場合はforceLightは無視されます。
+
+
+  ・使用例
+    [VRoid_obj3D_load storage="CyberStage_AB.glb" forceLight=true]
+
+
+
+[VRoid_obj3D_add]
+
+  3Dオブジェクトを追加します。
+  レイヤー、またはモデルに追加することが可能です。
+  
+    layerID         [省略可] VRoid_layer_newで指定したlayerIDを入力してください。
+    attachModelID   [省略可] attachModelIDとattachBoneName両方を既述した場合、既に追加済みのモデルに対して、ここで指定したモデルをattachBoneNameで指定したboneに追加します。
+    attachBoneName  [省略可] アタッチ先のボーン名を指定します。アタッチ可能なボーン名はVRoid_addと同等です。
+  
+    objID       [必  須] 3DオブジェクトのIDを割り振ります。
+    name        [必  須] VRoid_obj3D_loadで指定したnameを入力してください。
+    visible     [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    x           [省略可] デフォルト：0　オブジェクトの横方向の移動を設定します。
+    y           [省略可] デフォルト：0　オブジェクトの縦方向の移動を設定します。
+    z           [省略可] デフォルト：0　オブジェクトの奥方向の移動を設定します。
+    rotX        [省略可] デフォルト：0　オブジェクトの横方向の回転を設定します。
+    rotY        [省略可] デフォルト：0　オブジェクトの縦方向の回転を設定します。
+    rotZ        [省略可] デフォルト：0　オブジェクトの奥方向の回転を設定します。
+    scaleX      [省略可] デフォルト：1　オブジェクトの横方向の縮尺を設定します。-1を設定すると左右反転します。
+    scaleY      [省略可] デフォルト：1　オブジェクトの縦方向の縮尺を設定します。-1を設定すると上下反転します。
+    scaleZ      [省略可] デフォルト：1　オブジェクトの奥方向の縮尺を設定します。
+    scale       [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    renderOrder [省略可] デフォルト：0　オブジェクトのレンダー順を設定します。元のオブジェクトに設定されたrenderOrderに加算します。
+                                        オブジェクトの後ろのVRMの透過マテリアルが浮き出てくる場合などは999など描画順を後にすることで改善します。
+
+
+  ・使用例
+    "VRoid"レイヤーに"CyberStage_AB"をobjID1として追加する。（rotY="&Math.PI"と指定することで手前と奥を反転して表示可能です。オブジェクトの初期状態によって活用してください。）
+     [VRoid_obj3D_add layerID="VRoid" name="CyberStage_AB" objID="objID1" rotY="&Math.PI"]
+
+
+
+[VRoid_obj3D_delete]
+
+  3Dオブジェクトを消去します。
+  objIDまたはnameどちらかの指定が必要です。
+  同じnameの3Dオブジェクトには同じパラメーターが一括で設定されます。
+  
+  
+    objID      [省略可] VRoid_obj3D_addで指定したobjIDを入力してください。
+    name       [省略可] VRoid_obj3D_loadで指定したnameを入力してください。
+
+
+  ・使用例
+    [VRoid_obj3D_delete objID="obj1"]
+
+
+
+[VRoid_obj3D_dispose]
+
+  3Dオブジェクトを破棄します。
+  
+  
+    name       [省略可] VRoid_obj3D_loadで指定したnameを入力してください。
+                        nameを省略した場合はVRoid_obj3D_loadした全てのオブジェクトを破棄します。
+
+
+  ・使用例
+    [VRoid_obj3D_dispose name="CyberStage_AB"]
+
+
+[VRoid_obj3D_show]
+
+  3Dオブジェクトを表示します。
+  objIDまたはnameどちらかの指定が必要です。
+  同じnameのオブジェクトには同じパラメーターが一括で設定されます。
+  
+  
+    objID      [省略可] VRoid_obj3D_addで指定したobjIDを入力してください。
+    name       [省略可] VRoid_obj3D_loadで指定したnameを入力してください。
+
+
+  ・使用例
+    [VRoid_obj3D_show objID="obj1"]
+
+
+
+[VRoid_obj3D_hide]
+
+
+  3Dオブジェクトを非表示にします。
+  objIDまたはnameどちらかの指定が必要です。
+  同じnameのオブジェクトには同じパラメーターが一括で設定されます。
+  
+  
+    objID      [省略可] VRoid_obj3D_addで指定したobjIDを入力してください。
+    name       [省略可] VRoid_obj3D_loadで指定したnameを入力してください。
+
+
+  ・使用例
+    [VRoid_obj3D_hide objID="obj1"]
+
+
+
+[VRoid_obj3D_move]
+
+  3Dオブジェクトを移動します。
+  objIDまたはnameどちらかの指定が必要です。
+  同じnameのオブジェクトには同じパラメーターが一括で設定されます。
+
+    objID      [省略可] VRoid_obj3D_addで指定したobjIDを入力してください。
+    name       [省略可] [省略可] VRoid_obj3D_loadで指定したnameを入力してください。
+    x          [省略可] 画像のX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] 画像のY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] 画像のZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] 画像のX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] 画像のY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] 画像のZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] 画像のX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] 画像のY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] 画像のZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    モデルを奥へ1秒かけて移動
+    [VRoid_obj3D_move objID="obj1" z=-0.5 time=1000]
+
+
+
+[VRoid_mosaic_add]
+
+  モザイクを追加します。
+  レイヤー、またはモデルに追加することが可能です。
+  
+  ※注意　モザイクをsphereやboxで作成した際に、カメラがその球体や直方体の中に入るとモザイクの掛かっていない状態の映像が映ります。
+          モザイクを使用し、絶対に表示させてはいけない箇所がある場合は、球体や直方体の中に入らないようにカメラワークに注意してください。
+  
+    layerID         [省略可] VRoid_layer_newで指定したlayerIDを入力してください。
+    attachModelID   [省略可] attachModelIDとattachBoneName両方を既述した場合、既に追加済みのモデルに対して、ここで指定したモデルをattachBoneNameで指定したboneに追加します。
+    attachBoneName  [省略可] アタッチ先のボーン名を指定します。アタッチ可能なボーン名はVRoid_addと同等です。
+  
+    mosaicID   [必  須] モザイクのIDを割り振ります。
+    visible    [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    x          [省略可] デフォルト：0　モザイクの横方向の移動を設定します。
+    y          [省略可] デフォルト：0　モザイクの縦方向の移動を設定します。
+    z          [省略可] デフォルト：0　モザイクの奥方向の移動を設定します。
+    rotX       [省略可] デフォルト：0　モザイクの横方向の回転を設定します。
+    rotY       [省略可] デフォルト：0　モザイクの縦方向の回転を設定します。
+    rotZ       [省略可] デフォルト：0　モザイクの奥方向の回転を設定します。
+    scaleX     [省略可] デフォルト：1　モザイクの横方向の縮尺を設定します。-1を設定すると左右反転します。
+    scaleY     [省略可] デフォルト：1　モザイクの縦方向の縮尺を設定します。-1を設定すると上下反転します。
+    scaleZ     [省略可] デフォルト：1　モザイクの奥方向の縮尺を設定します。
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+
+    pixel       [省略可] デフォルト：64　モザイクの粗さを1以上の数字で設定します。数字が大きいほどモザイクが薄く（細かく）、小さいほど厚く（粗く）なります。
+    brightness  [省略可] デフォルト：0　1～-1の範囲でモザイクの明るさを調整します。1で真っ白に、-1で真っ黒になります。
+    type        [省略可] デフォルト："sphere"　sphere、circle、box、planeのいずれかを設定します。それぞれ球体、円、直方体、平面のモザイクが生成されます。
+    radius      [省略可] デフォルト：1　直径の大きさを設定します。sphere及びcircleのtypeを設定している時に有効です。
+    segments    [省略可] デフォルト：32　円の滑らかさを設定します。sphere及びcircleのtypeを設定している時に有効です。数字が高いほど滑らかな円になりますが、負荷が上がります。
+    width       [省略可] デフォルト：1　横幅を設定します。box及びplaneのtypeを設定している時に有効です。
+    height      [省略可] デフォルト：1　縦幅を設定します。box及びplaneのtypeを設定している時に有効です。
+    depth       [省略可] デフォルト：1　奥行を設定します。boxのtypeを設定している時に有効です。
+
+
+  ・使用例
+    "VRoid"レイヤーにmosaic1を追加する。
+     [VRoid_mosaic_add layerID="VRoid" mosaicID="mosaic1"]
+
+
+
+[VRoid_mosaic_delete]
+
+  モザイクを消去します。
+  
+  
+    mosaicID   [省略可] VRoid_mosaic_addで指定したmosaicIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mosaic_delete mosaicID="mosaic1"]
+
+
+[VRoid_mosaic_show]
+
+  モザイクを表示します。
+  
+  
+    mosaicID   [省略可] VRoid_mosaic_addで指定したmosaicIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mosaic_show mosaicID="mosaic1"]
+
+
+
+[VRoid_mosaic_hide]
+
+  モザイクを非表示にします。
+  
+  
+    mosaicID   [省略可] VRoid_mosaic_addで指定したmosaicIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mosaic_hide objID="mosaic1"]
+
+
+[VRoid_mosaic_move]
+
+  モザイクを移動します。
+
+    mosaicID   [省略可] VRoid_mosaic_addで指定したmosaicIDを入力してください。
+    x          [省略可] モザイクのX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] モザイクのY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] モザイクのZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] モザイクのX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] モザイクのY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] モザイクのZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] モザイクのX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] モザイクのY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] モザイクのZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    pixel      [省略可] モザイクの粗さを1以上の数字で設定します。数字が大きいほどモザイクが薄く（細かく）、小さいほど厚く（粗く）なります。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    brightness [省略可] 1～-1の範囲でモザイクの明るさを調整します。1で真っ白に、-1で真っ黒になります。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    モザイクを奥へ1秒かけて移動
+    [VRoid_mosaic_move mosaicID="mosaic1" z=-0.5 time=1000]
+
+
+
+[VRoid_mirror_add]
+
+  ミラーを追加します。鏡合わせのようなループ表示には仕様上なりません。
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    mirrorID   [必  須] ミラーのIDを割り振ります。
+    visible    [省略可] デフォルト：true　falseだと非表示状態でレイヤーに追加できます。
+    x          [省略可] デフォルト：0　ミラーの横方向の移動を設定します。
+    y          [省略可] デフォルト：0　ミラーの縦方向の移動を設定します。
+    z          [省略可] デフォルト：0　ミラーの奥方向の移動を設定します。
+    rotX       [省略可] デフォルト：0　ミラーの横方向の回転を設定します。
+    rotY       [省略可] デフォルト：0　ミラーの縦方向の回転を設定します。
+    rotZ       [省略可] デフォルト：0　ミラーの奥方向の回転を設定します。
+    scaleX     [省略可] デフォルト：1　ミラーの横方向の縮尺を設定します。-1を設定すると左右反転します。
+    scaleY     [省略可] デフォルト：1　ミラーの縦方向の縮尺を設定します。-1を設定すると上下反転します。
+    scaleZ     [省略可] デフォルト：1　ミラーの奥方向の縮尺を設定します。
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+
+    resWidth   [省略可] デフォルト：320　ミラーに表示される横軸の解像度を設定します。高くすると負荷が上がりますがくっきりと、低くすると負荷が下がりぼやけた表示になります。
+    resHeight  [省略可] デフォルト：320　ミラーに表示される縦軸の解像度を設定します。高くすると負荷が上がりますがくっきりと、低くすると負荷が下がりぼやけた表示になります。
+
+    r          [省略可] デフォルト：1　ミラーの赤を調整します。1を100%とした数字を指定します（0.5で50%）。
+    g          [省略可] デフォルト：1　ミラーの緑を調整します。1を100%とした数字を指定します（0.5で50%）。
+    b          [省略可] デフォルト：1　ミラーの青を調整します。1を100%とした数字を指定します（0.5で50%）。
+
+    type       [省略可] デフォルト："circle"　circle、planeのどちらかを設定します。それぞれ円、平面のミラーが生成されます。
+    radius     [省略可] デフォルト：1　直径の大きさを設定します。circleのtypeを設定している時に有効です。
+    segments   [省略可] デフォルト：32　円の滑らかさを設定します。circleのtypeを設定している時に有効です。数字が高いほど滑らかな円になりますが、負荷が上がります。
+    width      [省略可] デフォルト：1　横幅を設定します。planeのtypeを設定している時に有効です。
+    height     [省略可] デフォルト：1　縦幅を設定します。planeのtypeを設定している時に有効です。
+
+
+  ・使用例
+    "VRoid"レイヤーにmirror1を追加する。
+     [VRoid_mirror_add layerID="VRoid" mirrorID="mirror1"]
+
+
+
+[VRoid_mirror_delete]
+
+  ミラーを消去します。
+  
+  
+    mirrorID   [省略可] VRoid_mirror_addで指定したmirrorIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mirror_delete mirrorID="mirror1"]
+
+
+[VRoid_mirror_show]
+
+  ミラーを表示します。
+  
+  
+    mirrorID   [省略可] VRoid_mirror_addで指定したmirrorIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mirror_show mirrorID="mirror1"]
+
+
+
+[VRoid_mirror_hide]
+
+
+  ミラーを非表示にします。
+  
+  
+    mirrorID   [省略可] VRoid_mirror_addで指定したmirrorIDを入力してください。
+
+
+  ・使用例
+    [VRoid_mirror_hide objID="mirror1"]
+
+
+[VRoid_mirror_move]
+
+
+  ミラーを移動します。
+
+    mirrorID   [省略可] VRoid_mirror_addで指定したmirrorIDを入力してください。
+    x          [省略可] ミラーのX軸（横）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    y          [省略可] ミラーのY軸（縦）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    z          [省略可] ミラーのZ軸（奥）の移動を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotX       [省略可] ミラーのX軸（横）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotY       [省略可] ミラーのY軸（縦）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    rotZ       [省略可] ミラーのZ軸（奥）の回転を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleX     [省略可] ミラーのX軸（横）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleY     [省略可] ミラーのY軸（縦）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scaleZ     [省略可] ミラーのZ軸（奥）の縮尺を調整します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    scale      [省略可] scaleX,Y,Zを一括で指定します。scaleを指定した場合は同時にscaleXなどを指定していても無視されてこちらの値が優先されます。
+    resWidth   [省略可] ミラーに表示される横軸の解像度を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    resHeight  [省略可] ミラーに表示される縦軸の解像度を設定します。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    r          [省略可] ミラーの赤を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    g          [省略可] ミラーの緑を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+    b          [省略可] ミラーの青を調整します。1を100%とした数字を指定します（0.5で50%）。指定しない場合は現在の値を引き継ぎます。+=0.5　-=0.5 のように現在位置から相対位置で指定も可能です。（四則演算が使用可能です）
+
+    easing     [省略可] デフォルト：easeInOutQuart　timeで指定した秒数をイージング関数にしたがって遷移させます。使用可能なeasingの一覧は後述にて。
+    time       [省略可] デフォルト：0　0で瞬間変更。ミリ秒単位で指定可能。指定した秒数をかけて変更します。
+    wait       [省略可] デフォルト：true　trueの場合はtimeで指定した秒数を待ってから次のタグへ移ります。falseだと待ちません。
+    skip       [省略可] デフォルト：false　trueを指定すると、ユーザーがテキストスキップを行った際にtimeで指定した秒数を無視して瞬時に変更するようになります。
+
+  ・使用例
+    ミラーを奥へ1秒かけて移動
+    [VRoid_mirror_move mirrorID="mirror1" z=-0.5 time=1000]
+
+
+
+[VRoid_import_blinkSetting]
+
+  モデルのブリンク時の詳細設定ファイルを読み込みます。
+  設定ファイルの記述方法については_blinkフォルダー内の_blinkReadme.txtを参照してください。
+  
+
+    modelID     [必  須] VRoid_loadで指定したmodelIDを入力してください。
+    storage     [必  須] インポートするファイルをdata/others/plugin/vrm/_blink に配置して指定してください。
+
+  ・使用例
+    ;モデルのブリンク時の詳細設定を読み込む
+    [VRoid_import_blinkSetting modelID="model1" storage="alicia.json"]
+
+
+
+[VRoid_import_emotion]
+
+  エモーションメイカーなどで作成した表情データファイルをインポートします。
+
+    storage    [必  須] インポートするファイルをdata/others/plugin/vrm/_emotion に配置して指定してください。
+                        ,（カンマ）区切りで複数ファイルを一度に指定可能です。
+
+  ・使用例
+    表情データファイルを3つ読み込む
+    [VRoid_import_emotion storage="original1.json, original2.json, original3.json"]
+
+
+    ※ここで読み込んだファイル名が[VRoid_pose]のemoパラメータや、[VRoid_emo]のemoパラメータに指定可能となります。
+    上記の例の場合は、
+    [VRoid_emo modelID="model1" emo="original1" time=2000]
+    のように使用できます。
+    
+    また、階層を分けて読み込んだ場合、
+    
+    ・ファイル配置
+    vrm/_emotion/chara1/original1.json
+    vrm/_emotion/chara2/original1.json
+    
+    ・インポートタグ
+    [VRoid_import_emotion storage="chara1/original1.json, chara2/original1.json"]
+    
+    として読み込むことができ、その場合は
+    [VRoid_emo modelID="model1" emo="chara1/original1" time=2000]
+    [VRoid_emo modelID="model2" emo="chara2/original1" time=2000]
+    のように記述して使用できます。
+
+
+
+[VRoid_import_pose]
+
+  VRMお手軽ポーズなどで作成したポーズデータファイルをインポートします。
+
+    storage    [必  須] インポートするファイルをdata/others/plugin/vrm/_pose に配置して指定してください。
+                        ,（カンマ）区切りで複数ファイルを一度に指定可能です。
+
+  ・使用例
+    ポーズデータファイルを3つ読み込む
+    [VRoid_import_pose storage="original1.json, original2.json, original3.json"]
+
+
+    ※ここで読み込んだファイル名が[VRoid_pose]のposeパラメータに指定可能となります。
+    上記の例の場合は、
+    [VRoid_pose modelID="model1" pose="original1" time=2000]
+    のように使用できます。
+    
+    また、階層を分けて読み込んだ場合、
+    
+    ・ファイル配置
+    vrm/_pose/chara1/original1.json
+    vrm/_pose/chara2/original1.json
+    
+    ・インポートタグ
+    [VRoid_import_pose storage="chara1/original1.json, chara2/original1.json"]
+    
+    として読み込むことができ、その場合は
+    [VRoid_pose modelID="model1" pose="chara1/original1" time=2000]
+    [VRoid_pose modelID="model2" pose="chara2/original1" time=2000]
+    のように記述して使用できます。
+
+
+
+[VRoid_import_animation]
+
+  VRMAファイルやFBXファイルを登録します。
+
+    storage    [必  須] インポートするファイルをdata/others/plugin/vrm/_animation に配置して指定してください。
+                        ,（カンマ）区切りで複数ファイルを一度に指定可能です。
+
+  ・使用例
+    VRMAファイル3つとFBXファイル1つを読み込む
+    [VRoid_import_animation storage="VRMA_01.vrma, VRMA_02.vrma, VRMA_03.vrma, FBX_01.fbx"]
+
+
+    ※ここで読み込んだファイル名が[VRoid_animation]のnameパラメータに指定可能となります。
+    上記の例の場合は、
+    [VRoid_animation modelID="model1" name="VRMA_02" fadeIn=1000 fadeOut=1000 type="vrma"]
+    [VRoid_animation modelID="model1" name="FBX_01" fadeIn=1000 fadeOut=1000 type="fbx"]
+    のように使用できます。
+    インポートの際に、ファイルの拡張子によってtypeが自動的に振り分けられます。
+
+
+    また、階層を分けて読み込んだ場合、
+    
+    ・ファイル配置
+    vrm/_vrma/chara1/VRMA_01.vrma
+    vrm/_vrma/chara2/VRMA_01.vrma
+    
+    ・インポートタグ
+    [VRoid_import_VRMA storage="chara1/VRMA_01.vrma, chara2/VRMA_01.vrma"]
+    
+    として読み込むことができ、その場合は
+    [VRoid_animation modelID="model1" name="chara1/VRMA_01" fadeIn=1000]
+    [VRoid_animation modelID="model1" name="chara2/VRMA_01" fadeIn=1000]
+    のように記述して使用できます。
+
+
+
+[VRoid_import_anim_emo_timeline]
+
+  VRoid_animation使用時にタイムラインで表情を変更を設定するファイルを登録します。
+
+    storage    [必  須] インポートするファイルをdata/others/plugin/vrm/_animEmo に配置して指定してください。
+                        ,（カンマ）区切りで複数ファイルを一度に指定可能です。
+
+  ・使用例
+    タイムラインファイルを読み込む
+    [VRoid_import_anim_emo_timeline storage="timeline01.json"]
+
+
+    ※ここで読み込んだファイル名が[VRoid_animation]のemoTimelineパラメータに指定可能となります。
+    上記の例の場合は、
+    [VRoid_animation modelID="model1" name="VRMA_02" emoTimeline="timeline01"]
+    のように使用できます。
+    
+    
+    タイムラインファイルはJSON形式で以下のように記述します。
+
+{
+  "0": {
+    "emo": "neutral",
+    "emoID": "",
+    "emoval": "1",
+    "time": "500",
+    "easing": "default",
+    "diff": "false"
+  },
+  "2000": {
+    "emo": "",
+    "emoID": "Fcl_EYE_Joy",
+    "emoval": "1",
+    "time": "500",
+    "easing": "default",
+    "diff": "false"
+  },
+  "2500": {
+    "emo": "aa",
+    "emoID": "",
+    "emoval": "0.8",
+    "time": "500",
+    "easing": "default",
+    "diff": "true"
+  }
+}
+
+    最初のキーで表情の変更を実行する時間をミリ秒で記述。
+    その値に[VRoid_emo]と同様のパラメータを指定してください。
+    （waitやskipは無視されます）
+    se_storageを同時に指定することでSEもアニメーションに同期して鳴らすことが可能です。
+
+
+
+[VRoid_capture]
+
+  このタグを通過時に、指定したVRoidレイヤーに描画されているモデルをキャプチャーします。
+  モデルだけキャプチャーし、透過PNGとして出力されます。
+
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    rate       [省略可] デフォルト：1　例えば1280x720のゲームで撮影した場合、rateに2を指定すると2560x1440の画像データで出力されます。
+                                       ゲームのプロモーション用などに高画質なモデルデータの画像が欲しい際に活用できます。
+                                       ※あまり大きな数字（10以上とか）を指定するとキャプチャーに失敗したりフリーズの恐れがあります。
+    timeout    [省略可] デフォルト：100　ミリ秒単位で指定します。rateを大きくした際に、キャプチャーに失敗していた場合はこの値を増やしてみてください。
+
+
+  ・使用例
+    3倍の解像度でVRoidレイヤーをキャプチャー
+    [VRoid_capture layerID="VRoid" rate=3]
+
+
+  ※上級者向け
+    デペロッパーツールのconsoleに下記のコマンドを直接入力することで
+    いつでもモデルのキャプチャーが可能です。
+
+    VRoid.three.capture("VRoid", 3)
+
+
+    →[VRoid_capture layerID="VRoid" rate=3]
+      相当のコマンドとなります。
+
+
+
+[VRoid_emo_maker]
+
+  エモーションメイカーを立ち上げます。
+  エモーションメイカーは表示したままゲームを進めることが可能です。
+  
+  エモーションメイカー起動中は強制的にブリンクが無効になります。
+
+  表示後、左上のボタンからマテリアルチェッカーへの切り替えが可能です。
+  
+  各表情パーツの名前の左側の☆アイコンは、お気に入り機能です。
+  お気に入りにチェックした項目は、次回エモーションメイカー起動時に上部に表示されます。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+
+  ・使用例
+    エモーションメイカーを立ち上げる
+    [VRoid_emo_maker modelID="model1"]
+
+
+  ※上級者向け
+    デペロッパーツールのconsoleに下記のコマンドを直接入力することで
+    いつでもエモーションメイカーの起動が可能です。
+
+    VRoid.three.emoMaker("model1")
+
+
+    →[VRoid_emo_maker modelID="model1"]
+      相当のコマンドとなります。
+
+
+
+[VRoid_materialChecker]
+
+  マテリアルチェッカーを立ち上げます。
+  マテリアルチェッカーは表示したままゲームを進めることが可能です。
+  
+  表示後、左上のボタンからエモーションメイカーへの切り替えが可能です。
+  
+  マテリアルの表示非表示を行うと、コンソールに[VRoid_material]タグが出力されます。
+  出力されたタグはそのままコピペして使用可能です。
+
+    modelID    [必  須] VRoid_loadで指定したmodelIDを入力してください。
+
+
+  ・使用例
+    マテリアルチェッカーを立ち上げる
+    [VRoid_materialChecker modelID="model1"]
+
+
+  ※上級者向け
+    デペロッパーツールのconsoleに下記のコマンドを直接入力することで
+    いつでもエモーションメイカーの起動が可能です。
+
+    VRoid.three.emoMaker("model1")
+
+
+    →[VRoid_emo_maker modelID="model1"]
+      相当のコマンドとなります。
+
+
+    マテリアルチェッカーに表示されている各マテリアルに直接テクスチャー画像をドロップすることで
+    テクスチャーを差し替えることが可能です。
+    ただしここで差し替えたテクスチャーはゲームデータにセーブすることはできませんので注意してください。
+    （テクスチャーのプレビュー機能としてお使いください）
+
+
+
+[VRoid_camera_test]
+
+  テストカメラを立ち上げます。テストカメラを立ち上げると、マウス操作でカメラを自由に変更可能となります。
+  ポーズの変更や、モデルのキャプチャーも可能です。（画面上のポーズリストからポーズを選択、またはキーボードの↑↓を入力して切り替え可能です）
+  「ポーズ編集」のチェックを入れるとモデルのポーズを編集可能な画面に切り替わります。
+  ポーズ編集で作成し、エクスポートしたファイルを使用して、[VRoid_import_pose]で実際に読み込むことが可能です。
+
+  テストカメラ表示中はゲーム進行が停止します。
+  前述のエモーションメイカーと同時に起動したい場合は、先に[VRoid_emo_maker]を記述してください。
+  
+  テストカメラとエモーションメイカーを使いこなすと
+  開発中の大きな助けとなりますので是非使いこなしてください。
+  
+    layerID    [必  須] VRoid_layer_newで指定したlayerIDを入力してください。
+    modelID    [省略可] VRoid_loadで指定したmodelIDを入力してください。省略した場合はポーズの変更やポーズ編集が非表示となります。
+
+
+  ・使用例
+    テストカメラを立ち上げる
+    [VRoid_camera_test layerID="VRoid" modelID="model1"]
+
+
+  ※上級者向け
+    デペロッパーツールのconsoleに下記のコマンドを直接入力することで
+    いつでもテストカメラの起動が可能です。
+
+    VRoid.three.testCamera("VRoid", "model1")
+
+
+    →[VRoid_camera_test layerID="VRoid" modelID="model1"]
+      相当のコマンドとなります。
+
+
+
+■easingパラメータについて
+
+easingパラメータには下記の指定が可能です。
+
+def
+default
+ease
+ease-in
+ease-out
+ease-in-out
+easeInBack
+easeInBounce
+easeInCirc
+easeInCubic
+easeInElastic
+easeInExpo
+easeInOutBack
+easeInOutBounce
+easeInOutCirc
+easeInOutCubic
+easeInOutElastic
+easeInOutExpo
+easeInOutQuad
+easeInOutQuart
+easeInOutQuint
+easeInOutSine
+easeInQuad
+easeInQuart
+easeInQuint
+easeInSine
+easeOutBack
+easeOutBounce
+easeOutCirc
+easeOutCubic
+easeOutElastic
+easeOutExpo
+easeOutQuad
+easeOutQuart
+easeOutQuint
+easeOutSine
+jswing
+linear
+swing
+
+
+※上級者向け
+easingの設定を調整したい場合は
+vrm/js/easing.js
+を編集してください。
+ease、ease-in、ease-out、ease-in-outは
+CSSのanimation-timing-functionを再現しています。
+ソースを参考にすれば独自にCSSのcubic-bezierを設定して利用可能です。
+

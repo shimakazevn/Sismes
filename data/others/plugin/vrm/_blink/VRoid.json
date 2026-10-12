@@ -1,0 +1,12 @@
+{
+  "blinkLeft": {"set": "blinkRight", "invalid":""},
+  "blinkRight": {"set": "blinkLeft", "invalid":""},
+  "happy": {"set": "happy", "invalid":""},
+  "Fcl_ALL_Joy": {"set": "Fcl_ALL_Joy", "invalid":""},
+  "Fcl_EYE_Close": {"set": "Fcl_EYE_Close", "invalid":""},
+  "Fcl_EYE_Close_R": {"set": "Fcl_EYE_Close_L", "invalid":""},
+  "Fcl_EYE_Close_L": {"set": "Fcl_EYE_Close_R", "invalid":""},
+  "Fcl_EYE_Joy": {"set": "Fcl_EYE_Joy", "invalid":""},
+  "Fcl_EYE_Joy_R": {"set": "Fcl_EYE_Joy_L", "invalid":""},
+  "Fcl_EYE_Joy_L": {"set": "Fcl_EYE_Joy_R", "invalid":""}
+}

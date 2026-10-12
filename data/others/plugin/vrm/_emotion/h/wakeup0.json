@@ -1,0 +1,14 @@
+{
+  "neutral": 0,
+  "Fcl_EYE_Angry": 0,
+  "lookUp": 0,
+  "blink": 0.2,
+  "Sekimen1": 0.2,
+  "Fcl_BRW_Sorrow": 0.5,
+  "Fcl_MTH_Sorrow": 0.5,
+  "browDownLeft": 0.05,
+  "browDownRight": 0.05,
+  "eyeWideLeft": 0.25,
+  "eyeWideRight": 0.25,
+  "tears_show": 0
+}
