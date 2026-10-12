@@ -2169,6 +2169,10 @@
 
         full_path = "./" + path_hash.join("/");
 
+        if (full_path.endsWith(".wav")) {
+            full_path = full_path.slice(0, -4) + ".ogg";
+        }
+
         return full_path;
     };
 
