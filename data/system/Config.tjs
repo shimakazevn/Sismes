@@ -1,6 +1,6 @@
 //ティラノビルダーによる自動ビルド　
 ;debugMenu.visible=false
-;configSave=file
+;configSave=webstorage
 ;global.config_version=6.00
 ;System.title=妹をメスと認識してからの三十夜
 ;projectID=Sismes
