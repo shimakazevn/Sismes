@@ -7,6 +7,16 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
         <meta name="robots" content="noindex,nofollow" />
 
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "./data/others/plugin/vrm/js/module/three/three.module.min.js",
+                "three/addons/": "./data/others/plugin/vrm/js/module/three/addons/",
+                "@pixiv/three-vrm": "./data/others/plugin/vrm/js/module/three-vrm/three-vrm.module.min.js"
+            }
+        }
+        </script>
+
         <link href="./tyrano/tyrano.css" rel="stylesheet" />
         <link href="./tyrano/libs/jquery-ui/jquery-ui.css" rel="stylesheet" />
 
@@ -96,6 +106,7 @@
         <!-- Web & Mobile Port Extensions -->
         <script src="./js/web_audio_engine.js"></script>
         <script src="./js/web_save_indexeddb.js"></script>
+        <script src="./js/cdn_manifest.js"></script>
         <script src="./js/cdn_interceptor.js"></script>
         <script src="./js/mobile_touch_hud.js"></script>
         

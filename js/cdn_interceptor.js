@@ -9,7 +9,7 @@
     'use strict';
 
     // Bảng ánh xạ CDN: Local Path -> Blogger Image URL (hoặc link ảnh stego PNG audio)
-    const EMBEDDED_MANIFEST = {};
+    const EMBEDDED_MANIFEST = window.SISMES_AUDIO_MANIFEST || {};
 
     window.SISMES_CDN_MANIFEST = EMBEDDED_MANIFEST;
 
@@ -22,9 +22,13 @@
     }
 
     const normalizedMap = new Map();
-    for (const [k, v] of Object.entries(EMBEDDED_MANIFEST)) {
-        normalizedMap.set(normalizePath(k), v);
+    function refreshManifest() {
+        const manifest = Object.assign({}, window.SISMES_AUDIO_MANIFEST || {}, EMBEDDED_MANIFEST);
+        for (const [k, v] of Object.entries(manifest)) {
+            normalizedMap.set(normalizePath(k), v);
+        }
     }
+    refreshManifest();
 
     window.resolveCDNUrl = function (filePath) {
         if (!filePath || typeof filePath !== 'string') return filePath;
