@@ -16,7 +16,7 @@
 
 [if exp="SISMES.savedata.status.shinrai >= 0"]
 
-	……おにいちゃん…………？[p]
+	...Anh trai............?[p]
 
 	[iscript]
 		tf.result = SISMES.wakeupShinraiDownEvent()
@@ -32,21 +32,21 @@
 	[VRoid_emo modelID="model1" emoID="Fcl_ALL_Sorrow" emoval=0.35 time=600 easing="ease" wait=false diff=true]
 	[VRoid_emo modelID="model1" emoID="lookDown" emoval=1 time=600 easing="ease" wait=false diff=true]
 
-	うそっ……どうしてわたし、裸に……？
+	Không thể nào... Sao em lại... không mặc đồ thế này...?
 
 	[elsif exp="tf.result === 2"]
 
 	[VRoid_emo modelID="model1" emoID="Fcl_ALL_Sorrow" emoval=0.35 time=600 easing="ease" wait=false diff=true]
 	[VRoid_emo modelID="model1" emoID="lookDown" emoval=1 time=600 easing="ease" wait=false diff=true]
 
-	……なにこれ……いやぁ……っ
+	...Cái gì thế này... Không muốn đâu...!
 
 	[elsif exp="tf.result === 3"]
 
 	[VRoid_emo modelID="model1" emoID="Fcl_ALL_Sorrow" emoval=0.35 time=600 easing="ease" wait=false diff=true]
 	[VRoid_emo modelID="model1" emoID="lookDown" emoval=1 time=600 easing="ease" wait=false diff=true]
 
-	……なんでこんな格好させられてるの……？
+	...Tại sao em lại bị bắt ở trong tư thế này chứ...?
 
 	[elsif exp="tf.result === 4"]
 
@@ -60,7 +60,7 @@
 	[else]
 
 	[VRoid_emo modelID="model1" emoID="Fcl_ALL_Sorrow" emoval=0.25 time=600 easing="ease" wait=false diff=true]
-	……えっ……？　なに…してる……の？
+	...Hơ...? Anh... đang làm gì... thế?
 
 	[endif]
 
@@ -107,13 +107,13 @@
 
 *select_button
 
-[glink color="btn_black" name="selectEvent selectTudukeru"             size=24 width=300 x=890 y=240 target="tudukeru"      text="続ける" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cond="SISMES.savedata.status.risei <= 50" cm=false]
-[glink color="btn_black" name="selectEvent selectTudukeru riseiNoneUI" size=24 width=300 x=890 y=240 target="select_button" text="続ける"                                                    cond="SISMES.savedata.status.risei >  50" cm=false]
+[glink color="btn_black" name="selectEvent selectTudukeru"             size=24 width=300 x=890 y=240 target="tudukeru"      text="Tiếp tục" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cond="SISMES.savedata.status.risei <= 50" cm=false]
+[glink color="btn_black" name="selectEvent selectTudukeru riseiNoneUI" size=24 width=300 x=890 y=240 target="select_button" text="Tiếp tục"                                                    cond="SISMES.savedata.status.risei >  50" cm=false]
 
-[glink color="btn_black" name="selectEvent" size=24 width=300 x=890 y=380 target="yameru" text="やめる" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cm=false]
+[glink color="btn_black" name="selectEvent" size=24 width=300 x=890 y=380 target="yameru" text="Dừng lại" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cm=false]
 
 [iscript]
-	if (SISMES.savedata.status.risei > 50) $(".selectTudukeru").append("<div class='selectInfo'>※要：理性50以下</div>")
+	if (SISMES.savedata.status.risei > 50) $(".selectTudukeru").append("<div class='selectInfo'>※Yêu cầu: Lý trí <= 50</div>")
 [endscript]
 
 [s][s][s][s][s][s][s][s][s][s]
@@ -174,7 +174,7 @@
 
 [layopt layer="message" visible=true]
 
-……そろそろ寝ないと。[p]
+...Cũng sắp đến lúc phải ngủ rồi.[p]
 
 [layopt layer="message" visible=false]
 
@@ -195,7 +195,7 @@
 
 [layopt layer="message" visible=true]
 
-……だっ……だめぇ……っ！[p]
+...Đ-Đừng mà......![p]
 
 [VRoid_emo modelID="model1" emoID="Fcl_BRW_Surprised" emoval=0.35 time=600 easing="ease" wait=false diff=true]
 [VRoid_emo modelID="model1" emoID="Fcl_EYE_Surprised" emoval=0.35 time=600 easing="ease" wait=false diff=true]
@@ -203,7 +203,7 @@
 
 
 
-……これ以上は……兄妹に戻れなくなっちゃうよ……。
+...Nếu tiến xa hơn nữa... hai chúng ta sẽ không thể quay lại làm anh em được nữa đâu...
 
 *select_button2
 [iscript]
@@ -215,10 +215,10 @@
 [glink color="btn_black" name="selectEvent selectTudukeru"             size=24 width=300 x=890 y=240 target="tudukeru2"      text="…………" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cond="SISMES.savedata.status.risei <= 0" cm=false]
 [glink color="btn_black" name="selectEvent selectTudukeru riseiNoneUI" size=24 width=300 x=890 y=240 target="select_button2" text="…………"                                                    cond="SISMES.savedata.status.risei >  0" cm=false]
 
-[glink color="btn_black" name="selectEvent" size=24 width=300 x=890 y=380 target="yameru2" text="やめる" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cm=false]
+[glink color="btn_black" name="selectEvent" size=24 width=300 x=890 y=380 target="yameru2" text="Dừng lại" exp="SISMES.layerFreeStyle.pointerEvents = 'none'" cm=false]
 
 [iscript]
-	if (SISMES.savedata.status.risei > 0) $(".selectTudukeru").append("<div class='selectInfo'>※要：理性0</div>")
+	if (SISMES.savedata.status.risei > 0) $(".selectTudukeru").append("<div class='selectInfo'>※Yêu cầu: Lý trí = 0</div>")
 [endscript]
 [s][s][s][s][s][s][s][s][s][s]
 

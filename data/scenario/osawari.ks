@@ -1,25 +1,25 @@
 *styleChange
 
 [glink color="btn_black" name="styleChangeUI okosu" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=180 target="okosu"        text="Đánh thức"      cm=false cond="!SISMES.savedata.freeMode && SISMES.savedata.status.risei <= 0 && !SISMES.sis.wakeup"]
-[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="clean_seieki"      text="精液を拭き取る"      cm=false cond="SISMES.checkSeishi() > 0"]
-[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="style_0"      text="仰向け"      cm=false cond="SISMES.data.currentStyle !== 0"]
-[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="style_1"      text="横向け"      cm=false cond="SISMES.data.currentStyle !== 1"]
-[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="style_2"      text="うつ伏せ"    cm=false cond="SISMES.data.currentStyle !== 2"]
-[glink color="btn_black" name="styleChangeUI mochiageru" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="style_3"      text="持ち上げる"  cm=false cond="SISMES.data.currentStyle !== 3"]
+[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="clean_seieki"      text="Lau sạch"      cm=false cond="SISMES.checkSeishi() > 0"]
+[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="style_0"      text="Nằm ngửa"      cm=false cond="SISMES.data.currentStyle !== 0"]
+[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="style_1"      text="Nằm nghiêng"      cm=false cond="SISMES.data.currentStyle !== 1"]
+[glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="style_2"      text="Nằm sấp"    cm=false cond="SISMES.data.currentStyle !== 2"]
+[glink color="btn_black" name="styleChangeUI mochiageru" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="style_3"      text="Bế bổng"  cm=false cond="SISMES.data.currentStyle !== 3"]
 [glink color="btn_black" name="styleChangeUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=540 target="style_cancel" text="Hủy"  cm=false]
 
-[glink color="btn_black" name="styleChangeUI disableUI"  exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="styleChange" text="精液を拭き取る" cm=false cond="SISMES.checkSeishi() === 0"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="styleChange" text="仰向け"         cm=false cond="SISMES.data.currentStyle === 0"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="styleChange" text="横向け"         cm=false cond="SISMES.data.currentStyle === 1"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="styleChange" text="うつ伏せ"       cm=false cond="SISMES.data.currentStyle === 2"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="styleChange" text="持ち上げる"     cm=false cond="SISMES.data.currentStyle === 3"]
+[glink color="btn_black" name="styleChangeUI disableUI"  exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="styleChange" text="Lau sạch" cm=false cond="SISMES.checkSeishi() === 0"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="styleChange" text="Nằm ngửa"         cm=false cond="SISMES.data.currentStyle === 0"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="styleChange" text="Nằm nghiêng"         cm=false cond="SISMES.data.currentStyle === 1"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="styleChange" text="Nằm sấp"       cm=false cond="SISMES.data.currentStyle === 2"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="styleChange" text="Bế bổng"     cm=false cond="SISMES.data.currentStyle === 3"]
 
 /*
-[glink color="btn_black" name="styleChangeUI disableUI"  exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="clean_seieki"      text="精液を拭き取る"      cm=false cond="SISMES.checkSeishi() === 0"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="style_0"      text="仰向け"      cm=false cond="SISMES.data.currentStyle === 0"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="style_1"      text="横向け"      cm=false cond="SISMES.data.currentStyle === 1"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="style_2"      text="うつ伏せ"    cm=false cond="SISMES.data.currentStyle === 2"]
-[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="style_3"      text="持ち上げる"  cm=false cond="SISMES.data.currentStyle === 3"]
+[glink color="btn_black" name="styleChangeUI disableUI"  exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=240 target="clean_seieki"      text="Lau sạch"      cm=false cond="SISMES.checkSeishi() === 0"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=300 target="style_0"      text="Nằm ngửa"      cm=false cond="SISMES.data.currentStyle === 0"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=360 target="style_1"      text="Nằm nghiêng"      cm=false cond="SISMES.data.currentStyle === 1"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=420 target="style_2"      text="Nằm sấp"    cm=false cond="SISMES.data.currentStyle === 2"]
+[glink color="btn_white" name="styleChangeUI nonClickUI" exp="$('.styleChangeUI').remove()" size=14 width=200 x=980  y=480 target="style_3"      text="Bế bổng"  cm=false cond="SISMES.data.currentStyle === 3"]
 */
 
 [iscript]
@@ -255,14 +255,14 @@
 ;発射メニュー
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_manual"  exp="SISMES.syasei_menu_syasei(10)"    size=16 width=90 x=100  y=520 target="stop_event" text="Sau 10s"   cm=false]
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_manual"  exp="SISMES.syasei_menu_syasei(5)"     size=16 width=90 x=205  y=520 target="stop_event" text="Sau 5s"    cm=false]
-[glink color="btn_black" name="syasei_menu disableOsawari syasei_manual"  exp="SISMES.syasei_menu_syasei(0)"     size=16 width=90 x=310  y=520 target="stop_event" text="射精"     cm=false]
+[glink color="btn_black" name="syasei_menu disableOsawari syasei_manual"  exp="SISMES.syasei_menu_syasei(0)"     size=16 width=90 x=310  y=520 target="stop_event" text="Về đích (Ra)"     cm=false]
 
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_3"  exp="SISMES.syasei_menu_auto(3)"    size=16 width=90 x=100  y=570 target="stop_event" text="Tự động 10s"   cm=false]
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_2"  exp="SISMES.syasei_menu_auto(2)"    size=16 width=90 x=205  y=570 target="stop_event" text="Tự động 5s"   cm=false]
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_1"  exp="SISMES.syasei_menu_auto(1)"    size=16 width=90 x=310  y=570 target="stop_event" text="Tự động 0s"   cm=false]
 
 [glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_0"  exp="SISMES.syasei_menu_auto(0)"    size=16 width=90 x=100  y=620 target="stop_event" text="Tắt tự động"   cm=false]
-[glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_4"  exp="SISMES.syasei_menu_auto(4)"    size=16 width=90 x=205  y=620 target="stop_event" text="同時イキ"   cm=false cond="SISMES.savedata.item['同時イキの極意']"]
+[glink color="btn_black" name="syasei_menu disableOsawari syasei_auto_menu  syasei_auto_4"  exp="SISMES.syasei_menu_auto(4)"    size=16 width=90 x=205  y=620 target="stop_event" text="Cùng lên đỉnh"   cm=false cond="SISMES.savedata.item['同時イキの極意']"]
 [glink color="btn_black" name="syasei_menu disableOsawari"  exp="SISMES.hide_syasei_menu()"    size=16 width=90 x=310  y=620 target="stop_event" text="＜ Đóng"   cm=false]
 
 ;できること確認ボタン

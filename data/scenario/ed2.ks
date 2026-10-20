@@ -13,7 +13,7 @@
 
 [layopt layer="message" visible=true]
 
-…………？　遠くから何か聴こえる気がする[p]
+............? Hình như có tiếng gì đó vọng lại từ đằng xa...[p]
 [layopt layer="message" visible=false]
 
 
@@ -24,7 +24,7 @@
 #
 [layopt layer="message" visible=true]
 
-…………妹の部屋に鍵が掛かっていないようだ[p]
+............Có vẻ như phòng em gái không khóa cửa...[p]
 
 [layopt layer="message" visible=false]
 
@@ -88,19 +88,19 @@
 
 [VRoid_emo modelID="model1" emo="n/emo_072_C" time=1200 easing="ease" wait=false]
 [VRoid_animation modelID="model1" name="072" loop=true keep=true rate=3 fadeIn=300 resetHips=false]
-おにいちゃん……？　あっ……やだっ……ぅぁっ……んっ……
+Anh trai......? A...... đừng mà...... ưm......
 [p]
 
 [playse storage="koui/koui_b_3.wav" buf=4 loop=true]
 [playse storage="h/aegi_mouth0_level3.wav" buf=2 loop=true]
 
 [VRoid_animation modelID="model1" name="072" loop=true keep=true rate=4 fadeIn=300 resetHips=false]
-みないで……ぅんっ……はぁっ……いやっ……イっ……っ！
+Đừng nhìn...... ư...... hà...... không...... a......!
 [p]
 
 [playse storage="h/iki_A_1.wav" buf=2 loop=false]
 
-いやっ……イっちゃう……あぁぁぁぁぁぁぁぁぁ…………っ！！
+Đừng mà...... lên mất rồi...... a a a a............!!
 [VRoid_emo modelID="model1" emo="n/emo_072_A" time=400 easing="ease" wait=false]
 [iscript]
 	splash(4)

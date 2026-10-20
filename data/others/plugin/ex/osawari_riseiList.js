@@ -1,1 +1,64 @@
-(function(){Object.assign(sismes.osawari,{riseiList:{0:[{risei:100,name:{"\u300E\u624B\u300F\u89E3\u653E":[0,1,2,3],\u306A\u3067\u306A\u3067:[0,1,2,3],\u53E3\u3044\u3058\u308A:[0,3],\u80F8\u3082\u307F:[0,1,3],\u4E73\u9996\u3044\u3058\u308A:[0,1,3],\u304A\u5C3B\u3082\u307F:[1,2,3]}},{risei:90,name:{\u811A\u79FB\u52D5:[0,1,2,3],\u30B7\u30E3\u30C4\u3081\u304F\u308A:[0,1,2],\u30AF\u30EA\u3044\u3058\u308A:[0,1,3],\u304A\u307E\u3093\u3053\u3044\u3058\u308A:[0,1,2,3],\u30A2\u30CA\u30EB\u3044\u3058\u308A:[1,2,3]}},{risei:80,name:{"\u300E\u820C\u300F\u89E3\u653E":[0,1,2,3],\u30AD\u30B9:[0,3],\u4E73\u9996\u306A\u3081:[0,1,3],\u30AF\u30EA\u306A\u3081:[0,1,3],\u304A\u307E\u3093\u3053\u306A\u3081:[0,1,2,3],\u30A2\u30CA\u30EB\u306A\u3081:[1,2,3]}}],1:[{risei:70,name:{\u30D1\u30F3\u30C4\u305A\u3089\u3057:[0,1,2,3],\u30B7\u30E3\u30C4\u8131\u304C\u3057:[0,1,2,3],\u624B\u30DE\u30F3:[0,1,2,3],\u30AF\u30F3\u30CB:[0,1,2,3]}},{risei:60,name:{"\u300E\u3061\u3093\u307D\u300F\u89E3\u653E":[0,1,2,3],\u30B9\u30DE\u30BF:[0,1,3],\u30D1\u30F3\u30C4\u8131\u304C\u3057:[0,1,2,3],"\u72B6\u614B\u5909\u66F4\uFF1A\u7CBE\u6DB2\u3092\u62ED\u304D\u53D6\u308B<br>\u3000&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;\u4EF0\u5411\u3051\u30FB\u6A2A\u5411\u3051\u30FB\u3046\u3064\u4F0F\u305B":[0,1,2,3]}},{risei:50,name:{"\u899A\u9192\u6642\uFF1A\u304A\u3055\u308F\u308A\u7D9A\u884C":[0,1,2,3],\u30D1\u30A4\u30BA\u30EA:[0]}},{risei:40,name:{"\u4F53\u4F4D\u5909\u66F4\uFF1A\u6301\u3061\u4E0A\u3052\u308B":[0,1,2,3],\u30D5\u30A7\u30E9:[0,3]}}],2:[{risei:30,name:{\u30A2\u30CA\u30EB\u633F\u5165:[1,2,3]}},{risei:20,name:{\u633F\u5165:[0,1,2,3]}},{risei:10,name:{\u4E2D\u3060\u3057:[0,1,2,3]}},{risei:0,name:{"\u899A\u9192\u6642\uFF1A\u633F\u5165":[0,1,2,3],"\u72B6\u614B\u5909\u66F4\uFF1A\u8D77\u3053\u3059":[0,1,2,3]}}]}})})();
+(function(){Object.assign(sismes.osawari,{riseiList:{
+0:[
+  {risei:100,name:{
+    "Mở khóa 『Tay』":[0,1,2,3],
+    "Xoa đầu / Vuốt ve":[0,1,2,3],
+    "Vầy môi":[0,3],
+    "Bóp ngực":[0,1,3],
+    "Vê đầu ti":[0,1,3],
+    "Bóp mông":[1,2,3]
+  }},
+  {risei:90,name:{
+    "Dịch chuyển chân":[0,1,2,3],
+    "Vén áo":[0,1,2],
+    "Mân mê âm vật":[0,1,3],
+    "Sờ chỗ kín":[0,1,2,3],
+    "Mân mê hậu môn":[1,2,3]
+  }},
+  {risei:80,name:{
+    "Mở khóa 『Lưỡi』":[0,1,2,3],
+    "Hôn":[0,3],
+    "Liếm đầu ti":[0,1,3],
+    "Liếm âm vật":[0,1,3],
+    "Liếm chỗ kín":[0,1,2,3],
+    "Liếm hậu môn":[1,2,3]
+  }}
+],
+1:[
+  {risei:70,name:{
+    "Kéo lệch quần lót":[0,1,2,3],
+    "Cởi áo":[0,1,2,3],
+    "Móc tay":[0,1,2,3],
+    "Vét máng":[0,1,2,3]
+  }},
+  {risei:60,name:{
+    "Mở khóa 『Dương vật』":[0,1,2,3],
+    "Kẹp đùi (Sumata)":[0,1,3],
+    "Cởi quần lót":[0,1,2,3],
+    "Đổi trạng thái: Lau sạch<br>　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nằm ngửa · Nằm nghiêng · Nằm sấp":[0,1,2,3]
+  }},
+  {risei:50,name:{
+    "Khi thức giấc: Tiếp tục tương tác":[0,1,2,3],
+    "Kẹp vú (Paizuri)":[0]
+  }},
+  {risei:40,name:{
+    "Đổi tư thế: Bế bổng":[0,1,2,3],
+    "Bú liếm (Blowjob)":[0,3]
+  }}
+],
+2:[
+  {risei:30,name:{
+    "Cho vào hậu môn":[1,2,3]
+  }},
+  {risei:20,name:{
+    "Đút vào trong":[0,1,2,3]
+  }},
+  {risei:10,name:{
+    "Xuất tinh bên trong":[0,1,2,3]
+  }},
+  {risei:0,name:{
+    "Khi thức giấc: Đút vào trong":[0,1,2,3],
+    "Đổi trạng thái: Đánh thức":[0,1,2,3]
+  }}
+]
+}})})();
