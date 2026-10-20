@@ -1,0 +1,2396 @@
+{
+  "ed1.ks": [
+    {
+      "line": 21,
+      "raw": "――コンコンッ[p]",
+      "translated": ""
+    },
+    {
+      "line": 24,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 25,
+      "raw": "おにいちゃん、入ってもいい？",
+      "translated": ""
+    },
+    {
+      "line": 27,
+      "raw": "[glink text=\"いいよ\" target=\"ed1_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 36,
+      "raw": "お邪魔しまーす……",
+      "translated": ""
+    },
+    {
+      "line": 38,
+      "raw": "[glink text=\"どうした？\" target=\"ed1_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 45,
+      "raw": "あ、うん[r]",
+      "translated": ""
+    },
+    {
+      "line": 46,
+      "raw": "おにいちゃんに伝えたいことがあって……[p]",
+      "translated": ""
+    },
+    {
+      "line": 51,
+      "raw": "えっとね？[p]",
+      "translated": ""
+    },
+    {
+      "line": 55,
+      "raw": "本当はあのオンラインゲーム、[r]",
+      "translated": ""
+    },
+    {
+      "line": 56,
+      "raw": "おにいちゃんに相談する前から始めてたんだ",
+      "translated": ""
+    },
+    {
+      "line": 58,
+      "raw": "[glink text=\"そうなんだ\" target=\"ed1_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 65,
+      "raw": "トライアル期間でお金もかからないから[r]",
+      "translated": ""
+    },
+    {
+      "line": 66,
+      "raw": "おにいちゃんには言わなかったんだけど……[p]",
+      "translated": ""
+    },
+    {
+      "line": 70,
+      "raw": "本当はゲームなんかしてる場合じゃないって[r]",
+      "translated": ""
+    },
+    {
+      "line": 71,
+      "raw": "わかってるんだけどね、やっぱりお外は怖くて……[p]",
+      "translated": ""
+    },
+    {
+      "line": 75,
+      "raw": "ゲームでなら誰かと話すことができるかなって……[r]",
+      "translated": ""
+    },
+    {
+      "line": 76,
+      "raw": "そこから少しずつ人に慣れて、お外が怖くなくなるかなって[p]",
+      "translated": ""
+    },
+    {
+      "line": 80,
+      "raw": "でも、そんなに甘くなかったね[r]",
+      "translated": ""
+    },
+    {
+      "line": 81,
+      "raw": "結局余計にわからなくなって怖くなっちゃった[p]",
+      "translated": ""
+    },
+    {
+      "line": 85,
+      "raw": "だけど、わたしもおにいちゃんみたいに[r]",
+      "translated": ""
+    },
+    {
+      "line": 86,
+      "raw": "お家の中で働けるように、ちゃんとお勉強頑張るから……[p]",
+      "translated": ""
+    },
+    {
+      "line": 90,
+      "raw": "ずっと支えててくれると嬉しいな……",
+      "translated": ""
+    },
+    {
+      "line": 92,
+      "raw": "[glink text=\"まかせろ\" target=\"ed1_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 99,
+      "raw": "うん……！[p]",
+      "translated": ""
+    },
+    {
+      "line": 103,
+      "raw": "不束な妹ですが[r]",
+      "translated": ""
+    },
+    {
+      "line": 104,
+      "raw": "これからもよろしくお願いします……！[p]",
+      "translated": ""
+    },
+    {
+      "line": 108,
+      "raw": "……ありがとう、おにいちゃん[p]",
+      "translated": ""
+    },
+    {
+      "line": 112,
+      "raw": "これが一番言いたかったんだ[r]",
+      "translated": ""
+    },
+    {
+      "line": 113,
+      "raw": "あははっ……なんか改まって言うと照れるね[p]",
+      "translated": ""
+    },
+    {
+      "line": 117,
+      "raw": "それじゃあ、わたし自分のお部屋に戻るね？[r]",
+      "translated": ""
+    },
+    {
+      "line": 118,
+      "raw": "お仕事で手伝えることがあったらいつでも言ってね？[p]",
+      "translated": ""
+    },
+    {
+      "line": 129,
+      "raw": "――ああ……こちらこそ、よろしくな[p]",
+      "translated": ""
+    },
+    {
+      "line": 151,
+      "raw": "――この歪な[ruby text=\"兄\" y=8]関[ruby text=\"妹\" y=8]係が壊れるまで[r]",
+      "translated": ""
+    },
+    {
+      "line": 152,
+      "raw": "ずっと…………ずっと…………[l]",
+      "translated": ""
+    }
+  ],
+  "ed2.ks": [
+    {
+      "line": 16,
+      "raw": "…………？　遠くから何か聴こえる気がする[p]",
+      "translated": ""
+    },
+    {
+      "line": 27,
+      "raw": "…………妹の部屋に鍵が掛かっていないようだ[p]",
+      "translated": ""
+    },
+    {
+      "line": 74,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 76,
+      "raw": "んっ……うんっ……あぁっ……[r]",
+      "translated": ""
+    },
+    {
+      "line": 77,
+      "raw": "ぅんっ……ふぅっ……っ！",
+      "translated": ""
+    },
+    {
+      "line": 91,
+      "raw": "おにいちゃん……？　あっ……やだっ……ぅぁっ……んっ……",
+      "translated": ""
+    },
+    {
+      "line": 98,
+      "raw": "みないで……ぅんっ……はぁっ……いやっ……イっ……っ！",
+      "translated": ""
+    },
+    {
+      "line": 103,
+      "raw": "いやっ……イっちゃう……あぁぁぁぁぁぁぁぁぁ…………っ！！",
+      "translated": ""
+    },
+    {
+      "line": 247,
+      "raw": "あぁぁ……ぃゃ……いやぁ……[r]",
+      "translated": ""
+    },
+    {
+      "line": 248,
+      "raw": "おにいちゃん……なんでぇ……っ",
+      "translated": ""
+    }
+  ],
+  "ed3.ks": [
+    {
+      "line": 16,
+      "raw": "…………なんだかいつも以上に静けさを感じる[p]",
+      "translated": ""
+    },
+    {
+      "line": 27,
+      "raw": "…………妹の部屋に鍵が掛かっていないようだ[p]",
+      "translated": ""
+    }
+  ],
+  "ed4.ks": [
+    {
+      "line": 15,
+      "raw": "……結局…………[p]",
+      "translated": ""
+    },
+    {
+      "line": 17,
+      "raw": "なんだかんだで『兄妹』を[r]",
+      "translated": ""
+    },
+    {
+      "line": 18,
+      "raw": "続けていきたいんだよな、俺は……[p]",
+      "translated": ""
+    },
+    {
+      "line": 21,
+      "raw": "さて、と……[r]",
+      "translated": ""
+    },
+    {
+      "line": 22,
+      "raw": "今日も仕事するか[p]",
+      "translated": ""
+    }
+  ],
+  "first.ks": [
+    {
+      "line": 2,
+      "raw": "データの読み込み中...",
+      "translated": ""
+    }
+  ],
+  "main.ks": [
+    {
+      "line": 172,
+      "raw": "[glink color=\"btn_black\"           size=24 width=\"200\" x=840 y=260 target=\"commu\"  text=\"コミュニケーション\" cond=\"SISMES.savedata.status.shinrai >= 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 173,
+      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=260 target=\"select\" text=\"コミュニケーション\" cond=\"SISMES.savedata.status.shinrai < 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 175,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=360 target=\"work\" text=\"仕事\" cond=\"SISMES.savedata.event.shinrai_11\"]",
+      "translated": ""
+    },
+    {
+      "line": 176,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=460 target=\"kyuukei\" text=\"休憩\" cond=\"SISMES.savedata.event.shinrai_11\"]",
+      "translated": ""
+    },
+    {
+      "line": 178,
+      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=360 target=\"select\" text=\"仕事\" cond=\"!SISMES.savedata.event.shinrai_11\"]",
+      "translated": ""
+    },
+    {
+      "line": 179,
+      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=460 target=\"select\" text=\"休憩\" cond=\"!SISMES.savedata.event.shinrai_11\"]",
+      "translated": ""
+    },
+    {
+      "line": 182,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=260 target=\"tsuhan\" text=\"通販\"]",
+      "translated": ""
+    },
+    {
+      "line": 183,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=360 target=\"skill\" text=\"スキル\"]",
+      "translated": ""
+    },
+    {
+      "line": 184,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=460 target=\"eroStatus\" text=\"妹の様子\"]",
+      "translated": ""
+    },
+    {
+      "line": 189,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=210 target=\"tsuhan\" text=\"通販\"]",
+      "translated": ""
+    },
+    {
+      "line": 191,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=310 target=\"skill\" text=\"スキル\"]",
+      "translated": ""
+    },
+    {
+      "line": 193,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=410 target=\"camera\" text=\"隠しカメラ\" cond=\"SISMES.savedata.item['ぬいぐるみ']\"]",
+      "translated": ""
+    },
+    {
+      "line": 195,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=510 target=\"eroStatus\" text=\"妹の様子\"]",
+      "translated": ""
+    },
+    {
+      "line": 270,
+      "raw": "[glink color=\"btn_black commu_1\" size=24 width=\"200\" x=840 y=210 target=\"commu1\" text=\"会話する\"    cond=\"SISMES.savedata.status.hp >= 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 271,
+      "raw": "[glink color=\"btn_black commu_2\" size=24 width=\"200\" x=840 y=310 target=\"commu2\" text=\"勉強をみる\"  cond=\"SISMES.savedata.event.shinrai_20 && SISMES.savedata.status.hp >= 30 && SISMES.savedata.status.shinrai >= 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 272,
+      "raw": "[glink color=\"btn_black commu_3\" size=24 width=\"200\" x=840 y=410 target=\"commu3\" text=\"ゲームする\"  cond=\"SISMES.savedata.event.shinrai_40 && SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.shinrai >= 40\"]",
+      "translated": ""
+    },
+    {
+      "line": 273,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=510 target=\"select\" text=\"戻る\"]",
+      "translated": ""
+    },
+    {
+      "line": 276,
+      "raw": "[glink color=\"btn_black commu_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"commu\" text=\"会話する\"    cond=\"SISMES.savedata.status.hp < 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 277,
+      "raw": "[glink color=\"btn_black commu_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"commu\" text=\"勉強をみる\"  cond=\"!SISMES.savedata.event.shinrai_20 || SISMES.savedata.status.hp < 30 || SISMES.savedata.status.shinrai < 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 278,
+      "raw": "[glink color=\"btn_black commu_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"commu\" text=\"ゲームする\"  cond=\"!SISMES.savedata.event.shinrai_40 || SISMES.savedata.status.hp < 40 || SISMES.savedata.status.shinrai < 40\"]",
+      "translated": ""
+    },
+    {
+      "line": 283,
+      "raw": "\tdocument.querySelector(\".commu_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 284,
+      "raw": "\tdocument.querySelector(\".commu_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：30</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 285,
+      "raw": "\tdocument.querySelector(\".commu_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：40</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 288,
+      "raw": "\t\tdocument.querySelector(\".commu_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※信頼40以上で解放</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 291,
+      "raw": "\t\t\tdocument.querySelector(\".commu_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※信頼20以上で解放</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 398,
+      "raw": "\t[glink color=\"btn_black work_1\" size=24 width=\"200\" x=840 y=210 target=\"work1\" text=\"普通\"    cond=\"SISMES.savedata.status.hp >= 25\"]",
+      "translated": ""
+    },
+    {
+      "line": 399,
+      "raw": "\t[glink color=\"btn_black work_2\" size=24 width=\"200\" x=840 y=310 target=\"work2\" text=\"本気\"      cond=\"SISMES.savedata.status.hp >= 50 && SISMES.savedata.status.risei <= 80\"]",
+      "translated": ""
+    },
+    {
+      "line": 400,
+      "raw": "\t[glink color=\"btn_black work_3\" size=24 width=\"200\" x=840 y=410 target=\"work3\" text=\"全力\"      cond=\"SISMES.savedata.status.hp >= 100 && SISMES.savedata.status.risei <= 60\"]",
+      "translated": ""
+    },
+    {
+      "line": 402,
+      "raw": "\t[glink color=\"btn_black work_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"work\" text=\"普通\"  cond=\"SISMES.savedata.status.hp < 25\"]",
+      "translated": ""
+    },
+    {
+      "line": 403,
+      "raw": "\t[glink color=\"btn_black work_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"work\" text=\"本気\"    cond=\"SISMES.savedata.status.hp < 50  || SISMES.savedata.status.risei > 80\"]",
+      "translated": ""
+    },
+    {
+      "line": 404,
+      "raw": "\t[glink color=\"btn_black work_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"work\" text=\"全力\"    cond=\"SISMES.savedata.status.hp < 100 || SISMES.savedata.status.risei > 60\"]",
+      "translated": ""
+    },
+    {
+      "line": 407,
+      "raw": "\t[glink color=\"btn_black work_1\" size=24 width=\"200\" x=840 y=210 target=\"work1\" text=\"普通\"    cond=\"SISMES.savedata.status.hp >= 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 408,
+      "raw": "\t[glink color=\"btn_black work_2\" size=24 width=\"200\" x=840 y=310 target=\"work2\" text=\"本気\"      cond=\"SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.risei <= 80\"]",
+      "translated": ""
+    },
+    {
+      "line": 409,
+      "raw": "\t[glink color=\"btn_black work_3\" size=24 width=\"200\" x=840 y=410 target=\"work3\" text=\"全力\"      cond=\"SISMES.savedata.status.hp >= 80 && SISMES.savedata.status.risei <= 60\"]",
+      "translated": ""
+    },
+    {
+      "line": 411,
+      "raw": "\t[glink color=\"btn_black work_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"work\" text=\"普通\"  cond=\"SISMES.savedata.status.hp < 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 412,
+      "raw": "\t[glink color=\"btn_black work_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"work\" text=\"本気\"    cond=\"SISMES.savedata.status.hp < 40 || SISMES.savedata.status.risei > 80\"]",
+      "translated": ""
+    },
+    {
+      "line": 413,
+      "raw": "\t[glink color=\"btn_black work_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"work\" text=\"全力\"    cond=\"SISMES.savedata.status.hp < 80 || SISMES.savedata.status.risei > 60\"]",
+      "translated": ""
+    },
+    {
+      "line": 416,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=510 target=\"select\" text=\"戻る\"]",
+      "translated": ""
+    },
+    {
+      "line": 423,
+      "raw": "\t\tdocument.querySelector(\".work_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：25</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 424,
+      "raw": "\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：50</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 425,
+      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：100</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 427,
+      "raw": "\t\tdocument.querySelector(\".work_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 428,
+      "raw": "\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：40</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 429,
+      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：80</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 433,
+      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※理性60以下で解放</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 436,
+      "raw": "\t\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※理性80以下で解放</div>\");",
+      "translated": ""
+    }
+  ],
+  "main_event.ks": [
+    {
+      "line": 62,
+      "raw": "\t#妹",
+      "translated": ""
+    },
+    {
+      "line": 63,
+      "raw": "\tおはよう、おにいちゃん[p]",
+      "translated": ""
+    },
+    {
+      "line": 76,
+      "raw": "\t#妹",
+      "translated": ""
+    },
+    {
+      "line": 77,
+      "raw": "\t……おにいちゃん、おはよう[p]",
+      "translated": ""
+    },
+    {
+      "line": 169,
+      "raw": "\t\t#妹",
+      "translated": ""
+    },
+    {
+      "line": 171,
+      "raw": "\t\tんっ……と。はい！　マッサージおしまいっ[r]",
+      "translated": ""
+    },
+    {
+      "line": 172,
+      "raw": "\t\t今日もおつかれさまです[p]",
+      "translated": ""
+    },
+    {
+      "line": 197,
+      "raw": "\t\t#妹",
+      "translated": ""
+    },
+    {
+      "line": 202,
+      "raw": "おやすみー、おにいちゃん[p]",
+      "translated": ""
+    },
+    {
+      "line": 230,
+      "raw": "[glink color=\"btn_black commu_1\"           size=24 width=\"200\" x=840 y=310 target=\"osawari\" text=\"妹の部屋へ行く\"  cond=\"SISMES.savedata.status.hp >= 20]",
+      "translated": ""
+    },
+    {
+      "line": 231,
+      "raw": "[glink color=\"btn_black commu_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"select\"  text=\"妹の部屋へ行く\"   cond=\"SISMES.savedata.status.hp < 20\"]",
+      "translated": ""
+    },
+    {
+      "line": 233,
+      "raw": "[glink color=\"btn_black commu_3\" size=24 width=\"200\" x=840 y=410 target=\"neru\" text=\"寝る\"]",
+      "translated": ""
+    },
+    {
+      "line": 246,
+      "raw": "\tdocument.querySelector(\".commu_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
+      "translated": ""
+    },
+    {
+      "line": 254,
+      "raw": "[jump target=\"not_osawari\" cond=\"SISMES.savedata.status.shinrai < 0 && !SISMES.savedata.item['困った時のピッキング術']\"]",
+      "translated": ""
+    },
+    {
+      "line": 274,
+      "raw": "……妹の部屋には鍵がかかっている[p]",
+      "translated": ""
+    },
+    {
+      "line": 276,
+      "raw": "明日通販で何か使えるものがないか探してみるか[p]",
+      "translated": ""
+    },
+    {
+      "line": 298,
+      "raw": "初日イベント",
+      "translated": ""
+    },
+    {
+      "line": 303,
+      "raw": "あ、そうだっ、おにいちゃん[r]",
+      "translated": ""
+    },
+    {
+      "line": 304,
+      "raw": "ちょっとあとで相談があるんだけど……",
+      "translated": ""
+    },
+    {
+      "line": 306,
+      "raw": "[glink text=\"なに？\" target=\"firstDay2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 313,
+      "raw": "おにいちゃんの都合のいい時で大丈夫だから！[r]",
+      "translated": ""
+    },
+    {
+      "line": 314,
+      "raw": "あとでちょっとお話させて？[p]",
+      "translated": ""
+    },
+    {
+      "line": 338,
+      "raw": "（…………そういえば昨日の夜……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 340,
+      "raw": "（おにいちゃん、わたしになにしてたの……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 357,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 358,
+      "raw": "……おはよう[p]",
+      "translated": ""
+    },
+    {
+      "line": 362,
+      "raw": "えっと……わたしは忘れるから[r]",
+      "translated": ""
+    },
+    {
+      "line": 363,
+      "raw": "昨日みたいなのはもうやめて欲しいな[p]",
+      "translated": ""
+    },
+    {
+      "line": 373,
+      "raw": "……妹が部屋から出てこない[r]",
+      "translated": ""
+    },
+    {
+      "line": 374,
+      "raw": "鍵をかけて閉じこもっているようだ[p]",
+      "translated": ""
+    },
+    {
+      "line": 390,
+      "raw": "（……なんか体がむずむずする……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 392,
+      "raw": "（なんだろう……？　熱あるのかな……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 414,
+      "raw": "（やだっ……！　おパンツ濡れちゃってる……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 418,
+      "raw": "（お漏らしじゃ……ないよね？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 437,
+      "raw": "（……気のせいかな。あたまがふわふわする……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 439,
+      "raw": "（……寝汗でからだがベトベト……シャワー浴びよ……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 456,
+      "raw": "（……えっ！？[r]",
+      "translated": ""
+    },
+    {
+      "line": 457,
+      "raw": "なんでこんなにおパンツ濡れてるの……？？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 461,
+      "raw": "（うそ……お洗濯しなきゃ……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 477,
+      "raw": "（……お布団凄く濡れちゃってた……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 479,
+      "raw": "（どうしよう……おにいちゃんにバレないよね……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 495,
+      "raw": "（……いたっ！？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 499,
+      "raw": "（……お腹の奥が痛い……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 502,
+      "raw": "（……うーん……生理そろそろだっけ？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 519,
+      "raw": "（……あれっ？……わたしなにか臭う？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 522,
+      "raw": "（……昨日ちゃんとお風呂入ったよね……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 542,
+      "raw": "（……んっ、なにか喉に絡みつくような……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 545,
+      "raw": "（……風邪かなぁ。うがいしよう……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 563,
+      "raw": "（……！？　お尻からなにか垂れてるような……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 567,
+      "raw": "（……病気……？　とかじゃないよね？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 589,
+      "raw": "（……どうしよう……[r]",
+      "translated": ""
+    },
+    {
+      "line": 590,
+      "raw": "おまたからなにか出てきた気がする）[p]",
+      "translated": ""
+    },
+    {
+      "line": 592,
+      "raw": "（……おりもの……？　にしては多い気がするけど……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 611,
+      "raw": "（……なにか変な感じがする……？）[p]",
+      "translated": ""
+    },
+    {
+      "line": 613,
+      "raw": "（お腹の中からあったかくなるような不思議な感じ……）[p]",
+      "translated": ""
+    },
+    {
+      "line": 617,
+      "raw": "（……今日はなにかいいことがあるのかも？）[p]",
+      "translated": ""
+    }
+  ],
+  "main_scenario.ks": [
+    {
+      "line": 15,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 17,
+      "raw": "相談なんだけどね、このゲームやっていい……？[p]",
+      "translated": ""
+    },
+    {
+      "line": 21,
+      "raw": "えっと……月額制だし、オンラインのゲームだから[r]",
+      "translated": ""
+    },
+    {
+      "line": 22,
+      "raw": "一応おにいちゃんに確認しておいた方がいいかなって……[p]",
+      "translated": ""
+    },
+    {
+      "line": 26,
+      "raw": "妹のいっているゲームはその昔[r]",
+      "translated": ""
+    },
+    {
+      "line": 27,
+      "raw": "俺がハマったことのあるＭＭＯだった[p]",
+      "translated": ""
+    },
+    {
+      "line": 29,
+      "raw": "月額制ではあるけど、ガチャみたいな課金要素もないし[r]",
+      "translated": ""
+    },
+    {
+      "line": 30,
+      "raw": "お小遣いの範囲だろうから問題ないと伝える[p]",
+      "translated": ""
+    },
+    {
+      "line": 34,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 35,
+      "raw": "やった！[r]",
+      "translated": ""
+    },
+    {
+      "line": 36,
+      "raw": "ありがとう、おにいちゃん！",
+      "translated": ""
+    },
+    {
+      "line": 38,
+      "raw": "[glink text=\"ただし生活リズムは<br>崩さない事！\" target=\"shinrai_11_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 46,
+      "raw": "はーい！[p]",
+      "translated": ""
+    },
+    {
+      "line": 50,
+      "raw": "妹が引きこもり始めてどれだけ経ったか……[p]",
+      "translated": ""
+    },
+    {
+      "line": 52,
+      "raw": "いつでも社会復帰できるように[r]",
+      "translated": ""
+    },
+    {
+      "line": 53,
+      "raw": "生活時間を守り、それなりの勉強をすると約束している[p]",
+      "translated": ""
+    },
+    {
+      "line": 58,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 59,
+      "raw": "ちゃんと今まで通りお勉強はするし[r]",
+      "translated": ""
+    },
+    {
+      "line": 60,
+      "raw": "１０時にはお布団に入るよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 89,
+      "raw": "[glink text=\"そういえば\" target=\"shinrai_20_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 97,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 99,
+      "raw": "えっ？　お勉強……？[p]",
+      "translated": ""
+    },
+    {
+      "line": 103,
+      "raw": "うん、ちゃんとしてるよ[r]",
+      "translated": ""
+    },
+    {
+      "line": 104,
+      "raw": "約束は守ってるよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 108,
+      "raw": "でも……[r]",
+      "translated": ""
+    },
+    {
+      "line": 109,
+      "raw": "実は結構わからないところがあって……[p]",
+      "translated": ""
+    },
+    {
+      "line": 113,
+      "raw": "おにいちゃん、お仕事の邪魔じゃなかったら[r]",
+      "translated": ""
+    },
+    {
+      "line": 114,
+      "raw": "たまにお勉強教えてほしいな……",
+      "translated": ""
+    },
+    {
+      "line": 116,
+      "raw": "[glink text=\"いつでもいいぞ\" target=\"shinrai_20_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 123,
+      "raw": "本当？　やった！[p]",
+      "translated": ""
+    },
+    {
+      "line": 127,
+      "raw": "さすがにゲームで知り合った人に[r]",
+      "translated": ""
+    },
+    {
+      "line": 128,
+      "raw": "お勉強教えてもらうわけにはいかないしねー",
+      "translated": ""
+    },
+    {
+      "line": 132,
+      "raw": "[glink text=\"友達できたの？\" target=\"shinrai_20_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 139,
+      "raw": "え？　あっ、えっと……ひとり、だけ……？[p]",
+      "translated": ""
+    },
+    {
+      "line": 143,
+      "raw": "でもやっぱり他の人はちょっと怖いから……[r]",
+      "translated": ""
+    },
+    {
+      "line": 144,
+      "raw": "その人以外とは全然話してないかな[p]",
+      "translated": ""
+    },
+    {
+      "line": 148,
+      "raw": "なんか、話しやすいんだよね、その人……[p]",
+      "translated": ""
+    },
+    {
+      "line": 152,
+      "raw": "そ、そんなことよりお勉強……！[r]",
+      "translated": ""
+    },
+    {
+      "line": 153,
+      "raw": "優しく教えてね、おにいちゃん！[p]",
+      "translated": ""
+    },
+    {
+      "line": 162,
+      "raw": "※以降、妹の信頼が２０以上ある状態で[r]",
+      "translated": ""
+    },
+    {
+      "line": 163,
+      "raw": "コミュニケーションから「勉強」が選べるようになります[p]",
+      "translated": ""
+    },
+    {
+      "line": 191,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 192,
+      "raw": "おにいちゃんってもうオンラインゲームしないの？",
+      "translated": ""
+    },
+    {
+      "line": 195,
+      "raw": "[glink text=\"やる時間ないからな\" target=\"shinrai_40_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 202,
+      "raw": "そっか[r]",
+      "translated": ""
+    },
+    {
+      "line": 203,
+      "raw": "おにいちゃんも一回ハマると抜け出せないタイプだもんね[p]",
+      "translated": ""
+    },
+    {
+      "line": 207,
+      "raw": "でもお仕事ばっかりだし、[r]",
+      "translated": ""
+    },
+    {
+      "line": 208,
+      "raw": "お勉強も見て貰ってるし……[p]",
+      "translated": ""
+    },
+    {
+      "line": 212,
+      "raw": "たまには息抜きで一緒に[r]",
+      "translated": ""
+    },
+    {
+      "line": 213,
+      "raw": "オンラインじゃないゲームしようよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 217,
+      "raw": "あ、でもおにいちゃん強いから[r]",
+      "translated": ""
+    },
+    {
+      "line": 218,
+      "raw": "協力系のゲームがいいな",
+      "translated": ""
+    },
+    {
+      "line": 220,
+      "raw": "[glink text=\"わかった\" target=\"shinrai_40_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 227,
+      "raw": "うん！[r]",
+      "translated": ""
+    },
+    {
+      "line": 228,
+      "raw": "おにいちゃんとのゲーム久しぶりだから楽しみ！[p]",
+      "translated": ""
+    },
+    {
+      "line": 238,
+      "raw": "※以降、妹の信頼が４０以上ある状態で[r]",
+      "translated": ""
+    },
+    {
+      "line": 239,
+      "raw": "コミュニケーションから「ゲーム」が選べるようになります[p]",
+      "translated": ""
+    },
+    {
+      "line": 266,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 268,
+      "raw": "おにいちゃん最近ちゃんと寝れてる？",
+      "translated": ""
+    },
+    {
+      "line": 270,
+      "raw": "[glink text=\"寝れてるよ\" target=\"shinrai_60_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 277,
+      "raw": "本当？　前よりもお仕事頑張ってるみたいだし[r]",
+      "translated": ""
+    },
+    {
+      "line": 278,
+      "raw": "朝すごい眠そうなときあるからちょっと心配だよ",
+      "translated": ""
+    },
+    {
+      "line": 281,
+      "raw": "[glink text=\"お前はゲーム<br>やりすぎてない？\" target=\"shinrai_60_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 288,
+      "raw": "えっ？　大丈夫だよ[r]",
+      "translated": ""
+    },
+    {
+      "line": 289,
+      "raw": "ほら、ちゃんと１０時にはお布団入ってるでしょ？[p]",
+      "translated": ""
+    },
+    {
+      "line": 293,
+      "raw": "いつも一緒にゲームしてる人もね[r]",
+      "translated": ""
+    },
+    {
+      "line": 294,
+      "raw": "朝が早いとかで１０時には落ちちゃうんだ[p]",
+      "translated": ""
+    },
+    {
+      "line": 298,
+      "raw": "おにいちゃんみたいに[r]",
+      "translated": ""
+    },
+    {
+      "line": 299,
+      "raw": "本当はお仕事忙しい人なのかな？[p]",
+      "translated": ""
+    },
+    {
+      "line": 303,
+      "raw": "あんまり自分のこと話さないから[r]",
+      "translated": ""
+    },
+    {
+      "line": 304,
+      "raw": "よくわからないんだよね[p]",
+      "translated": ""
+    },
+    {
+      "line": 308,
+      "raw": "……そう言えばわたしって[r]",
+      "translated": ""
+    },
+    {
+      "line": 309,
+      "raw": "逆に色々話しすぎちゃってる気がしてきた……",
+      "translated": ""
+    },
+    {
+      "line": 311,
+      "raw": "[glink text=\"個人情報には<br>気を付けろよ\" target=\"shinrai_60_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 318,
+      "raw": "う、うん[r]",
+      "translated": ""
+    },
+    {
+      "line": 319,
+      "raw": "その辺は多分……だいじょう……ぶ？[p]",
+      "translated": ""
+    },
+    {
+      "line": 324,
+      "raw": "そ、それよりもおにいちゃんだよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 328,
+      "raw": "ほら、おにいちゃんに倒れられたら[r]",
+      "translated": ""
+    },
+    {
+      "line": 329,
+      "raw": "わたし何にもできないから……[p]",
+      "translated": ""
+    },
+    {
+      "line": 333,
+      "raw": "そうだっ！　これからは寝る前に[r]",
+      "translated": ""
+    },
+    {
+      "line": 334,
+      "raw": "おにいちゃんにマッサージしてあげる！",
+      "translated": ""
+    },
+    {
+      "line": 336,
+      "raw": "[glink text=\"マッサージ？\" target=\"shinrai_60_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 344,
+      "raw": "うん！[r]",
+      "translated": ""
+    },
+    {
+      "line": 345,
+      "raw": "日頃のお礼にそれくらいさせてよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 356,
+      "raw": "※以降、妹の信頼が６０以上ある状態で[r]",
+      "translated": ""
+    },
+    {
+      "line": 357,
+      "raw": "２２時を迎えると体力が少し回復します[p]",
+      "translated": ""
+    },
+    {
+      "line": 383,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 384,
+      "raw": "おにいちゃ～ん！",
+      "translated": ""
+    },
+    {
+      "line": 386,
+      "raw": "[glink text=\"どうした？\" target=\"shinrai_80_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 393,
+      "raw": "うんっ！[r]",
+      "translated": ""
+    },
+    {
+      "line": 394,
+      "raw": "呼んでみただけ！",
+      "translated": ""
+    },
+    {
+      "line": 396,
+      "raw": "[glink text=\"最近ご機嫌だな\" target=\"shinrai_80_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 403,
+      "raw": "あのゲーム始めてよかったよ[p]",
+      "translated": ""
+    },
+    {
+      "line": 407,
+      "raw": "なんかね、毎日が楽しくって……[r]",
+      "translated": ""
+    },
+    {
+      "line": 408,
+      "raw": "時間が経つのも、早く感じてね……！",
+      "translated": ""
+    },
+    {
+      "line": 411,
+      "raw": "[glink text=\"それはよかった\" target=\"shinrai_80_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 418,
+      "raw": "うん！　おにいちゃんがプレイしていいよって[r]",
+      "translated": ""
+    },
+    {
+      "line": 419,
+      "raw": "言ってくれたおかげだよ、ありがと[p]",
+      "translated": ""
+    },
+    {
+      "line": 423,
+      "raw": "お礼……ってわけじゃないけど……[p]",
+      "translated": ""
+    },
+    {
+      "line": 427,
+      "raw": "おにいちゃんのお仕事で[r]",
+      "translated": ""
+    },
+    {
+      "line": 428,
+      "raw": "手伝えることがあったらなんでも言ってね[p]",
+      "translated": ""
+    },
+    {
+      "line": 432,
+      "raw": "わたしで役に立てることがあったら頑張るから！[p]",
+      "translated": ""
+    },
+    {
+      "line": 442,
+      "raw": "※以降、妹の信頼が８０以上ある状態で[r]",
+      "translated": ""
+    },
+    {
+      "line": 443,
+      "raw": "仕事を行うと、体力の消費が少し抑えられます[p]",
+      "translated": ""
+    },
+    {
+      "line": 469,
+      "raw": "#妹",
+      "translated": ""
+    },
+    {
+      "line": 472,
+      "raw": "[glink text=\"元気ないな？\" target=\"shinrai_100_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 479,
+      "raw": "うん、仲の良かった人が[r]",
+      "translated": ""
+    },
+    {
+      "line": 480,
+      "raw": "突然アカウント削除しちゃったみたいで……[p]",
+      "translated": ""
+    },
+    {
+      "line": 484,
+      "raw": "その人、昨日まで何も言ってなかったのに突然だったから[r]",
+      "translated": ""
+    },
+    {
+      "line": 485,
+      "raw": "すごいショックなんだよ……[p]",
+      "translated": ""
+    },
+    {
+      "line": 489,
+      "raw": "もしかして、わたししつこかった……？[r]",
+      "translated": ""
+    },
+    {
+      "line": 490,
+      "raw": "実は迷惑かけてたのかなぁ……",
+      "translated": ""
+    },
+    {
+      "line": 492,
+      "raw": "[glink text=\"そんなに仲良かったの？\" target=\"shinrai_100_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 499,
+      "raw": "少なくともわたしは良いと思ってたよ……[p]",
+      "translated": ""
+    },
+    {
+      "line": 503,
+      "raw": "でね、ゲームのメールボックスに[r]",
+      "translated": ""
+    },
+    {
+      "line": 504,
+      "raw": "一通だけメッセージが残ってたの[p]",
+      "translated": ""
+    },
+    {
+      "line": 508,
+      "raw": "『この世界で君だけが鮮やかに感じられた[r]",
+      "translated": ""
+    },
+    {
+      "line": 509,
+      "raw": "_　君の色で、君の声で、いつか終わりがくるまで……』って[p]",
+      "translated": ""
+    },
+    {
+      "line": 513,
+      "raw": "なにこれ？　謎解き……？？[r]",
+      "translated": ""
+    },
+    {
+      "line": 514,
+      "raw": "もー、意味わかんないよぉ……[p]",
+      "translated": ""
+    },
+    {
+      "line": 518,
+      "raw": "やっぱり男のひとってよくわかんないなぁ……",
+      "translated": ""
+    },
+    {
+      "line": 521,
+      "raw": "[glink text=\"もしかして好きだったの？\" target=\"shinrai_100_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 528,
+      "raw": "えっ！？　ええっ！！？[r]",
+      "translated": ""
+    },
+    {
+      "line": 529,
+      "raw": "す、好きとか……っ！　そういうのじゃ……！[p]",
+      "translated": ""
+    },
+    {
+      "line": 533,
+      "raw": "た、たぶん…ない、よ[p]",
+      "translated": ""
+    },
+    {
+      "line": 535,
+      "raw": "ゲーム、凄い上手な人だったから[r]",
+      "translated": ""
+    },
+    {
+      "line": 536,
+      "raw": "かっこいいなーとは思ったけど……っ[p]",
+      "translated": ""
+    },
+    {
+      "line": 540,
+      "raw": "わ、わたし、そういうのよくわからないし……[p]",
+      "translated": ""
+    },
+    {
+      "line": 542,
+      "raw": "男の子とか……女の子とか……？[r]",
+      "translated": ""
+    },
+    {
+      "line": 543,
+      "raw": "そういうの全然わかんないから……[p]",
+      "translated": ""
+    },
+    {
+      "line": 547,
+      "raw": "ねぇ？　おにいちゃん[r]",
+      "translated": ""
+    },
+    {
+      "line": 548,
+      "raw": "わたしって男の人から見たらどう見えるの……？",
+      "translated": ""
+    },
+    {
+      "line": 551,
+      "raw": "[glink text=\"俺はおにいちゃんだからな\" target=\"shinrai_100_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 558,
+      "raw": "そうだよね、おにいちゃんから見たわたしは[r]",
+      "translated": ""
+    },
+    {
+      "line": 559,
+      "raw": "妹でしかないよね……ごめん、変なこと言って[p]",
+      "translated": ""
+    },
+    {
+      "line": 563,
+      "raw": "あーあ！[r]",
+      "translated": ""
+    },
+    {
+      "line": 564,
+      "raw": "なんか本当にあのゲームやる気なくなっちゃったな……[p]",
+      "translated": ""
+    },
+    {
+      "line": 568,
+      "raw": "ちょっと気持ちが整理できるまで[r]",
+      "translated": ""
+    },
+    {
+      "line": 569,
+      "raw": "一回あのゲームから離れようと思う！[p]",
+      "translated": ""
+    },
+    {
+      "line": 573,
+      "raw": "これからはその空いた時間で[r]",
+      "translated": ""
+    },
+    {
+      "line": 574,
+      "raw": "おにいちゃんのお仕事もっと手伝ってもいい？[p]",
+      "translated": ""
+    },
+    {
+      "line": 578,
+      "raw": "なんか悲しい気持ち通り越して[r]",
+      "translated": ""
+    },
+    {
+      "line": 579,
+      "raw": "ちょっとムカムカしてきたっ！[p]",
+      "translated": ""
+    },
+    {
+      "line": 583,
+      "raw": "ひとりでいるとまた考え込みそうだから[r]",
+      "translated": ""
+    },
+    {
+      "line": 584,
+      "raw": "おにいちゃんのお仕事で気を紛らわせたい！",
+      "translated": ""
+    },
+    {
+      "line": 586,
+      "raw": "[glink text=\"馬車馬のように<br>こき使ってやるぞ\" target=\"shinrai_100_5\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
+      "translated": ""
+    },
+    {
+      "line": 593,
+      "raw": "もう、おにいちゃんったら……[p]",
+      "translated": ""
+    },
+    {
+      "line": 597,
+      "raw": "やっぱりおにいちゃんと[r]",
+      "translated": ""
+    },
+    {
+      "line": 598,
+      "raw": "話しているときが一番気楽でいいね[p]",
+      "translated": ""
+    },
+    {
+      "line": 609,
+      "raw": "※以降、妹の信頼が１００ある状態で[r]",
+      "translated": ""
+    },
+    {
+      "line": 610,
+      "raw": "仕事を行うと、お金が稼ぎやすくなります。[p]",
+      "translated": ""
+    }
+  ],
+  "osawari.ks": [
+    {
+      "line": 3,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI okosu\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=180 target=\"okosu\"        text=\"起こす\"      cm=false cond=\"!SISMES.savedata.freeMode && SISMES.savedata.status.risei <= 0 && !SISMES.sis.wakeup\"]",
+      "translated": ""
+    },
+    {
+      "line": 4,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=240 target=\"clean_seieki\"      text=\"精液を拭き取る\"      cm=false cond=\"SISMES.checkSeishi() > 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 5,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=300 target=\"style_0\"      text=\"仰向け\"      cm=false cond=\"SISMES.data.currentStyle !== 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 6,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=360 target=\"style_1\"      text=\"横向け\"      cm=false cond=\"SISMES.data.currentStyle !== 1\"]",
+      "translated": ""
+    },
+    {
+      "line": 7,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=420 target=\"style_2\"      text=\"うつ伏せ\"    cm=false cond=\"SISMES.data.currentStyle !== 2\"]",
+      "translated": ""
+    },
+    {
+      "line": 8,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI mochiageru\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=480 target=\"style_3\"      text=\"持ち上げる\"  cm=false cond=\"SISMES.data.currentStyle !== 3\"]",
+      "translated": ""
+    },
+    {
+      "line": 9,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=540 target=\"style_cancel\" text=\"キャンセル\"  cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 11,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI disableUI\"  exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=240 target=\"styleChange\" text=\"精液を拭き取る\" cm=false cond=\"SISMES.checkSeishi() === 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 12,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=300 target=\"styleChange\" text=\"仰向け\"         cm=false cond=\"SISMES.data.currentStyle === 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 13,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=360 target=\"styleChange\" text=\"横向け\"         cm=false cond=\"SISMES.data.currentStyle === 1\"]",
+      "translated": ""
+    },
+    {
+      "line": 14,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=420 target=\"styleChange\" text=\"うつ伏せ\"       cm=false cond=\"SISMES.data.currentStyle === 2\"]",
+      "translated": ""
+    },
+    {
+      "line": 15,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=480 target=\"styleChange\" text=\"持ち上げる\"     cm=false cond=\"SISMES.data.currentStyle === 3\"]",
+      "translated": ""
+    },
+    {
+      "line": 18,
+      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI disableUI\"  exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=240 target=\"clean_seieki\"      text=\"精液を拭き取る\"      cm=false cond=\"SISMES.checkSeishi() === 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 19,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=300 target=\"style_0\"      text=\"仰向け\"      cm=false cond=\"SISMES.data.currentStyle === 0\"]",
+      "translated": ""
+    },
+    {
+      "line": 20,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=360 target=\"style_1\"      text=\"横向け\"      cm=false cond=\"SISMES.data.currentStyle === 1\"]",
+      "translated": ""
+    },
+    {
+      "line": 21,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=420 target=\"style_2\"      text=\"うつ伏せ\"    cm=false cond=\"SISMES.data.currentStyle === 2\"]",
+      "translated": ""
+    },
+    {
+      "line": 22,
+      "raw": "[glink color=\"btn_white\" name=\"styleChangeUI nonClickUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=480 target=\"style_3\"      text=\"持ち上げる\"  cm=false cond=\"SISMES.data.currentStyle === 3\"]",
+      "translated": ""
+    },
+    {
+      "line": 256,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(10)\"    size=16 width=90 x=100  y=520 target=\"stop_event\" text=\"10秒後\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 257,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(5)\"     size=16 width=90 x=205  y=520 target=\"stop_event\" text=\"5秒後\"    cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 258,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(0)\"     size=16 width=90 x=310  y=520 target=\"stop_event\" text=\"射精\"     cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 260,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_3\"  exp=\"SISMES.syasei_menu_auto(3)\"    size=16 width=90 x=100  y=570 target=\"stop_event\" text=\"自動 10s\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 261,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_2\"  exp=\"SISMES.syasei_menu_auto(2)\"    size=16 width=90 x=205  y=570 target=\"stop_event\" text=\"自動 5s\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 262,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_1\"  exp=\"SISMES.syasei_menu_auto(1)\"    size=16 width=90 x=310  y=570 target=\"stop_event\" text=\"自動　0s\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 264,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_0\"  exp=\"SISMES.syasei_menu_auto(0)\"    size=16 width=90 x=100  y=620 target=\"stop_event\" text=\"自動 off\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 265,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_4\"  exp=\"SISMES.syasei_menu_auto(4)\"    size=16 width=90 x=205  y=620 target=\"stop_event\" text=\"同時イキ\"   cm=false cond=\"SISMES.savedata.item['同時イキの極意']\"]",
+      "translated": ""
+    },
+    {
+      "line": 266,
+      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari\"  exp=\"SISMES.hide_syasei_menu()\"    size=16 width=90 x=310  y=620 target=\"stop_event\" text=\"＜ 閉じる\"   cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 269,
+      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_kakunin disableOsawari\"    exp=\"SISMES.osawariInfoKakunin()\"         size=12 width=120 x=910 y=90 target=\"stop_event\" text=\"おさわり位置確認\"     cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 270,
+      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_prev    disableOsawari\"    exp=\"SISMES.osawariInfoKakunin_prev()\"    size=12 width=50 x=1050 y=90 target=\"stop_event\" text=\"< 前\"     cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 271,
+      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_next    disableOsawari\"    exp=\"SISMES.osawariInfoKakunin_next()\"    size=12 width=50 x=1120 y=90 target=\"stop_event\" text=\"次 >\"     cm=false]",
+      "translated": ""
+    }
+  ],
+  "osawari_event.ks": [
+    {
+      "line": 19,
+      "raw": "\t……おにいちゃん…………？[p]",
+      "translated": ""
+    },
+    {
+      "line": 35,
+      "raw": "\tうそっ……どうしてわたし、裸に……？",
+      "translated": ""
+    },
+    {
+      "line": 42,
+      "raw": "\t……なにこれ……いやぁ……っ",
+      "translated": ""
+    },
+    {
+      "line": 49,
+      "raw": "\t……なんでこんな格好させられてるの……？",
+      "translated": ""
+    },
+    {
+      "line": 57,
+      "raw": "\tあっ……なんで……？[r]",
+      "translated": ""
+    },
+    {
+      "line": 58,
+      "raw": "\t……ぁっ……ぅんっ……からだが……へんだよぉ……",
+      "translated": ""
+    },
+    {
+      "line": 63,
+      "raw": "\t……えっ……？　なに…してる……の？",
+      "translated": ""
+    },
+    {
+      "line": 78,
+      "raw": "\t……どうして……？　おにいちゃん……[r]",
+      "translated": ""
+    },
+    {
+      "line": 79,
+      "raw": "\tこんなの……やだぉ……",
+      "translated": ""
+    },
+    {
+      "line": 82,
+      "raw": "\t……おねがい……もうやめてよぉ……",
+      "translated": ""
+    },
+    {
+      "line": 83,
+      "raw": "\t兄妹で……ダメだよ……っ",
+      "translated": ""
+    },
+    {
+      "line": 86,
+      "raw": "\t……なんで……なんで……？[r]",
+      "translated": ""
+    },
+    {
+      "line": 87,
+      "raw": "\tやだ……おにいちゃん……やだよぉ……",
+      "translated": ""
+    },
+    {
+      "line": 91,
+      "raw": "\t……いやだっ……いやだよぉ……[r]",
+      "translated": ""
+    },
+    {
+      "line": 92,
+      "raw": "\tもうこんなの……いやぁ……っ",
+      "translated": ""
+    },
+    {
+      "line": 95,
+      "raw": "\t……うそだよね？[r]",
+      "translated": ""
+    },
+    {
+      "line": 96,
+      "raw": "\tおにいちゃん……なんで……？",
+      "translated": ""
+    },
+    {
+      "line": 110,
+      "raw": "[glink color=\"btn_black\" name=\"selectEvent selectTudukeru\"             size=24 width=300 x=890 y=240 target=\"tudukeru\"      text=\"続ける\" exp=\"SISMES.layerFreeStyle.pointerEvents = 'none'\" cond=\"SISMES.savedata.status.risei <= 50\" cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 111,
+      "raw": "[glink color=\"btn_black\" name=\"selectEvent selectTudukeru riseiNoneUI\" size=24 width=300 x=890 y=240 target=\"select_button\" text=\"続ける\"                                                    cond=\"SISMES.savedata.status.risei >  50\" cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 113,
+      "raw": "[glink color=\"btn_black\" name=\"selectEvent\" size=24 width=300 x=890 y=380 target=\"yameru\" text=\"やめる\" exp=\"SISMES.layerFreeStyle.pointerEvents = 'none'\" cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 116,
+      "raw": "\tif (SISMES.savedata.status.risei > 50) $(\".selectTudukeru\").append(\"<div class='selectInfo'>※要：理性50以下</div>\")",
+      "translated": ""
+    },
+    {
+      "line": 177,
+      "raw": "……そろそろ寝ないと。[p]",
+      "translated": ""
+    },
+    {
+      "line": 198,
+      "raw": "……だっ……だめぇ……っ！[p]",
+      "translated": ""
+    },
+    {
+      "line": 206,
+      "raw": "……これ以上は……兄妹に戻れなくなっちゃうよ……。",
+      "translated": ""
+    },
+    {
+      "line": 218,
+      "raw": "[glink color=\"btn_black\" name=\"selectEvent\" size=24 width=300 x=890 y=380 target=\"yameru2\" text=\"やめる\" exp=\"SISMES.layerFreeStyle.pointerEvents = 'none'\" cm=false]",
+      "translated": ""
+    },
+    {
+      "line": 221,
+      "raw": "\tif (SISMES.savedata.status.risei > 0) $(\".selectTudukeru\").append(\"<div class='selectInfo'>※要：理性0</div>\")",
+      "translated": ""
+    }
+  ],
+  "title.ks": [
+    {
+      "line": 60,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=260 target=\"mode_select\" text=\"はじめから\" ]",
+      "translated": ""
+    },
+    {
+      "line": 61,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=360 target=\"load\" text=\"つづきから\" ]",
+      "translated": ""
+    },
+    {
+      "line": 62,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=460 target=\"free_mode\" text=\"フリーモード\" ]",
+      "translated": ""
+    },
+    {
+      "line": 63,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=560 target=\"close\" text=\"閉じる\"]",
+      "translated": ""
+    },
+    {
+      "line": 66,
+      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=240 y=560 storage=\"zenjitsu.ks\" target=\"start\" text=\"前日譚\" cond=\"sf.globalClear\"]",
+      "translated": ""
+    }
+  ],
+  "zenjitsu.ks": [
+    {
+      "line": 31,
+      "raw": "_　――――カタカタカタカタカタカタ……。[p]",
+      "translated": ""
+    },
+    {
+      "line": 33,
+      "raw": "_　部屋の中に無機質な音だけが、静寂を一定のリズムで刻んでいた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 37,
+      "raw": "_　この家では俺と妹しか暮らしていない。[l]壁を挟んだ先には、数年前にその主達を失ったまま止まっている空間があり、さらに隣に妹の部屋がある。[p]",
+      "translated": ""
+    },
+    {
+      "line": 39,
+      "raw": "_　こうやってパソコン相手に無心で手を動かすにはうってつけの環境と言えば聞こえはいいかもしれない。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 40,
+      "raw": "_　――ふーっ、と一息つき、キーボードから手を放し、代わりにコーヒーカップへ伸ばす。[l]仕事が一段落ついてしまった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 42,
+      "raw": "_　思考する時間が出来てしまうと、どうしても先の見えないこの生活への不安が襲ってくる。[p]",
+      "translated": ""
+    },
+    {
+      "line": 44,
+      "raw": "_　不慮の事故で亡くなってしまった両親が残したこの家で、俺は住宅ローンという名の足枷にあと十数年は繋がれたままの状態だ。[l]そんな中で自分の奨学金も返しながら、決して多くない貯金を少しずつ切り崩していた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 45,
+      "raw": "_　家の売却も考えたが、両親と暮らしたこの家からは出たくないと妹に懇願されてはその選択をできずにいる。[l]……いよいよという時にはそんなこと言ってられないのだが。[p]",
+      "translated": ""
+    },
+    {
+      "line": 47,
+      "raw": "_　そんな妹はというと、最近は随分と情緒が安定した。[l]元々虐めにあっていたこともあり、両親の死をきっかけに引きこもるようになった。[l]その当時は少し目を離したら消えてしまいそうなほど、その目に弱々しい光を宿していた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 48,
+      "raw": "_　妹の前ではなるべく不安にさせないように兄としての振る舞いを続けてきた。[l]気が付けばそんな生活も随分長くなっていた。そのおかげか、今では両親がいたときのように笑顔ものぞかせ、立ち直っているようにも見えるが不登校は相変わらずだった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 50,
+      "raw": "_　……とはいえ本人は勉強も自分で調べながらしているし、俺の言いつけを守って生活時間は崩さず、なるべく自堕落にならないようにしている。[l]基本的には優等生な気質なのだ。[p]",
+      "translated": ""
+    },
+    {
+      "line": 51,
+      "raw": "_　贅沢も言わないし、何か金を使うときは必ず俺に相談をする。[l]逆に何か欲しいものはないかと聞いても生活必需品以上のものはほとんど出てこない。[p]",
+      "translated": ""
+    },
+    {
+      "line": 52,
+      "raw": "_　それはそれで不健全だろうと、そんな状況に置いてしまっていることにも、もどかしさを感じていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 55,
+      "raw": "_　そんな日々は次第に色あせて見えていった。[l]全てが灰色の世界だ。[p]",
+      "translated": ""
+    },
+    {
+      "line": 56,
+      "raw": "_　別に絶望しているわけでもない。[l]でも希望があるわけでもない。[l]無着色な景色。[l]それが日常になっていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 60,
+      "raw": "_　――ガチャ。[p]",
+      "translated": ""
+    },
+    {
+      "line": 62,
+      "raw": "_　静まり返った部屋に、遠くでドアの開く音がかすかに響いた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 63,
+      "raw": "_　そのおかげで際限のない思考から引き戻された俺は、モニターの端に映し出された時刻に視線を落とす。[p]",
+      "translated": ""
+    },
+    {
+      "line": 65,
+      "raw": "_　……そろそろ昼飯の時間だった。[l]妹はお腹が減って出てきたのだろう。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 66,
+      "raw": "_　俺も何か適当なものを腹に入れるため、部屋の外へ足を向けた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 70,
+      "raw": "_　廊下に出ると、ついさっき出て行ったであろう妹の影は見当たらなかった。[l]リビングの先のキッチンへ向かおうと、妹の部屋の前を横切る。[p]",
+      "translated": ""
+    },
+    {
+      "line": 72,
+      "raw": "_　最近では秋の訪れを感じられるほど涼しくなり、エアコンの必要がない妹の部屋のドアは開けっ放しだった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 73,
+      "raw": "_　Ｔシャツ一枚で過ごすというズボラな面はあるが、部屋はいつも小綺麗に保っていると知っているため、いつもならわざわざその中を覗こうとは思わないのだが……。[p]",
+      "translated": ""
+    },
+    {
+      "line": 77,
+      "raw": "_　ローテーブルの上にちょこんと置かれたノートパソコンからは聞き覚えのある音楽が流れていた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 78,
+      "raw": "_　……それは昔、やり込んでいたオンラインゲームだった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 79,
+      "raw": "_　有名メーカーが運営するＭＭＯ。プレイする時間がなくなり、もう何年もログインしていない。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 80,
+      "raw": "_　そう言えば最近また大型アップデートが来たとかＷｅｂ広告で見掛けた気がする。[p]",
+      "translated": ""
+    },
+    {
+      "line": 82,
+      "raw": "_　そんなことより妹がオンラインゲーム？[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 83,
+      "raw": "_　引き籠ってから他者との交流をできる限り避けていた妹が？[p]",
+      "translated": ""
+    },
+    {
+      "line": 85,
+      "raw": "_　そこからは、頭で考えるよりも先に足がノートパソコンへ向かっていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 86,
+      "raw": "_　……その画面には間違いなく俺の知っているゲームが映し出されており、中央には初心者マークのアイコンが付いたキャラクターが鎮座していた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 87,
+      "raw": "_　もしかしたら誰かの配信画面が映っているだけとも考えたが、キャラクターを動かさない範囲で操作するときちんとゲームが反応を示した。[p]",
+      "translated": ""
+    },
+    {
+      "line": 95,
+      "raw": "「あ、おにいちゃんもカップ麺食べる？　今お湯沸かすよー」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 97,
+      "raw": "_　キッチンから顔を出す妹。ああ、と短い返事をする。[p]",
+      "translated": ""
+    },
+    {
+      "line": 101,
+      "raw": "_　――そのまま一緒にカップ麺を食べたが、妹からはゲームの話は出てこなかった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 111,
+      "raw": "_　午後の仕事に意識を向けることは難しかった。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 112,
+      "raw": "_　妹の心情の変化を読み取れなかったことが、どうにも心に引っかかっていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 114,
+      "raw": "_　こちらから聞き出しても良かったのではないかと考えを巡らせるも、さすがに過保護すぎないか、過干渉ではないかという思考に足止めされた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 116,
+      "raw": "_　……とはいえ、気になるものは気になる。[p]",
+      "translated": ""
+    },
+    {
+      "line": 118,
+      "raw": "_　そんな状態のまま二時間ほどが過ぎ、このままでは仕事に手が付かないと判断した俺は、あのゲームのダウンロードを始めた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 119,
+      "raw": "_　長年のアップデートを重ねて膨れ上がったゲームクライアントのダウンロードには時間がかかる。[l]家の回線はそれほど速くないことも相まって、何も手につかない虚無の時間だけが流れた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 120,
+      "raw": "_　そしてダウンロードとインストールが終わり、ログイン画面まで辿り着いた頃には既に日が傾こうとしていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 122,
+      "raw": "_　昔ゲームをしていた頃のＩＤやパスワードは大体同じものを使っていたこともあり、ログイン自体は問題なくできそうだった。[l]しかし……[p]",
+      "translated": ""
+    },
+    {
+      "line": 124,
+      "raw": "_　――『このアカウントは、サービス契約状態が「契約なし」になっているため、プレイすることができません』[p]",
+      "translated": ""
+    },
+    {
+      "line": 126,
+      "raw": "_　そうだった。[l]そもそもこのゲームは月額課金制だった。[l]そこで妹がゲームの話題に触れなかった理由についてさらにわからなくなる。[p]",
+      "translated": ""
+    },
+    {
+      "line": 127,
+      "raw": "_　妹には毎月少額ではあるがお小遣いを与えている。好きに使っていいとは言っているが、妹はこの家の経済状況を気にしているためかほとんど使おうとしなかった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 128,
+      "raw": "_　それでも何かに金を使うときは、まず俺に相談してくる。[l]ましてこれは月額制だ。[l]妹の性格なら、必ず俺にこのゲームのことを伝えるだろう。[p]",
+      "translated": ""
+    },
+    {
+      "line": 130,
+      "raw": "_　ひとまず最短の一か月分だけ課金処理を済ませ、もう一度ログインを実行する。[p]",
+      "translated": ""
+    },
+    {
+      "line": 132,
+      "raw": "_　今度は無事キャラクター選択画面に進み、数年ぶりにゲームアバターに再会する。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 133,
+      "raw": "_　ヘッドホンから流れるＢＧＭに懐かしさを覚えながら、ゲームを開始した。[p]",
+      "translated": ""
+    },
+    {
+      "line": 135,
+      "raw": "_　ローディング画面が表示され、ワールドマップに切り替わると同時に戦闘ＢＧＭへと変わった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 136,
+      "raw": "_　どうやら敵の出現するフィールドのど真ん中で最後にログアウトしていたようだ。[l]しかし、このフィールドの敵のレベルはそこまで高くない。[p]",
+      "translated": ""
+    },
+    {
+      "line": 137,
+      "raw": "_　ほどほどにやり込んでいた俺は、焦らずに近くの敵を倒そうとカメラを操作すると、昼間に見た初心者マークを付けたキャラクターが敵を大量に引き連れて逃げ回っていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 139,
+      "raw": "_　……一先ず片っ端からトレインされている敵を倒す。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 140,
+      "raw": "_　久しぶりだったためもあり、多少操作に難があったが妹のＨＰバーが空になる前には殲滅することができた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 143,
+      "raw": "_　妹が俺の前に移動してくる。[l]……が、なにも話さない。[l]ただ近くをちょこまかと巡回している。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 144,
+      "raw": "_　もしかしてチャットの仕方すらわからないのだろうか？　と思い、見ようによっては煽っているようにも感じる妹に操作方法を教えた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 147,
+      "raw": "『ありがとうございます！』[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 149,
+      "raw": "_　お礼の言葉を貰う。[l]どうやらこのゲームを始めたばかりで、よくわからない間にこの状況になったらしい。[p]",
+      "translated": ""
+    },
+    {
+      "line": 150,
+      "raw": "_　それから近くの安全な街まで連れて行き、何をすればいいかと聞かれたり、こちらから色々と教えたりしているうちに時間が過ぎていった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 156,
+      "raw": "_　そんな出来事から一週間が過ぎようとしていた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 157,
+      "raw": "_　その間、仕事の隙間を縫ってはゲームにログインし、妹と遊んでいるうちに色々と気付いたことがあった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 159,
+      "raw": "_　まず、妹は滅茶苦茶チャットが速い。[l]多分俺よりも速い。[p]",
+      "translated": ""
+    },
+    {
+      "line": 160,
+      "raw": "_　理由を聞いたら、暇つぶしにタイピングゲームをやっていることが多かったかららしい。[l]……これは知らなかった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 162,
+      "raw": "_　それと思ったよりも他人への振る舞いができている。[l]むしろ自然なほどだ。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 163,
+      "raw": "_　他者との交流を何年も避けていたであろう妹が、意外なほどコミュニケーションが上手かった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 166,
+      "raw": "_　ちなみに妹はまだ目の前のキャラクターの中に俺がいることを知らない。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 167,
+      "raw": "_　兄というフィルターがない方が話せることもあるのではないかと思い、隠し続けている。[p]",
+      "translated": ""
+    },
+    {
+      "line": 170,
+      "raw": "_　……だがそれも今日で終わりだ。[p]",
+      "translated": ""
+    },
+    {
+      "line": 171,
+      "raw": "_　妹はこのゲームに無料のトライアル期間があると知って始めたらしい。[l]それが今日の２４時に終わる。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 172,
+      "raw": "_　それを聞いた時は、なるほどそれで俺に相談することもなく始めたのかと納得した。[p]",
+      "translated": ""
+    },
+    {
+      "line": 177,
+      "raw": "_　時計は２１時を回ろうとしていた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 178,
+      "raw": "_　トライアル期間が２４時に終わるとはいえ、生活時間を崩さずにいる妹のタイムリミットは２２時だ。[p]",
+      "translated": ""
+    },
+    {
+      "line": 180,
+      "raw": "『あ、あの……最後にちゃんとお礼を言わせてください』[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 182,
+      "raw": "_　別に敬語は使わなくていいよと言っても、結局最後までその言葉遣いを変えなかった妹。[p]",
+      "translated": ""
+    },
+    {
+      "line": 184,
+      "raw": "_　少しの間があり、チャット欄に表示された文字に我が目を疑った。[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 186,
+      "raw": "『直接伝えたいので……えっと、ボイスチャットしてもいいですか？』[p]",
+      "translated": ""
+    },
+    {
+      "line": 188,
+      "raw": "_　このゲームではパーティーを組むと、そのパーティー内でボイスチャットができる。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 189,
+      "raw": "_　妹の真意が全く分からないまま、俺にはマイクがないからと咄嗟に嘘をつき、それでもいいならと伝える。[p]",
+      "translated": ""
+    },
+    {
+      "line": 191,
+      "raw": "_　そこから少し間を置いて、ガサゴソとヘッドホンからノイズが流れたかと思ったら――[p]",
+      "translated": ""
+    },
+    {
+      "line": 194,
+      "raw": "「あ……あの……聴こえていますか？」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 196,
+      "raw": "_　その透き通った声が、俺の耳に届いた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 199,
+      "raw": "_　普段から聞き慣れているはずのその声は、俺の知っている妹の、俺の知らない妹の声だった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 201,
+      "raw": "「もっ……もしかするとこれで最後かもしれないので……ちゃんとお礼が言いたくて……」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 203,
+      "raw": "「あと、ごめんなさい……おにいちゃんにボイスチャットしてるの気付かれると恥ずかしいから……小声になっちゃいます」[p]",
+      "translated": ""
+    },
+    {
+      "line": 205,
+      "raw": "_　できる限り小さな声を拾うようにマイクを近づけているのか、吐息混じりの声がヘッドホンから直接脳を揺さぶってきた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 206,
+      "raw": "_　普段とは違う妹の声……。[l]それを聴く度に俺の中の何かが熱を帯び、昂ってくるのを感じる……。[p]",
+      "translated": ""
+    },
+    {
+      "line": 208,
+      "raw": "「本当はトライアルだけで終わろうと思ってたんですけど……」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 210,
+      "raw": "_　実はこの一週間で気になっていたことはあった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 211,
+      "raw": "_　妹は俺のキャラクターに……その先にいる者に好意を持っているんじゃないかと。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 212,
+      "raw": "_　そして好意は、友達へのものではなく、異性へ向けたものではないかと。[p]",
+      "translated": ""
+    },
+    {
+      "line": 214,
+      "raw": "_　そんなわけないかとも思っていたし、もしそうであっても色恋沙汰に耐性を持っていない妹なら逆に納得もしていたが、今の妹の声を聴いて確信めいた何かが脳裏をよぎった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 215,
+      "raw": "_　恐らく無自覚であろう妹のその声からは、紛れもなく女のそれが漏れ出ていた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 216,
+      "raw": "_　今まで聞いたことない猫なで声を出す、そんな妹の性に、俺は言い知れぬ興奮を覚えていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 218,
+      "raw": "_　そんな目で妹を見たことはなかった。[l]少なくとも自分ではそう思っていたはずなのに……。[p]",
+      "translated": ""
+    },
+    {
+      "line": 220,
+      "raw": "_　妹の口から媚薬のような声が漏れ出る度に、俺の息は荒くなり、気が付くと陰茎は痛いくらいに膨張していた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 222,
+      "raw": "_　その恐ろしく甘い声色を……吐息を鼓膜から浴びる度に忌避感は形を変え、気が付くと俺の手は自分自身を包み、上下へと動かしていた。[l][r]",
+      "translated": ""
+    },
+    {
+      "line": 223,
+      "raw": "_　今まで経験したことのない、鮮烈で背徳的な感情に支配されていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 226,
+      "raw": "「でも、続けるならおにいちゃんに相談した方がいいと思うから……」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 228,
+      "raw": "_　もはやなにを話しているかは理解していなかった。ただ、『おにいちゃん』という言葉が響く度に、加速度的に俺の中で何かが壊れていった。[p]",
+      "translated": ""
+    },
+    {
+      "line": 230,
+      "raw": "「それじゃあ……本当にありがとうございました……！　おやすみなさい……」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 232,
+      "raw": "_　妹のアバターがログアウトして消えたモニターには、白濁した俺の罪悪感がどろりと張り付いていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 233,
+      "raw": "_　欲望を一度吐き出してなお、反り立ったソレに手を添える。[l]妹への罪悪感も、自身への嫌悪感も、何もかも全てが今は麻薬のように強く背徳への依存を誘っていた。[p]",
+      "translated": ""
+    },
+    {
+      "line": 236,
+      "raw": "_　――もっと……もっと妹の声が聴きたい。[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 238,
+      "raw": "_　――もっと……妹を近くで味わいたい。[p]",
+      "translated": ""
+    },
+    {
+      "line": 252,
+      "raw": "「おはよう、おにいちゃん」[l][r][r]",
+      "translated": ""
+    },
+    {
+      "line": 261,
+      "raw": "「あ、そうだっ、おにいちゃん、ちょっとあとで相談があるんだけど……」",
+      "translated": ""
+    },
+    {
+      "line": 281,
+      "raw": "――もっと……お[ruby text=\"妹\" x=-14]前の[ruby text=\"メス\"]色を感じさせてくれ。",
+      "translated": ""
+    }
+  ]
+}
