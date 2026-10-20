@@ -3,13 +3,13 @@
 
 [resetfont]
 [free name="chara_name_area" layer="message0" ]
-[ptext name="chara_name_area" layer="message0" color="white" size=28 bold=true x=270 y=560]
+[ptext name="chara_name_area" layer="message0" color="white" size=19 bold=true x=180 y=466]
 [chara_config ptext="chara_name_area"]
 
-[position layer="message0" width=800 height=136 top=530 left=240 margint=10 marginl=70 marginr=70 marginb=60 opacity=204 page="fore"]
+[position layer="message0" width=960 height=155 top=510 left=160 margint=20 marginl=35 marginr=45 marginb=20 opacity=215 page="fore"]
 [layopt layer="message" visible=false]
 #
-[glyph line="nextpage.png" folder="data/image" fix=true left=980 top=606 ]
+[glyph line="nextpage.png" folder="data/image" fix=true left=1075 top=620 ]
 
 [freeimage layer="0"]
 

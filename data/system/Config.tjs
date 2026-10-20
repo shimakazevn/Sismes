@@ -71,8 +71,8 @@
 ;frameOpacity=255
 ;defaultAutoReturn=true
 ;marginRCh=2
-;defaultFontSize=28
-;defaultLineSpacing=8
+;defaultFontSize=21
+;defaultLineSpacing=7
 ;defaultPitch=0
 ;userFace=Nunito, M PLUS Rounded 1c, AlpenFontFree, TekitouPoem, sans-serif
 ;defaultChColor=0xfefefe

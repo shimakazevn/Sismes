@@ -32,6 +32,12 @@
 
 [bg storage="heya.png" time=10 position="center"]
 
+[free name="chara_name_area" layer="message0" ]
+[ptext name="chara_name_area" layer="message0" color="white" size=19 bold=true x=180 y=466]
+[chara_config ptext="chara_name_area"]
+[position layer="message0" width=960 height=155 top=510 left=160 margint=20 marginl=35 marginr=45 marginb=20 opacity=215 page="fore"]
+[glyph line="nextpage.png" folder="data/image" fix=true left=1075 top=620 ]
+
 [iscript]
 	if (document.getElementById("sysmes_save_outer")) document.getElementById("sysmes_save_outer").remove()
 	SISMES.createStatusDisplay()

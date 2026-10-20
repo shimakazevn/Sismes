@@ -65,9 +65,9 @@
 [VRoid_camera_move layerID=VRoid x=-0.2359372 y=1.1012402 z=1.3016674 rotX=-0.1753484 rotY=-0.1925549 rotZ=0.4 wait=false time=10000 easing="easeInOutSine"]
 
 [free name="chara_name_area" layer="message0" ]
-[ptext name="chara_name_area" layer="message0" color="white" size=28 bold=true x=70 y=260]
-[position layer="message0" width=500 height=136 top=230 left=40 margint=10 marginl=70 marginr=60 marginb=60 opacity=204 page="fore"]
-[glyph line="nextpage.png" folder="data/image" fix=true left=480 top=306 ]
+[ptext name="chara_name_area" layer="message0" color="white" size=19 bold=true x=60 y=190]
+[position layer="message0" width=600 height=155 top=230 left=40 margint=20 marginl=30 marginr=35 marginb=20 opacity=215 page="fore"]
+[glyph line="nextpage.png" folder="data/image" fix=true left=595 top=345 ]
 
 
 
