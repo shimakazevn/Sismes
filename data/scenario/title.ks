@@ -68,7 +68,8 @@
 [button name="sismes_config" width=50 x=1220 y=10 graphic="config.png" exp="sismes.config()" role="dummy"]
 
 [iscript]
-	$(".layer_free").append("<div id='version'>Ver 1.01</div><div id='cien_link' class='btn_white'>Ci-en</div>")
+	$(".layer_free").append("<div id='version'>Ver 1.01</div><div id='cien_link' class='btn_white'>Ci-en</div><div id='pwa_title_btn' class='btn_white'>📲 Cài đặt App</div>")
+	$("#pwa_title_btn").on("click", function(e){ if (window.promptPWAInstall) window.promptPWAInstall(); });
 	
 	let locked = false
 	$("#cien_link").on("click", function(e){
