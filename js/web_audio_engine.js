@@ -265,6 +265,10 @@
                     }
                 } catch(e) {}
 
+                if (audioBufferCache.size >= 8) {
+                    const oldestKey = audioBufferCache.keys().next().value;
+                    audioBufferCache.delete(oldestKey);
+                }
                 audioBufferCache.set(cacheKey, decodedBuffer);
                 return decodedBuffer;
             } finally {
@@ -429,6 +433,12 @@
             }
             const blob = new Blob([rawBytes], { type: mimeType });
             const blobUrl = URL.createObjectURL(blob);
+            if (blobUrlCache.size >= 4) {
+                const oldest = blobUrlCache.keys().next().value;
+                const oldBlob = blobUrlCache.get(oldest);
+                try { URL.revokeObjectURL(oldBlob); } catch(e) {}
+                blobUrlCache.delete(oldest);
+            }
             blobUrlCache.set(url, blobUrl);
             return blobUrl;
         } catch(err) {
