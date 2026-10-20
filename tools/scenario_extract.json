@@ -16,18 +16,8 @@
       "translated": ""
     },
     {
-      "line": 27,
-      "raw": "[glink text=\"いいよ\" target=\"ed1_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 36,
       "raw": "お邪魔しまーす……",
-      "translated": ""
-    },
-    {
-      "line": 38,
-      "raw": "[glink text=\"どうした？\" target=\"ed1_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -41,11 +31,6 @@
       "translated": ""
     },
     {
-      "line": 51,
-      "raw": "えっとね？[p]",
-      "translated": ""
-    },
-    {
       "line": 55,
       "raw": "本当はあのオンラインゲーム、[r]",
       "translated": ""
@@ -53,11 +38,6 @@
     {
       "line": 56,
       "raw": "おにいちゃんに相談する前から始めてたんだ",
-      "translated": ""
-    },
-    {
-      "line": 58,
-      "raw": "[glink text=\"そうなんだ\" target=\"ed1_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -116,16 +96,6 @@
       "translated": ""
     },
     {
-      "line": 92,
-      "raw": "[glink text=\"まかせろ\" target=\"ed1_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 99,
-      "raw": "うん……！[p]",
-      "translated": ""
-    },
-    {
       "line": 103,
       "raw": "不束な妹ですが[r]",
       "translated": ""
@@ -133,11 +103,6 @@
     {
       "line": 104,
       "raw": "これからもよろしくお願いします……！[p]",
-      "translated": ""
-    },
-    {
-      "line": 108,
-      "raw": "……ありがとう、おにいちゃん[p]",
       "translated": ""
     },
     {
@@ -158,11 +123,6 @@
     {
       "line": 118,
       "raw": "お仕事で手伝えることがあったらいつでも言ってね？[p]",
-      "translated": ""
-    },
-    {
-      "line": 129,
-      "raw": "――ああ……こちらこそ、よろしくな[p]",
       "translated": ""
     },
     {
@@ -228,24 +188,7 @@
       "translated": ""
     }
   ],
-  "ed3.ks": [
-    {
-      "line": 16,
-      "raw": "…………なんだかいつも以上に静けさを感じる[p]",
-      "translated": ""
-    },
-    {
-      "line": 27,
-      "raw": "…………妹の部屋に鍵が掛かっていないようだ[p]",
-      "translated": ""
-    }
-  ],
   "ed4.ks": [
-    {
-      "line": 15,
-      "raw": "……結局…………[p]",
-      "translated": ""
-    },
     {
       "line": 17,
       "raw": "なんだかんだで『兄妹』を[r]",
@@ -267,242 +210,10 @@
       "translated": ""
     }
   ],
-  "first.ks": [
-    {
-      "line": 2,
-      "raw": "データの読み込み中...",
-      "translated": ""
-    }
-  ],
   "main.ks": [
     {
-      "line": 172,
-      "raw": "[glink color=\"btn_black\"           size=24 width=\"200\" x=840 y=260 target=\"commu\"  text=\"コミュニケーション\" cond=\"SISMES.savedata.status.shinrai >= 0\"]",
-      "translated": ""
-    },
-    {
-      "line": 173,
-      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=260 target=\"select\" text=\"コミュニケーション\" cond=\"SISMES.savedata.status.shinrai < 0\"]",
-      "translated": ""
-    },
-    {
-      "line": 175,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=360 target=\"work\" text=\"仕事\" cond=\"SISMES.savedata.event.shinrai_11\"]",
-      "translated": ""
-    },
-    {
-      "line": 176,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=460 target=\"kyuukei\" text=\"休憩\" cond=\"SISMES.savedata.event.shinrai_11\"]",
-      "translated": ""
-    },
-    {
-      "line": 178,
-      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=360 target=\"select\" text=\"仕事\" cond=\"!SISMES.savedata.event.shinrai_11\"]",
-      "translated": ""
-    },
-    {
-      "line": 179,
-      "raw": "[glink color=\"btn_black disableUI\" size=24 width=\"200\" x=840 y=460 target=\"select\" text=\"休憩\" cond=\"!SISMES.savedata.event.shinrai_11\"]",
-      "translated": ""
-    },
-    {
-      "line": 182,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=260 target=\"tsuhan\" text=\"通販\"]",
-      "translated": ""
-    },
-    {
-      "line": 183,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=360 target=\"skill\" text=\"スキル\"]",
-      "translated": ""
-    },
-    {
-      "line": 184,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=460 target=\"eroStatus\" text=\"妹の様子\"]",
-      "translated": ""
-    },
-    {
-      "line": 189,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=210 target=\"tsuhan\" text=\"通販\"]",
-      "translated": ""
-    },
-    {
-      "line": 191,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=310 target=\"skill\" text=\"スキル\"]",
-      "translated": ""
-    },
-    {
       "line": 193,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=410 target=\"camera\" text=\"隠しカメラ\" cond=\"SISMES.savedata.item['ぬいぐるみ']\"]",
-      "translated": ""
-    },
-    {
-      "line": 195,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=510 target=\"eroStatus\" text=\"妹の様子\"]",
-      "translated": ""
-    },
-    {
-      "line": 270,
-      "raw": "[glink color=\"btn_black commu_1\" size=24 width=\"200\" x=840 y=210 target=\"commu1\" text=\"会話する\"    cond=\"SISMES.savedata.status.hp >= 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 271,
-      "raw": "[glink color=\"btn_black commu_2\" size=24 width=\"200\" x=840 y=310 target=\"commu2\" text=\"勉強をみる\"  cond=\"SISMES.savedata.event.shinrai_20 && SISMES.savedata.status.hp >= 30 && SISMES.savedata.status.shinrai >= 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 272,
-      "raw": "[glink color=\"btn_black commu_3\" size=24 width=\"200\" x=840 y=410 target=\"commu3\" text=\"ゲームする\"  cond=\"SISMES.savedata.event.shinrai_40 && SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.shinrai >= 40\"]",
-      "translated": ""
-    },
-    {
-      "line": 273,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=510 target=\"select\" text=\"戻る\"]",
-      "translated": ""
-    },
-    {
-      "line": 276,
-      "raw": "[glink color=\"btn_black commu_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"commu\" text=\"会話する\"    cond=\"SISMES.savedata.status.hp < 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 277,
-      "raw": "[glink color=\"btn_black commu_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"commu\" text=\"勉強をみる\"  cond=\"!SISMES.savedata.event.shinrai_20 || SISMES.savedata.status.hp < 30 || SISMES.savedata.status.shinrai < 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 278,
-      "raw": "[glink color=\"btn_black commu_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"commu\" text=\"ゲームする\"  cond=\"!SISMES.savedata.event.shinrai_40 || SISMES.savedata.status.hp < 40 || SISMES.savedata.status.shinrai < 40\"]",
-      "translated": ""
-    },
-    {
-      "line": 283,
-      "raw": "\tdocument.querySelector(\".commu_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 284,
-      "raw": "\tdocument.querySelector(\".commu_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：30</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 285,
-      "raw": "\tdocument.querySelector(\".commu_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：40</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 288,
-      "raw": "\t\tdocument.querySelector(\".commu_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※信頼40以上で解放</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 291,
-      "raw": "\t\t\tdocument.querySelector(\".commu_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※信頼20以上で解放</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 398,
-      "raw": "\t[glink color=\"btn_black work_1\" size=24 width=\"200\" x=840 y=210 target=\"work1\" text=\"普通\"    cond=\"SISMES.savedata.status.hp >= 25\"]",
-      "translated": ""
-    },
-    {
-      "line": 399,
-      "raw": "\t[glink color=\"btn_black work_2\" size=24 width=\"200\" x=840 y=310 target=\"work2\" text=\"本気\"      cond=\"SISMES.savedata.status.hp >= 50 && SISMES.savedata.status.risei <= 80\"]",
-      "translated": ""
-    },
-    {
-      "line": 400,
-      "raw": "\t[glink color=\"btn_black work_3\" size=24 width=\"200\" x=840 y=410 target=\"work3\" text=\"全力\"      cond=\"SISMES.savedata.status.hp >= 100 && SISMES.savedata.status.risei <= 60\"]",
-      "translated": ""
-    },
-    {
-      "line": 402,
-      "raw": "\t[glink color=\"btn_black work_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"work\" text=\"普通\"  cond=\"SISMES.savedata.status.hp < 25\"]",
-      "translated": ""
-    },
-    {
-      "line": 403,
-      "raw": "\t[glink color=\"btn_black work_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"work\" text=\"本気\"    cond=\"SISMES.savedata.status.hp < 50  || SISMES.savedata.status.risei > 80\"]",
-      "translated": ""
-    },
-    {
-      "line": 404,
-      "raw": "\t[glink color=\"btn_black work_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"work\" text=\"全力\"    cond=\"SISMES.savedata.status.hp < 100 || SISMES.savedata.status.risei > 60\"]",
-      "translated": ""
-    },
-    {
-      "line": 407,
-      "raw": "\t[glink color=\"btn_black work_1\" size=24 width=\"200\" x=840 y=210 target=\"work1\" text=\"普通\"    cond=\"SISMES.savedata.status.hp >= 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 408,
-      "raw": "\t[glink color=\"btn_black work_2\" size=24 width=\"200\" x=840 y=310 target=\"work2\" text=\"本気\"      cond=\"SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.risei <= 80\"]",
-      "translated": ""
-    },
-    {
-      "line": 409,
-      "raw": "\t[glink color=\"btn_black work_3\" size=24 width=\"200\" x=840 y=410 target=\"work3\" text=\"全力\"      cond=\"SISMES.savedata.status.hp >= 80 && SISMES.savedata.status.risei <= 60\"]",
-      "translated": ""
-    },
-    {
-      "line": 411,
-      "raw": "\t[glink color=\"btn_black work_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"work\" text=\"普通\"  cond=\"SISMES.savedata.status.hp < 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 412,
-      "raw": "\t[glink color=\"btn_black work_2 disableUI\" size=24 width=\"200\" x=840 y=310 target=\"work\" text=\"本気\"    cond=\"SISMES.savedata.status.hp < 40 || SISMES.savedata.status.risei > 80\"]",
-      "translated": ""
-    },
-    {
-      "line": 413,
-      "raw": "\t[glink color=\"btn_black work_3 disableUI\" size=24 width=\"200\" x=840 y=410 target=\"work\" text=\"全力\"    cond=\"SISMES.savedata.status.hp < 80 || SISMES.savedata.status.risei > 60\"]",
-      "translated": ""
-    },
-    {
-      "line": 416,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=840 y=510 target=\"select\" text=\"戻る\"]",
-      "translated": ""
-    },
-    {
-      "line": 423,
-      "raw": "\t\tdocument.querySelector(\".work_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：25</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 424,
-      "raw": "\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：50</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 425,
-      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：100</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 427,
-      "raw": "\t\tdocument.querySelector(\".work_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 428,
-      "raw": "\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：40</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 429,
-      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：80</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 433,
-      "raw": "\t\tdocument.querySelector(\".work_3\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※理性60以下で解放</div>\");",
-      "translated": ""
-    },
-    {
-      "line": 436,
-      "raw": "\t\t\tdocument.querySelector(\".work_2\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectInfo'>※理性80以下で解放</div>\");",
+      "raw": "[glink color=\"btn_black\" size=24 width=\"200\" x=240 y=410 target=\"camera\" text=\"Camera\" cond=\"SISMES.savedata.item['ぬいぐるみ']\"]",
       "translated": ""
     }
   ],
@@ -513,18 +224,8 @@
       "translated": ""
     },
     {
-      "line": 63,
-      "raw": "\tおはよう、おにいちゃん[p]",
-      "translated": ""
-    },
-    {
       "line": 76,
       "raw": "\t#妹",
-      "translated": ""
-    },
-    {
-      "line": 77,
-      "raw": "\t……おにいちゃん、おはよう[p]",
       "translated": ""
     },
     {
@@ -553,21 +254,6 @@
       "translated": ""
     },
     {
-      "line": 230,
-      "raw": "[glink color=\"btn_black commu_1\"           size=24 width=\"200\" x=840 y=310 target=\"osawari\" text=\"妹の部屋へ行く\"  cond=\"SISMES.savedata.status.hp >= 20]",
-      "translated": ""
-    },
-    {
-      "line": 231,
-      "raw": "[glink color=\"btn_black commu_1 disableUI\" size=24 width=\"200\" x=840 y=210 target=\"select\"  text=\"妹の部屋へ行く\"   cond=\"SISMES.savedata.status.hp < 20\"]",
-      "translated": ""
-    },
-    {
-      "line": 233,
-      "raw": "[glink color=\"btn_black commu_3\" size=24 width=\"200\" x=840 y=410 target=\"neru\" text=\"寝る\"]",
-      "translated": ""
-    },
-    {
       "line": 246,
       "raw": "\tdocument.querySelector(\".commu_1\")?.insertAdjacentHTML(\"beforeend\", \"<div class='selectHP'>体力：20</div>\");",
       "translated": ""
@@ -575,16 +261,6 @@
     {
       "line": 254,
       "raw": "[jump target=\"not_osawari\" cond=\"SISMES.savedata.status.shinrai < 0 && !SISMES.savedata.item['困った時のピッキング術']\"]",
-      "translated": ""
-    },
-    {
-      "line": 274,
-      "raw": "……妹の部屋には鍵がかかっている[p]",
-      "translated": ""
-    },
-    {
-      "line": 276,
-      "raw": "明日通販で何か使えるものがないか探してみるか[p]",
       "translated": ""
     },
     {
@@ -600,11 +276,6 @@
     {
       "line": 304,
       "raw": "ちょっとあとで相談があるんだけど……",
-      "translated": ""
-    },
-    {
-      "line": 306,
-      "raw": "[glink text=\"なに？\" target=\"firstDay2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -795,11 +466,6 @@
       "translated": ""
     },
     {
-      "line": 17,
-      "raw": "相談なんだけどね、このゲームやっていい……？[p]",
-      "translated": ""
-    },
-    {
       "line": 21,
       "raw": "えっと……月額制だし、オンラインのゲームだから[r]",
       "translated": ""
@@ -845,21 +511,6 @@
       "translated": ""
     },
     {
-      "line": 38,
-      "raw": "[glink text=\"ただし生活リズムは<br>崩さない事！\" target=\"shinrai_11_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 46,
-      "raw": "はーい！[p]",
-      "translated": ""
-    },
-    {
-      "line": 50,
-      "raw": "妹が引きこもり始めてどれだけ経ったか……[p]",
-      "translated": ""
-    },
-    {
       "line": 52,
       "raw": "いつでも社会復帰できるように[r]",
       "translated": ""
@@ -885,18 +536,8 @@
       "translated": ""
     },
     {
-      "line": 89,
-      "raw": "[glink text=\"そういえば\" target=\"shinrai_20_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 97,
       "raw": "#妹",
-      "translated": ""
-    },
-    {
-      "line": 99,
-      "raw": "えっ？　お勉強……？[p]",
       "translated": ""
     },
     {
@@ -930,16 +571,6 @@
       "translated": ""
     },
     {
-      "line": 116,
-      "raw": "[glink text=\"いつでもいいぞ\" target=\"shinrai_20_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 123,
-      "raw": "本当？　やった！[p]",
-      "translated": ""
-    },
-    {
       "line": 127,
       "raw": "さすがにゲームで知り合った人に[r]",
       "translated": ""
@@ -950,16 +581,6 @@
       "translated": ""
     },
     {
-      "line": 132,
-      "raw": "[glink text=\"友達できたの？\" target=\"shinrai_20_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 139,
-      "raw": "え？　あっ、えっと……ひとり、だけ……？[p]",
-      "translated": ""
-    },
-    {
       "line": 143,
       "raw": "でもやっぱり他の人はちょっと怖いから……[r]",
       "translated": ""
@@ -967,11 +588,6 @@
     {
       "line": 144,
       "raw": "その人以外とは全然話してないかな[p]",
-      "translated": ""
-    },
-    {
-      "line": 148,
-      "raw": "なんか、話しやすいんだよね、その人……[p]",
       "translated": ""
     },
     {
@@ -1002,11 +618,6 @@
     {
       "line": 192,
       "raw": "おにいちゃんってもうオンラインゲームしないの？",
-      "translated": ""
-    },
-    {
-      "line": 195,
-      "raw": "[glink text=\"やる時間ないからな\" target=\"shinrai_40_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -1050,11 +661,6 @@
       "translated": ""
     },
     {
-      "line": 220,
-      "raw": "[glink text=\"わかった\" target=\"shinrai_40_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 227,
       "raw": "うん！[r]",
       "translated": ""
@@ -1085,11 +691,6 @@
       "translated": ""
     },
     {
-      "line": 270,
-      "raw": "[glink text=\"寝れてるよ\" target=\"shinrai_60_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 277,
       "raw": "本当？　前よりもお仕事頑張ってるみたいだし[r]",
       "translated": ""
@@ -1097,11 +698,6 @@
     {
       "line": 278,
       "raw": "朝すごい眠そうなときあるからちょっと心配だよ",
-      "translated": ""
-    },
-    {
-      "line": 281,
-      "raw": "[glink text=\"お前はゲーム<br>やりすぎてない？\" target=\"shinrai_60_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -1155,11 +751,6 @@
       "translated": ""
     },
     {
-      "line": 311,
-      "raw": "[glink text=\"個人情報には<br>気を付けろよ\" target=\"shinrai_60_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 318,
       "raw": "う、うん[r]",
       "translated": ""
@@ -1167,11 +758,6 @@
     {
       "line": 319,
       "raw": "その辺は多分……だいじょう……ぶ？[p]",
-      "translated": ""
-    },
-    {
-      "line": 324,
-      "raw": "そ、それよりもおにいちゃんだよ[p]",
       "translated": ""
     },
     {
@@ -1192,11 +778,6 @@
     {
       "line": 334,
       "raw": "おにいちゃんにマッサージしてあげる！",
-      "translated": ""
-    },
-    {
-      "line": 336,
-      "raw": "[glink text=\"マッサージ？\" target=\"shinrai_60_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -1230,11 +811,6 @@
       "translated": ""
     },
     {
-      "line": 386,
-      "raw": "[glink text=\"どうした？\" target=\"shinrai_80_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 393,
       "raw": "うんっ！[r]",
       "translated": ""
@@ -1242,16 +818,6 @@
     {
       "line": 394,
       "raw": "呼んでみただけ！",
-      "translated": ""
-    },
-    {
-      "line": 396,
-      "raw": "[glink text=\"最近ご機嫌だな\" target=\"shinrai_80_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 403,
-      "raw": "あのゲーム始めてよかったよ[p]",
       "translated": ""
     },
     {
@@ -1265,11 +831,6 @@
       "translated": ""
     },
     {
-      "line": 411,
-      "raw": "[glink text=\"それはよかった\" target=\"shinrai_80_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 418,
       "raw": "うん！　おにいちゃんがプレイしていいよって[r]",
       "translated": ""
@@ -1280,11 +841,6 @@
       "translated": ""
     },
     {
-      "line": 423,
-      "raw": "お礼……ってわけじゃないけど……[p]",
-      "translated": ""
-    },
-    {
       "line": 427,
       "raw": "おにいちゃんのお仕事で[r]",
       "translated": ""
@@ -1292,11 +848,6 @@
     {
       "line": 428,
       "raw": "手伝えることがあったらなんでも言ってね[p]",
-      "translated": ""
-    },
-    {
-      "line": 432,
-      "raw": "わたしで役に立てることがあったら頑張るから！[p]",
       "translated": ""
     },
     {
@@ -1312,11 +863,6 @@
     {
       "line": 469,
       "raw": "#妹",
-      "translated": ""
-    },
-    {
-      "line": 472,
-      "raw": "[glink text=\"元気ないな？\" target=\"shinrai_100_1\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -1347,16 +893,6 @@
     {
       "line": 490,
       "raw": "実は迷惑かけてたのかなぁ……",
-      "translated": ""
-    },
-    {
-      "line": 492,
-      "raw": "[glink text=\"そんなに仲良かったの？\" target=\"shinrai_100_2\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 499,
-      "raw": "少なくともわたしは良いと思ってたよ……[p]",
       "translated": ""
     },
     {
@@ -1395,11 +931,6 @@
       "translated": ""
     },
     {
-      "line": 521,
-      "raw": "[glink text=\"もしかして好きだったの？\" target=\"shinrai_100_3\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
       "line": 528,
       "raw": "えっ！？　ええっ！！？[r]",
       "translated": ""
@@ -1410,11 +941,6 @@
       "translated": ""
     },
     {
-      "line": 533,
-      "raw": "た、たぶん…ない、よ[p]",
-      "translated": ""
-    },
-    {
       "line": 535,
       "raw": "ゲーム、凄い上手な人だったから[r]",
       "translated": ""
@@ -1422,11 +948,6 @@
     {
       "line": 536,
       "raw": "かっこいいなーとは思ったけど……っ[p]",
-      "translated": ""
-    },
-    {
-      "line": 540,
-      "raw": "わ、わたし、そういうのよくわからないし……[p]",
       "translated": ""
     },
     {
@@ -1447,11 +968,6 @@
     {
       "line": 548,
       "raw": "わたしって男の人から見たらどう見えるの……？",
-      "translated": ""
-    },
-    {
-      "line": 551,
-      "raw": "[glink text=\"俺はおにいちゃんだからな\" target=\"shinrai_100_4\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
       "translated": ""
     },
     {
@@ -1515,16 +1031,6 @@
       "translated": ""
     },
     {
-      "line": 586,
-      "raw": "[glink text=\"馬車馬のように<br>こき使ってやるぞ\" target=\"shinrai_100_5\" color=\"btn_black\" size=24 width=\"300\" x=840 y=350 ]",
-      "translated": ""
-    },
-    {
-      "line": 593,
-      "raw": "もう、おにいちゃんったら……[p]",
-      "translated": ""
-    },
-    {
       "line": 597,
       "raw": "やっぱりおにいちゃんと[r]",
       "translated": ""
@@ -1546,11 +1052,6 @@
     }
   ],
   "osawari.ks": [
-    {
-      "line": 3,
-      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI okosu\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=180 target=\"okosu\"        text=\"起こす\"      cm=false cond=\"!SISMES.savedata.freeMode && SISMES.savedata.status.risei <= 0 && !SISMES.sis.wakeup\"]",
-      "translated": ""
-    },
     {
       "line": 4,
       "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=240 target=\"clean_seieki\"      text=\"精液を拭き取る\"      cm=false cond=\"SISMES.checkSeishi() > 0\"]",
@@ -1574,11 +1075,6 @@
     {
       "line": 8,
       "raw": "[glink color=\"btn_black\" name=\"styleChangeUI mochiageru\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=480 target=\"style_3\"      text=\"持ち上げる\"  cm=false cond=\"SISMES.data.currentStyle !== 3\"]",
-      "translated": ""
-    },
-    {
-      "line": 9,
-      "raw": "[glink color=\"btn_black\" name=\"styleChangeUI\" exp=\"$('.styleChangeUI').remove()\" size=14 width=200 x=980  y=540 target=\"style_cancel\" text=\"キャンセル\"  cm=false]",
       "translated": ""
     },
     {
@@ -1632,63 +1128,13 @@
       "translated": ""
     },
     {
-      "line": 256,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(10)\"    size=16 width=90 x=100  y=520 target=\"stop_event\" text=\"10秒後\"   cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 257,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(5)\"     size=16 width=90 x=205  y=520 target=\"stop_event\" text=\"5秒後\"    cm=false]",
-      "translated": ""
-    },
-    {
       "line": 258,
       "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_manual\"  exp=\"SISMES.syasei_menu_syasei(0)\"     size=16 width=90 x=310  y=520 target=\"stop_event\" text=\"射精\"     cm=false]",
       "translated": ""
     },
     {
-      "line": 260,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_3\"  exp=\"SISMES.syasei_menu_auto(3)\"    size=16 width=90 x=100  y=570 target=\"stop_event\" text=\"自動 10s\"   cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 261,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_2\"  exp=\"SISMES.syasei_menu_auto(2)\"    size=16 width=90 x=205  y=570 target=\"stop_event\" text=\"自動 5s\"   cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 262,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_1\"  exp=\"SISMES.syasei_menu_auto(1)\"    size=16 width=90 x=310  y=570 target=\"stop_event\" text=\"自動　0s\"   cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 264,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_0\"  exp=\"SISMES.syasei_menu_auto(0)\"    size=16 width=90 x=100  y=620 target=\"stop_event\" text=\"自動 off\"   cm=false]",
-      "translated": ""
-    },
-    {
       "line": 265,
       "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari syasei_auto_menu  syasei_auto_4\"  exp=\"SISMES.syasei_menu_auto(4)\"    size=16 width=90 x=205  y=620 target=\"stop_event\" text=\"同時イキ\"   cm=false cond=\"SISMES.savedata.item['同時イキの極意']\"]",
-      "translated": ""
-    },
-    {
-      "line": 266,
-      "raw": "[glink color=\"btn_black\" name=\"syasei_menu disableOsawari\"  exp=\"SISMES.hide_syasei_menu()\"    size=16 width=90 x=310  y=620 target=\"stop_event\" text=\"＜ 閉じる\"   cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 269,
-      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_kakunin disableOsawari\"    exp=\"SISMES.osawariInfoKakunin()\"         size=12 width=120 x=910 y=90 target=\"stop_event\" text=\"おさわり位置確認\"     cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 270,
-      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_prev    disableOsawari\"    exp=\"SISMES.osawariInfoKakunin_prev()\"    size=12 width=50 x=1050 y=90 target=\"stop_event\" text=\"< 前\"     cm=false]",
-      "translated": ""
-    },
-    {
-      "line": 271,
-      "raw": "[glink color=\"btn_black\" name=\"KakuninInfo_page_button KakuninInfo_page_button_next    disableOsawari\"    exp=\"SISMES.osawariInfoKakunin_next()\"    size=12 width=50 x=1120 y=90 target=\"stop_event\" text=\"次 >\"     cm=false]",
       "translated": ""
     }
   ],
@@ -1824,49 +1270,7 @@
       "translated": ""
     }
   ],
-  "title.ks": [
-    {
-      "line": 60,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=260 target=\"mode_select\" text=\"はじめから\" ]",
-      "translated": ""
-    },
-    {
-      "line": 61,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=360 target=\"load\" text=\"つづきから\" ]",
-      "translated": ""
-    },
-    {
-      "line": 62,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=460 target=\"free_mode\" text=\"フリーモード\" ]",
-      "translated": ""
-    },
-    {
-      "line": 63,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=840 y=560 target=\"close\" text=\"閉じる\"]",
-      "translated": ""
-    },
-    {
-      "line": 66,
-      "raw": "[glink color=\"btn_black\" size=24 width=\"300\" x=240 y=560 storage=\"zenjitsu.ks\" target=\"start\" text=\"前日譚\" cond=\"sf.globalClear\"]",
-      "translated": ""
-    }
-  ],
   "zenjitsu.ks": [
-    {
-      "line": 31,
-      "raw": "_　――――カタカタカタカタカタカタ……。[p]",
-      "translated": ""
-    },
-    {
-      "line": 33,
-      "raw": "_　部屋の中に無機質な音だけが、静寂を一定のリズムで刻んでいた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 37,
-      "raw": "_　この家では俺と妹しか暮らしていない。[l]壁を挟んだ先には、数年前にその主達を失ったまま止まっている空間があり、さらに隣に妹の部屋がある。[p]",
-      "translated": ""
-    },
     {
       "line": 39,
       "raw": "_　こうやってパソコン相手に無心で手を動かすにはうってつけの環境と言えば聞こえはいいかもしれない。[l][r]",
@@ -1875,61 +1279,6 @@
     {
       "line": 40,
       "raw": "_　――ふーっ、と一息つき、キーボードから手を放し、代わりにコーヒーカップへ伸ばす。[l]仕事が一段落ついてしまった。[p]",
-      "translated": ""
-    },
-    {
-      "line": 42,
-      "raw": "_　思考する時間が出来てしまうと、どうしても先の見えないこの生活への不安が襲ってくる。[p]",
-      "translated": ""
-    },
-    {
-      "line": 44,
-      "raw": "_　不慮の事故で亡くなってしまった両親が残したこの家で、俺は住宅ローンという名の足枷にあと十数年は繋がれたままの状態だ。[l]そんな中で自分の奨学金も返しながら、決して多くない貯金を少しずつ切り崩していた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 45,
-      "raw": "_　家の売却も考えたが、両親と暮らしたこの家からは出たくないと妹に懇願されてはその選択をできずにいる。[l]……いよいよという時にはそんなこと言ってられないのだが。[p]",
-      "translated": ""
-    },
-    {
-      "line": 47,
-      "raw": "_　そんな妹はというと、最近は随分と情緒が安定した。[l]元々虐めにあっていたこともあり、両親の死をきっかけに引きこもるようになった。[l]その当時は少し目を離したら消えてしまいそうなほど、その目に弱々しい光を宿していた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 48,
-      "raw": "_　妹の前ではなるべく不安にさせないように兄としての振る舞いを続けてきた。[l]気が付けばそんな生活も随分長くなっていた。そのおかげか、今では両親がいたときのように笑顔ものぞかせ、立ち直っているようにも見えるが不登校は相変わらずだった。[p]",
-      "translated": ""
-    },
-    {
-      "line": 50,
-      "raw": "_　……とはいえ本人は勉強も自分で調べながらしているし、俺の言いつけを守って生活時間は崩さず、なるべく自堕落にならないようにしている。[l]基本的には優等生な気質なのだ。[p]",
-      "translated": ""
-    },
-    {
-      "line": 51,
-      "raw": "_　贅沢も言わないし、何か金を使うときは必ず俺に相談をする。[l]逆に何か欲しいものはないかと聞いても生活必需品以上のものはほとんど出てこない。[p]",
-      "translated": ""
-    },
-    {
-      "line": 52,
-      "raw": "_　それはそれで不健全だろうと、そんな状況に置いてしまっていることにも、もどかしさを感じていた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 55,
-      "raw": "_　そんな日々は次第に色あせて見えていった。[l]全てが灰色の世界だ。[p]",
-      "translated": ""
-    },
-    {
-      "line": 56,
-      "raw": "_　別に絶望しているわけでもない。[l]でも希望があるわけでもない。[l]無着色な景色。[l]それが日常になっていた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 60,
-      "raw": "_　――ガチャ。[p]",
       "translated": ""
     },
     {
@@ -1950,21 +1299,6 @@
     {
       "line": 66,
       "raw": "_　俺も何か適当なものを腹に入れるため、部屋の外へ足を向けた。[p]",
-      "translated": ""
-    },
-    {
-      "line": 70,
-      "raw": "_　廊下に出ると、ついさっき出て行ったであろう妹の影は見当たらなかった。[l]リビングの先のキッチンへ向かおうと、妹の部屋の前を横切る。[p]",
-      "translated": ""
-    },
-    {
-      "line": 72,
-      "raw": "_　最近では秋の訪れを感じられるほど涼しくなり、エアコンの必要がない妹の部屋のドアは開けっ放しだった。[p]",
-      "translated": ""
-    },
-    {
-      "line": 73,
-      "raw": "_　Ｔシャツ一枚で過ごすというズボラな面はあるが、部屋はいつも小綺麗に保っていると知っているため、いつもならわざわざその中を覗こうとは思わないのだが……。[p]",
       "translated": ""
     },
     {
@@ -1995,11 +1329,6 @@
     {
       "line": 83,
       "raw": "_　引き籠ってから他者との交流をできる限り避けていた妹が？[p]",
-      "translated": ""
-    },
-    {
-      "line": 85,
-      "raw": "_　そこからは、頭で考えるよりも先に足がノートパソコンへ向かっていた。[p]",
       "translated": ""
     },
     {
@@ -2163,16 +1492,6 @@
       "translated": ""
     },
     {
-      "line": 159,
-      "raw": "_　まず、妹は滅茶苦茶チャットが速い。[l]多分俺よりも速い。[p]",
-      "translated": ""
-    },
-    {
-      "line": 160,
-      "raw": "_　理由を聞いたら、暇つぶしにタイピングゲームをやっていることが多かったかららしい。[l]……これは知らなかった。[p]",
-      "translated": ""
-    },
-    {
       "line": 162,
       "raw": "_　それと思ったよりも他人への振る舞いができている。[l]むしろ自然なほどだ。[l][r]",
       "translated": ""
@@ -2223,11 +1542,6 @@
       "translated": ""
     },
     {
-      "line": 182,
-      "raw": "_　別に敬語は使わなくていいよと言っても、結局最後までその言葉遣いを変えなかった妹。[p]",
-      "translated": ""
-    },
-    {
       "line": 184,
       "raw": "_　少しの間があり、チャット欄に表示された文字に我が目を疑った。[l][r][r]",
       "translated": ""
@@ -2248,18 +1562,8 @@
       "translated": ""
     },
     {
-      "line": 191,
-      "raw": "_　そこから少し間を置いて、ガサゴソとヘッドホンからノイズが流れたかと思ったら――[p]",
-      "translated": ""
-    },
-    {
       "line": 194,
       "raw": "「あ……あの……聴こえていますか？」[l][r][r]",
-      "translated": ""
-    },
-    {
-      "line": 196,
-      "raw": "_　その透き通った声が、俺の耳に届いた。[p]",
       "translated": ""
     },
     {
