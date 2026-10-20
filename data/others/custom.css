@@ -166,32 +166,32 @@ body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textar
 	left: 40px;
 }
 
-#sismes_config_default{
+#sismes_config_default {
 	position: absolute;
 	top: 335px;
 	left: 40px;
 	width: 90px;
-	font-size: 15px;
+	font-size: 13px; padding: 0.5em 0.2em; display: flex; align-items: center; justify-content: center;
 	text-align: center;
 	cursor: pointer;
 }
 
-#sismes_config_full{
+#sismes_config_full {
 	position: absolute;
 	top: 335px;
 	left: 146px;
 	width: 90px;
-	font-size: 15px;
+	font-size: 13px; padding: 0.5em 0.2em; display: flex; align-items: center; justify-content: center;
 	text-align: center;
 	cursor: pointer;
 }
 
-#sismes_config_title{
+#sismes_config_title {
 	position: absolute;
 	top: 335px;
 	left: 252px;
 	width: 90px;
-	font-size: 15px;
+	font-size: 13px; padding: 0.5em 0.2em; display: flex; align-items: center; justify-content: center;
 	text-align: center;
 	cursor: pointer;
 }
@@ -1420,41 +1420,39 @@ body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textar
 	left:1020px;
 }
 
-#sysmes_eroStatus_container{
+#sysmes_eroStatus_container {
 	position:absolute;
 	top:50%;
-	left:40px;
+	left:30px;
 	transform:translateY(-50%);
-
 	display:flex;
 	flex-direction:column;
-	gap:20px;	/* 2つの間隔 */
-	width:340px;
-	
-	line-height: 32px;
+	gap:15px;
+	width:390px;
+	line-height: 28px;
 }
 
-#sysmes_eroStatus_imouto{
-	font-size: 22px;
+#sysmes_eroStatus_imouto {
+	font-size: 18px;
 }
 
-.sysmes_eroStatus_imouto_left{
+.sysmes_eroStatus_imouto_left {
 	display: inline-block;
 	text-align: right;
-	width: 66%;
+	width: 72%;
 }
-.sysmes_eroStatus_imouto_right{
+.sysmes_eroStatus_imouto_right {
 	display: inline-block;
 	text-align: right;
-	width: 34%;
+	width: 28%;
 	white-space: nowrap;
 }
 
-#sysmes_eroStatus_sintyoku{
-	width:320px;
-	font-size:22px;
+#sysmes_eroStatus_sintyoku {
+	width:380px;
+	font-size:17px;
 	text-align:left;
-	line-height:30px;
+	line-height:24px;
 }
 
 
