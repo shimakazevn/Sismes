@@ -1,5 +1,5 @@
 [nowait]
-データの読み込み中...
+Đang tải dữ liệu trò chơi...
 
 [layopt layer=0 visible=true]
 [layopt layer=1 visible=true]

@@ -28,36 +28,36 @@
 [layopt layer="message" visible=true]
 
 
-_　――――カタカタカタカタカタカタ……。[p]
+_　――――Lách cách, lách cách, lách cách……。[p]
 
-_　部屋の中に無機質な音だけが、静寂を一定のリズムで刻んでいた。[p]
+_　Trong căn phòng tĩnh mịch, chỉ có tiếng gõ phím vô hồn đều đặn phá vỡ màn đêm yên ắng。[p]
 
 [bg storage="heya.png" time=1000 position="center"]
 
-_　この家では俺と妹しか暮らしていない。[l]壁を挟んだ先には、数年前にその主達を失ったまま止まっている空間があり、さらに隣に妹の部屋がある。[p]
+_　Căn nhà này giờ đây chỉ còn lại hai anh em tôi nương tựa vào nhau。[l]Cách một bức tường là căn phòng của bố mẹ, nơi không gian dường như ngưng đọng kể từ khi họ qua đời vài năm trước, và ngay sát cạnh đó là phòng của em gái tôi。[p]
 
 _　こうやってパソコン相手に無心で手を動かすにはうってつけの環境と言えば聞こえはいいかもしれない。[l][r]
 _　――ふーっ、と一息つき、キーボードから手を放し、代わりにコーヒーカップへ伸ばす。[l]仕事が一段落ついてしまった。[p]
 
-_　思考する時間が出来てしまうと、どうしても先の見えないこの生活への不安が襲ってくる。[p]
+_　Mỗi khi có chút thời gian rảnh rỗi để suy nghĩ, nỗi bất an về một tương lai mờ mịt phía trước lại ùa về bủa vây lấy tôi。[p]
 
-_　不慮の事故で亡くなってしまった両親が残したこの家で、俺は住宅ローンという名の足枷にあと十数年は繋がれたままの状態だ。[l]そんな中で自分の奨学金も返しながら、決して多くない貯金を少しずつ切り崩していた。[p]
-_　家の売却も考えたが、両親と暮らしたこの家からは出たくないと妹に懇願されてはその選択をできずにいる。[l]……いよいよという時にはそんなこと言ってられないのだが。[p]
+_　Trong căn nhà mà cha mẹ đột ngột qua đời vì tai nạn để lại, tôi vẫn còn bị trói buộc bởi gông cùm mang tên khoản nợ trả góp mua nhà suốt hơn chục năm nữa。[l]Vừa phải gánh khoản nợ đó, vừa trả tiền vay học phí đại học, tôi đành phải cắn răng bòn rút dần chút tiền tiết kiệm ít ỏi của mình。[p]
+_　Tôi cũng từng tính đến chuyện bán quách căn nhà đi, nhưng mỗi lần nhìn thấy em gái khẩn khoản van xin không muốn rời xa nơi từng sống cùng cha mẹ, tôi lại không đành lòng đưa ra quyết định đó。[l]...Dù rằng nếu đến bước đường cùng thì chẳng thể nào chiều theo ý con bé mãi được。[p]
 
-_　そんな妹はというと、最近は随分と情緒が安定した。[l]元々虐めにあっていたこともあり、両親の死をきっかけに引きこもるようになった。[l]その当時は少し目を離したら消えてしまいそうなほど、その目に弱々しい光を宿していた。[p]
-_　妹の前ではなるべく不安にさせないように兄としての振る舞いを続けてきた。[l]気が付けばそんな生活も随分長くなっていた。そのおかげか、今では両親がいたときのように笑顔ものぞかせ、立ち直っているようにも見えるが不登校は相変わらずだった。[p]
+_　Còn về phần em gái tôi, dạo gần đây tâm trạng của con bé đã ổn định hơn trước rất nhiều。[l]Vốn dĩ từng bị bạn bè bắt nạt ở trường, lại thêm cú sốc cha mẹ đột ngột qua đời, con bé đã bắt đầu tự nhốt mình trong phòng, không chịu bước chân ra ngoài。[l]Vào thời điểm đó, trong ánh mắt con bé le lói những tia nhìn yếu ớt, mong manh đến mức chỉ cần rời mắt đi một chút thôi là tưởng như con bé sẽ tan biến mất。[p]
+_　Trước mặt em gái, tôi luôn cố gắng tỏ ra vững vàng để con bé không phải lo lắng, làm tròn bổn phận của một người anh trai。[l]Thấm thoát mà cuộc sống như vậy cũng đã kéo dài suốt bao lâu nay. Nhờ vậy mà giờ đây con bé đôi lúc đã nở nụ cười như thuở cha mẹ còn sống, trông có vẻ đã dần gượng dậy được, thế nhưng chuyện không chịu đi học thì vẫn chẳng có gì thay đổi。[p]
 
-_　……とはいえ本人は勉強も自分で調べながらしているし、俺の言いつけを守って生活時間は崩さず、なるべく自堕落にならないようにしている。[l]基本的には優等生な気質なのだ。[p]
-_　贅沢も言わないし、何か金を使うときは必ず俺に相談をする。[l]逆に何か欲しいものはないかと聞いても生活必需品以上のものはほとんど出てこない。[p]
-_　それはそれで不健全だろうと、そんな状況に置いてしまっていることにも、もどかしさを感じていた。[p]
-
-
-_　そんな日々は次第に色あせて見えていった。[l]全てが灰色の世界だ。[p]
-_　別に絶望しているわけでもない。[l]でも希望があるわけでもない。[l]無着色な景色。[l]それが日常になっていた。[p]
+_　...Dù vậy, bản thân con bé vẫn tự giác tìm tòi học hành, luôn tuân theo lời tôi dặn dò, giữ đúng thời gian biểu sinh hoạt và cố gắng không để bản thân trở nên sa đọa, lười biếng。[l]Về bản chất, con bé vốn là một đứa trẻ ngoan ngoãn và chăm chỉ。[p]
+_　Con bé chẳng bao giờ đòi hỏi xa xỉ, mỗi khi cần tiêu tiền việc gì đều nhất nhất hỏi ý kiến của tôi。[l]Ngược lại, dẫu tôi có chủ động hỏi xem con bé có thích thứ gì không, thì ngoài những nhu yếu phẩm sinh hoạt cơ bản ra, con bé gần như chẳng bao giờ đòi hỏi gì thêm。[p]
+_　Một đứa trẻ ở tuổi ấy mà như vậy thì cũng chẳng hề lành mạnh chút nào, nghĩ đến việc chính hoàn cảnh khốn khó này đã đẩy con bé vào tình cảnh ấy, lòng tôi lại không khỏi trào dâng cảm giác xót xa, bứt rứt。[p]
 
 
+_　Những ngày tháng ấy cứ thế dần trở nên nhạt nhòa, bạc màu。[l]Mọi thứ xung quanh như chìm trong một thế giới xám xịt。[p]
+_　Chẳng hẳn là tuyệt vọng đến cùng cực。[l]Nhưng cũng chẳng hề có lấy một tia hy vọng。[l]Một khung cảnh không sắc màu。[l]Và nó đã trở thành cuộc sống thường nhật của tôi。[p]
 
-_　――ガチャ。[p]
+
+
+_　――Cạch。[p]
 
 _　静まり返った部屋に、遠くでドアの開く音がかすかに響いた。[l][r]
 _　そのおかげで際限のない思考から引き戻された俺は、モニターの端に映し出された時刻に視線を落とす。[p]
@@ -67,10 +67,10 @@ _　俺も何か適当なものを腹に入れるため、部屋の外へ足を�
 
 [bg storage="rouka.png" time=1000 position="center"]
 
-_　廊下に出ると、ついさっき出て行ったであろう妹の影は見当たらなかった。[l]リビングの先のキッチンへ向かおうと、妹の部屋の前を横切る。[p]
+_　Bước ra hành lang, tôi không thấy bóng dáng của em gái đâu cả。[l]Trong lúc đi ngang qua trước cửa phòng em gái để hướng về phía nhà bếp cạnh phòng khách...[p]
 
-_　最近では秋の訪れを感じられるほど涼しくなり、エアコンの必要がない妹の部屋のドアは開けっ放しだった。[p]
-_　Ｔシャツ一枚で過ごすというズボラな面はあるが、部屋はいつも小綺麗に保っていると知っているため、いつもならわざわざその中を覗こうとは思わないのだが……。[p]
+_　Dạo gần đây tiết trời đã chuyển mát mẻ báo hiệu mùa thu sang, không cần bật điều hòa nữa nên cửa phòng của em gái vẫn đang mở toang。[p]
+_　Con bé có thói quen xuề xòa là chỉ mặc mỗi chiếc áo phông khi ở trong phòng, nhưng phòng ốc thì lúc nào cũng được dọn dẹp ngăn nắp sạch sẽ, thế nên bình thường tôi chẳng bao giờ tò mò dòm ngó vào trong làm gì, vậy mà...[p]
 
 [bg storage="kuro.png" time=1000]
 
@@ -82,7 +82,7 @@ _　そう言えば最近また大型アップデートが来たとかＷｅｂ�
 _　そんなことより妹がオンラインゲーム？[l][r]
 _　引き籠ってから他者との交流をできる限り避けていた妹が？[p]
 
-_　そこからは、頭で考えるよりも先に足がノートパソコンへ向かっていた。[p]
+_　Chưa kịp nghĩ ngợi gì thêm, đôi chân tôi đã tự động bước về phía chiếc máy tính xách tay。[p]
 _　……その画面には間違いなく俺の知っているゲームが映し出されており、中央には初心者マークのアイコンが付いたキャラクターが鎮座していた。[p]
 _　もしかしたら誰かの配信画面が映っているだけとも考えたが、キャラクターを動かさない範囲で操作するときちんとゲームが反応を示した。[p]
 
@@ -156,8 +156,8 @@ _　それから近くの安全な街まで連れて行き、何をすればい�
 _　そんな出来事から一週間が過ぎようとしていた。[l][r]
 _　その間、仕事の隙間を縫ってはゲームにログインし、妹と遊んでいるうちに色々と気付いたことがあった。[p]
 
-_　まず、妹は滅茶苦茶チャットが速い。[l]多分俺よりも速い。[p]
-_　理由を聞いたら、暇つぶしにタイピングゲームをやっていることが多かったかららしい。[l]……これは知らなかった。[p]
+_　Điều đầu tiên là, con bé gõ phím nhắn tin cực kỳ nhanh。[l]Có khi còn nhanh hơn cả tôi nữa。[p]
+_　Lúc gặng hỏi thì con bé bảo là lúc rảnh rỗi thường hay chơi mấy trò tập gõ phím để giết thời gian。[l]...Chuyện này thì đúng là trước giờ tôi không hề hay biết。[p]
 
 _　それと思ったよりも他人への振る舞いができている。[l]むしろ自然なほどだ。[l][r]
 _　他者との交流を何年も避けていたであろう妹が、意外なほどコミュニケーションが上手かった。[p]
@@ -179,7 +179,7 @@ _　トライアル期間が２４時に終わるとはいえ、生活時間を�
 
 『あ、あの……最後にちゃんとお礼を言わせてください』[l][r][r]
 
-_　別に敬語は使わなくていいよと言っても、結局最後までその言葉遣いを変えなかった妹。[p]
+_　Dù tôi có bảo là không cần dùng kính ngữ khách sáo đâu, nhưng rốt cuộc con bé vẫn giữ cách nói chuyện lễ phép ấy cho đến tận phút cuối。[p]
 
 _　少しの間があり、チャット欄に表示された文字に我が目を疑った。[l][r][r]
 
@@ -188,12 +188,12 @@ _　少しの間があり、チャット欄に表示された文字に我が目�
 _　このゲームではパーティーを組むと、そのパーティー内でボイスチャットができる。[l][r]
 _　妹の真意が全く分からないまま、俺にはマイクがないからと咄嗟に嘘をつき、それでもいいならと伝える。[p]
 
-_　そこから少し間を置いて、ガサゴソとヘッドホンからノイズが流れたかと思ったら――[p]
+_　Sau một thoáng ngập ngừng, từ chiếc tai nghe phát ra vài tiếng sột soạt rè rè, và rồi――[p]
 
 
 「あ……あの……聴こえていますか？」[l][r][r]
 
-_　その透き通った声が、俺の耳に届いた。[p]
+_　Một giọng nói trong trẻo, khẽ khàng truyền thẳng vào tai tôi。[p]
 
 
 _　普段から聞き慣れているはずのその声は、俺の知っている妹の、俺の知らない妹の声だった。[p]

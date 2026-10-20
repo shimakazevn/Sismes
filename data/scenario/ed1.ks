@@ -24,7 +24,7 @@
 #妹
 おにいちゃん、入ってもいい？
 
-[glink text="いいよ" target="ed1_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Cứ vào đi" target="ed1_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *ed1_1
@@ -35,7 +35,7 @@
 [layopt layer="message" visible=true]
 お邪魔しまーす……
 
-[glink text="どうした？" target="ed1_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Có chuyện gì thế em?" target="ed1_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *ed1_2
@@ -48,14 +48,14 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_02" time=600 easing="ease" wait=false]
 
-えっとね？[p]
+Ừm thì...[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_04_B, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
 本当はあのオンラインゲーム、[r]
 おにいちゃんに相談する前から始めてたんだ
 
-[glink text="そうなんだ" target="ed1_3" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Vậy à..." target="ed1_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *ed1_3
@@ -89,14 +89,14 @@
 
 ずっと支えててくれると嬉しいな……
 
-[glink text="まかせろ" target="ed1_4" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Cứ tin ở anh" target="ed1_4" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *ed1_4
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-うん……！[p]
+Dạ vâng...![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_01_A, n/emo_Sekimen_050" time=600 easing="easeOutQuint" wait=false]
 
@@ -105,7 +105,7 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_04_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-……ありがとう、おにいちゃん[p]
+...Em cảm ơn anh nhiều lắm, anh trai.[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_04_B, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
@@ -126,7 +126,7 @@
 [layopt layer="message" visible=true]
 …………[p]
 
-――ああ……こちらこそ、よろしくな[p]
+――Ừ... anh cũng nhờ em chiếu cố nhé.[p]
 [layopt layer="message" visible=false]
 
 

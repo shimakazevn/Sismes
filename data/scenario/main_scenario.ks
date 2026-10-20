@@ -14,7 +14,7 @@
 [layopt layer="message" visible=true]
 #妹
 
-相談なんだけどね、このゲームやっていい……？[p]
+Em muốn hỏi ý kiến anh một chút... Em chơi thử tựa game này có được không anh...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_01_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
@@ -35,7 +35,7 @@
 やった！[r]
 ありがとう、おにいちゃん！
 
-[glink text="ただし生活リズムは<br>崩さない事！" target="shinrai_11_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Nhưng không được làm xáo trộn<br>giờ giấc sinh hoạt đâu đấy!" target="shinrai_11_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_11_2
@@ -43,11 +43,11 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_06_A, n/emo_Cheek_100" time=600 easing="easeOutQuint" wait=false]
 
-はーい！[p]
+Vâng ạ![p]
 
 
 #
-妹が引きこもり始めてどれだけ経ったか……[p]
+Đã bao lâu kể từ ngày em gái bắt đầu tự nhốt mình trong phòng rồi nhỉ...[p]
 
 いつでも社会復帰できるように[r]
 生活時間を守り、それなりの勉強をすると約束している[p]
@@ -86,7 +86,7 @@
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 
-[glink text="そういえば" target="shinrai_20_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Nhắc mới nhớ..." target="shinrai_20_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_20_1
@@ -96,7 +96,7 @@
 [layopt layer="message" visible=true]
 #妹
 
-えっ？　お勉強……？[p]
+Dạ? Việc học ạ...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A" time=600 easing="ease" wait=false]
 
@@ -113,14 +113,14 @@
 おにいちゃん、お仕事の邪魔じゃなかったら[r]
 たまにお勉強教えてほしいな……
 
-[glink text="いつでもいいぞ" target="shinrai_20_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Lúc nào cũng được cả" target="shinrai_20_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_20_2
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-本当？　やった！[p]
+Thật ạ? Tuyệt quá đi mất![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_B" time=600 easing="ease" wait=false]
 
@@ -129,14 +129,14 @@
 
 
 
-[glink text="友達できたの？" target="shinrai_20_3" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Em kết bạn được rồi à?" target="shinrai_20_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_20_3
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-え？　あっ、えっと……ひとり、だけ……？[p]
+Dạ? À, ừm thì... chỉ có một người thôi ạ...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" time=600 easing="ease" wait=false]
 
@@ -145,7 +145,7 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_01_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-なんか、話しやすいんだよね、その人……[p]
+Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
@@ -192,7 +192,7 @@
 おにいちゃんってもうオンラインゲームしないの？
 
 
-[glink text="やる時間ないからな" target="shinrai_40_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Anh không có thời gian cày đâu" target="shinrai_40_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_40_1
@@ -217,7 +217,7 @@
 あ、でもおにいちゃん強いから[r]
 協力系のゲームがいいな
 
-[glink text="わかった" target="shinrai_40_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Được rồi" target="shinrai_40_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_40_2
@@ -267,7 +267,7 @@
 
 おにいちゃん最近ちゃんと寝れてる？
 
-[glink text="寝れてるよ" target="shinrai_60_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Anh ngủ đủ giấc mà" target="shinrai_60_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_60_1
@@ -278,7 +278,7 @@
 朝すごい眠そうなときあるからちょっと心配だよ
 
 
-[glink text="お前はゲーム<br>やりすぎてない？" target="shinrai_60_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Còn em thì sao,<br>có chơi game quá đà không đấy?" target="shinrai_60_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_60_2
@@ -308,7 +308,7 @@
 ……そう言えばわたしって[r]
 逆に色々話しすぎちゃってる気がしてきた……
 
-[glink text="個人情報には<br>気を付けろよ" target="shinrai_60_3" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Phải cẩn thận thông tin cá nhân đấy" target="shinrai_60_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_60_3
@@ -321,7 +321,7 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_02_A" time=600 easing="ease" wait=false]
 
-そ、それよりもおにいちゃんだよ[p]
+M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
@@ -333,7 +333,7 @@
 そうだっ！　これからは寝る前に[r]
 おにいちゃんにマッサージしてあげる！
 
-[glink text="マッサージ？" target="shinrai_60_4" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Mát-xa á?" target="shinrai_60_4" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_60_4
@@ -383,7 +383,7 @@
 #妹
 おにいちゃ～ん！
 
-[glink text="どうした？" target="shinrai_80_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Có chuyện gì thế em?" target="shinrai_80_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_80_1
@@ -393,14 +393,14 @@
 うんっ！[r]
 呼んでみただけ！
 
-[glink text="最近ご機嫌だな" target="shinrai_80_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Dạo này tâm trạng em tốt ghê nhỉ" target="shinrai_80_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_80_2
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_00_B, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-あのゲーム始めてよかったよ[p]
+Em thấy mình bắt đầu chơi tựa game đó là quyết định đúng đắn thật đấy.[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_04_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
@@ -408,7 +408,7 @@
 時間が経つのも、早く感じてね……！
 
 
-[glink text="それはよかった" target="shinrai_80_3" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Thế thì tốt quá rồi" target="shinrai_80_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_80_3
@@ -420,7 +420,7 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_04_A, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-お礼……ってわけじゃないけど……[p]
+Cũng không hẳn là để báo đáp đâu nhưng mà...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_01_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
@@ -429,7 +429,7 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_01_A, n/emo_Cheek_075" time=600 easing="easeOutQuint" wait=false]
 
-わたしで役に立てることがあったら頑張るから！[p]
+Chỉ cần em có thể góp sức giúp ích được cho anh, em sẽ cố gắng hết mình luôn![p]
 
 
 [layopt layer="message" visible=false]
@@ -469,7 +469,7 @@
 #妹
 ……
 
-[glink text="元気ないな？" target="shinrai_100_1" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Trông em có vẻ không được vui nhỉ?" target="shinrai_100_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_100_1
@@ -489,14 +489,14 @@
 もしかして、わたししつこかった……？[r]
 実は迷惑かけてたのかなぁ……
 
-[glink text="そんなに仲良かったの？" target="shinrai_100_2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Hai đứa thân thiết đến thế cơ à?" target="shinrai_100_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_100_2
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B, n/emo_tears_100" time=600 easing="ease" wait=false]
 
-少なくともわたしは良いと思ってたよ……[p]
+Ít nhất thì... em luôn cảm thấy người ấy rất tốt với mình mà...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_A, n/emo_tears_090" time=600 easing="ease" wait=false]
 
@@ -518,7 +518,7 @@ _　君の色で、君の声で、いつか終わりがくるまで……』っ�
 やっぱり男のひとってよくわかんないなぁ……
 
 
-[glink text="もしかして好きだったの？" target="shinrai_100_3" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Không lẽ... em thích người ta rồi à?" target="shinrai_100_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_100_3
@@ -530,14 +530,14 @@ _　君の色で、君の声で、いつか終わりがくるまで……』っ�
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_03_A, n/emo_tears_090, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-た、たぶん…ない、よ[p]
+Ch-Chắc là... không có đâu ạ...[p]
 
 ゲーム、凄い上手な人だったから[r]
 かっこいいなーとは思ったけど……っ[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_B, n/emo_Sekimen_100" time=600 easing="ease" wait=false]
 
-わ、わたし、そういうのよくわからないし……[p]
+V-Với lại em cũng chẳng hiểu mấy chuyện yêu đương đó đâu...[p]
 
 男の子とか……女の子とか……？[r]
 そういうの全然わかんないから……[p]
@@ -548,7 +548,7 @@ _　君の色で、君の声で、いつか終わりがくるまで……』っ�
 わたしって男の人から見たらどう見えるの……？
 
 
-[glink text="俺はおにいちゃんだからな" target="shinrai_100_4" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Dù sao thì anh vẫn là anh trai của em mà" target="shinrai_100_4" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_100_4
@@ -583,14 +583,14 @@ _　君の色で、君の声で、いつか終わりがくるまで……』っ�
 ひとりでいるとまた考え込みそうだから[r]
 おにいちゃんのお仕事で気を紛らわせたい！
 
-[glink text="馬車馬のように<br>こき使ってやるぞ" target="shinrai_100_5" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Anh sẽ bắt em làm việc<br>như trâu như ngựa luôn đấy nhé" target="shinrai_100_5" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *shinrai_100_5
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_04_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-もう、おにいちゃんったら……[p]
+Trời ạ, anh trai thật là...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 

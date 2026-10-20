@@ -13,7 +13,7 @@
 
 [layopt layer="message" visible=true]
 
-…………なんだかいつも以上に静けさを感じる[p]
+............Cảm giác tĩnh lặng đến lạ thường, hơn hẳn mọi ngày...[p]
 [layopt layer="message" visible=false]
 
 
@@ -24,7 +24,7 @@
 #
 [layopt layer="message" visible=true]
 
-…………妹の部屋に鍵が掛かっていないようだ[p]
+............Có vẻ như phòng em gái không khóa cửa...[p]
 
 [layopt layer="message" visible=false]
 

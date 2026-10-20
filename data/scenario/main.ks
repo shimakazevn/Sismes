@@ -280,15 +280,15 @@
 [glink_config show_time=0]
 
 [iscript]
-	document.querySelector(".commu_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：20</div>");
-	document.querySelector(".commu_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：30</div>");
-	document.querySelector(".commu_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：40</div>");
+	document.querySelector(".commu_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 20</div>");
+	document.querySelector(".commu_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 30</div>");
+	document.querySelector(".commu_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 40</div>");
 
 	if (SISMES.savedata.status.shinrai < 40) {
-		document.querySelector(".commu_3")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※信頼40以上で解放</div>");
+		document.querySelector(".commu_3")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※Mở khóa khi Tin cậy >= 40</div>");
 
 		if (SISMES.savedata.status.shinrai < 20) {
-			document.querySelector(".commu_2")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※信頼20以上で解放</div>");
+			document.querySelector(".commu_2")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※Mở khóa khi Tin cậy >= 20</div>");
 		}
 	}
 [endscript]
@@ -420,20 +420,20 @@
 
 [iscript]
 	if (SISMES.savedata.status.shinrai < 80) {
-		document.querySelector(".work_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：25</div>");
-		document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：50</div>");
-		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：100</div>");
+		document.querySelector(".work_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 25</div>");
+		document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 50</div>");
+		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 100</div>");
 	} else {
-		document.querySelector(".work_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：20</div>");
-		document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：40</div>");
-		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：80</div>");
+		document.querySelector(".work_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 20</div>");
+		document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 40</div>");
+		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 80</div>");
 	}
 
 	if (SISMES.savedata.status.risei > 60) {
-		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※理性60以下で解放</div>");
+		document.querySelector(".work_3")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※Mở khóa khi Lý trí <= 60</div>");
 
 		if (SISMES.savedata.status.risei > 80) {
-			document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※理性80以下で解放</div>");
+			document.querySelector(".work_2")?.insertAdjacentHTML("beforeend", "<div class='selectInfo'>※Mở khóa khi Lý trí <= 80</div>");
 		}
 	}
 [endscript]

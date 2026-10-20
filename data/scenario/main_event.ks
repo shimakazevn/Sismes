@@ -60,7 +60,7 @@
 	[VRoid_layer_show layerID="VRoid" time=600 wait=true]
 	[layopt layer="message" visible=true]
 	#妹
-	おはよう、おにいちゃん[p]
+	Chào buổi sáng anh trai nhé![p]
 
 
 [else]
@@ -74,7 +74,7 @@
 
 	[layopt layer="message" visible=true]
 	#妹
-	……おにいちゃん、おはよう[p]
+	......Anh trai, buổi sáng tốt lành...[p]
 
 [endif]
 
@@ -227,10 +227,10 @@
 
 [glink_config show_time=300]
 
-[glink color="btn_black commu_1"           size=24 width="200" x=840 y=310 target="osawari" text="妹の部屋へ行く"  cond="SISMES.savedata.status.hp >= 20]
-[glink color="btn_black commu_1 disableUI" size=24 width="200" x=840 y=210 target="select"  text="妹の部屋へ行く"   cond="SISMES.savedata.status.hp < 20"]
+[glink color="btn_black commu_1"           size=24 width="200" x=840 y=310 target="osawari" text="Đến phòng em gái"  cond="SISMES.savedata.status.hp >= 20]
+[glink color="btn_black commu_1 disableUI" size=24 width="200" x=840 y=210 target="select"  text="Đến phòng em gái"   cond="SISMES.savedata.status.hp < 20"]
 
-[glink color="btn_black commu_3" size=24 width="200" x=840 y=410 target="neru" text="寝る"]
+[glink color="btn_black commu_3" size=24 width="200" x=840 y=410 target="neru" text="Đi ngủ"]
 
 
 [button width=50 x=980  y=10 name="sismes_main_button" graphic="save.png"  target="save"]
@@ -271,9 +271,9 @@
 #
 [layopt layer="message" visible=true]
 
-……妹の部屋には鍵がかかっている[p]
+......Cửa phòng em gái đã bị khóa chốt rồi.[p]
 
-明日通販で何か使えるものがないか探してみるか[p]
+Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy...[p]
 
 [layopt layer="message" visible=false]
 
@@ -303,7 +303,7 @@
 あ、そうだっ、おにいちゃん[r]
 ちょっとあとで相談があるんだけど……
 
-[glink text="なに？" target="firstDay2" color="btn_black" size=24 width="300" x=840 y=350 ]
+[glink text="Có chuyện gì thế?" target="firstDay2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
 
 *firstDay2

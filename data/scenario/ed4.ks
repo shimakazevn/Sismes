@@ -12,7 +12,7 @@
 [wait time=1000]
 
 [layopt layer="message" visible=true]
-……結局…………[p]
+......Rốt cuộc thì............[p]
 
 なんだかんだで『兄妹』を[r]
 続けていきたいんだよな、俺は……[p]
