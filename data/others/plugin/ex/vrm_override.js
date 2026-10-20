@@ -1,11 +1,13 @@
 /**
- * Sismes - VRoid & WebGL High-Definition Mobile Optimization Engine
- * =========================================================================
+ * Sismes - VRoid & WebGL High-Definition Mobile Optimization & Tool Rendering Engine
+ * ===================================================================================
  * - Đảm bảo độ sắc nét cao (Chuẩn HD / 60 FPS), loại bỏ hoàn toàn răng cưa (2x MSAA + Trilinear Mipmaps)
- * - Tối ưu texture sắc nét (1536px cho khuôn mặt/da/tóc, 1024px cho shading/quần áo)
- * - Tự động mở khóa 60 FPS và nâng cấp cài đặt đồ họa lên mức sắc nét
- * - Kiểm soát VRAM an toàn trong ngưỡng WebKit iOS (~300MB), chống crash bền vững
- * - Xử lý khôi phục ngữ cảnh WebGL tự động
+ * - Tối ưu texture model chính (Yui model1) tránh tràn VRAM WebKit iOS (~300MB)
+ * - ĐẢM BẢO 100% HIỂN THỊ MÔ HÌNH THAO TÁC (Bàn tay L/R, Lưỡi bero, Dương vật chin)
+ * - Miễn nhiễm hoàn toàn với lỗi tàng hình do BlendShape Hide (LeftHandHide, ChinHide, BeroHide)
+ * - Tự động vệ sinh và sửa lỗi cấu hình sf.con.opa (Độ mờ công cụ) từ save cũ
+ * - Giữ nguyên vẹn mesh và shader gốc cho toàn bộ tool (L, R, bero, chin, danmen)
+ * - Xử lý khôi phục ngữ cảnh WebGL tự động chống crash
  */
 
 (function () {
@@ -15,32 +17,46 @@
                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     const isMobile = isIOS || /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    console.log(`[VRM Engine] Kích hoạt chế độ đồ họa HD 60 FPS khử răng cưa (isIOS: ${isIOS}, isMobile: ${isMobile})`);
+    console.log(`[VRM Engine] Khởi chạy bộ hiển thị HD 60 FPS & Fix Action Models (isIOS: ${isIOS}, isMobile: ${isMobile})`);
 
-    // 1. Cấu hình mặc định sắc nét & mở khóa 60 FPS
-    if (typeof SISMES !== 'undefined' && SISMES.initConfig) {
-        SISMES.initConfig.graphic = 1.0; // Mức Vừa (1.0x độ phân giải chuẩn 1280x720)
-        SISMES.initConfig.fps = 60;      // 60 FPS mượt mà
+    // 1. Cấu hình mặc định sắc nét & mở khóa 60 FPS, độ hiển thị công cụ 100% rõ
+    function sanitizeCon(con) {
+        if (!con) return;
+        if (con.fps < 60) con.fps = 60;
+        if (con.graphic < 1.0) con.graphic = 1.0;
+        // Nếu opa bị NaN, undefined hoặc >= 0.8 (bị tàng hình hoàn toàn), lập tức khôi phục về 0 (hiện 100%)
+        if (isNaN(con.opa) || con.opa === undefined || con.opa === null || con.opa >= 0.8) {
+            con.opa = 0;
+        }
     }
 
-    // Nâng cấp cấu hình đã lưu trước đó nếu người chơi đang bị lưu mức 30 FPS / 0.75
-    try {
-        if (window.TYRANO && window.TYRANO.kag && window.TYRANO.kag.variable && window.TYRANO.kag.variable.sf) {
-            const sf = window.TYRANO.kag.variable.sf;
-            if (sf.con) {
-                if (sf.con.fps < 60) sf.con.fps = 60;
-                if (sf.con.graphic < 1.0) sf.con.graphic = 1.0;
-            }
-        }
-    } catch (e) {}
+    if (typeof SISMES !== 'undefined' && SISMES.initConfig) {
+        SISMES.initConfig.graphic = 1.0;
+        SISMES.initConfig.fps = 60;
+        SISMES.initConfig.opa = 0; // 0 = Hiển thị 100% rõ ràng, không ẩn
+    }
 
-    // 2. Hàm thu nhỏ kết cấu thông minh: giữ độ sắc nét cao (1536px) mà không tốn dung lượng thừa
+    // Vệ sinh sf.con liên tục trong giai đoạn khởi động để save cũ không làm ẩn model
+    const cleanTimer = setInterval(() => {
+        try {
+            if (window.TYRANO && window.TYRANO.kag && window.TYRANO.kag.variable && window.TYRANO.kag.variable.sf) {
+                const sf = window.TYRANO.kag.variable.sf;
+                if (sf.con) sanitizeCon(sf.con);
+            }
+            if (window.SISMES && window.SISMES.initConfig) {
+                window.SISMES.initConfig.opa = 0;
+            }
+        } catch (e) {}
+    }, 500);
+    setTimeout(() => clearInterval(cleanTimer), 15000);
+
+    // 2. Thu nhỏ kết cấu an toàn (chỉ áp dụng cho Yui - model1)
     function downscaleTexture(texture, maxSize) {
         try {
             if (!texture || !texture.image) return;
             const img = texture.image;
-            const w = img.width || (img.videoWidth || 0);
-            const h = img.height || (img.videoHeight || 0);
+            const w = img.naturalWidth || img.videoWidth || img.width || 0;
+            const h = img.naturalHeight || img.videoHeight || img.height || 0;
             if (w <= maxSize && h <= maxSize) return;
             if (w === 0 || h === 0) return;
 
@@ -68,11 +84,11 @@
         }
     }
 
-    // 3. Tối ưu Model VRM: bật Mipmaps chống răng cưa, giữ độ nét 1536px
+    // 3. Tối ưu mesh nhân vật chính Yui (bật Mipmaps chống răng cưa, khống chế VRAM 1024/2048px)
     function optimizeModelMesh(rootObj) {
         if (!rootObj) return;
-        const maxTexSize = isIOS ? 1536 : 2048;       // 1536px cực kỳ sắc nét trên màn hình Retina
-        const maxShadeTexSize = 1024;                 // 1024px cho map bóng và viền
+        const maxTexSize = isIOS ? 1024 : 2048;
+        const maxShadeTexSize = 1024;
 
         rootObj.traverse((obj) => {
             if (!obj.isMesh || !obj.material) return;
@@ -80,11 +96,9 @@
             for (const mat of mats) {
                 if (!mat) continue;
 
-                // Tối ưu Texture chính (Map da, mắt, tóc, thân thể)
                 if (mat.map && mat.map.image) {
                     downscaleTexture(mat.map, maxTexSize);
                 }
-                // Tối ưu Shading / MToon Texture
                 if (mat.shadeMultiplyTexture && mat.shadeMultiplyTexture.image) {
                     downscaleTexture(mat.shadeMultiplyTexture, maxShadeTexSize);
                 }
@@ -98,7 +112,6 @@
                     downscaleTexture(mat.outlineWidthMultiplyTexture, maxShadeTexSize);
                 }
 
-                // Bật Mipmaps + Trilinear filtering để loại bỏ 100% hiện tượng răng cưa và gai viền khi nhìn xa
                 [mat.map, mat.shadeMultiplyTexture, mat.normalMap, mat.rimMultiplyTexture].forEach(tex => {
                     if (tex) {
                         tex.generateMipmaps = true;
@@ -111,7 +124,29 @@
         });
     }
 
-    // 4. Hook VRoid.three Engine
+    // 4. Hàm đảm bảo hiển thị tuyệt đối cho mô hình công cụ (Hand, Tongue, Penis)
+    function ensureToolModelVisible(modelScene) {
+        if (!modelScene) return;
+        modelScene.visible = true;
+        modelScene.traverse((obj) => {
+            if (obj.isMesh) {
+                obj.visible = true;
+                const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
+                for (const mat of mats) {
+                    if (!mat) continue;
+                    mat.visible = true;
+                    if (isNaN(mat.opacity) || mat.opacity < 0.2) {
+                        mat.opacity = 1.0;
+                    }
+                    mat.depthTest = true;
+                    mat.depthWrite = true;
+                    mat.needsUpdate = true;
+                }
+            }
+        });
+    }
+
+    // 5. Hook VRoid.three Engine
     if (window.VRoid && window.VRoid.three) {
         const V3 = window.VRoid.three;
 
@@ -119,31 +154,21 @@
         const origCreate = V3.create;
         V3.create = function (opts) {
             opts = opts || {};
-
-            // Khử răng cưa 2x MSAA (vừa mịn màng, vừa không ngốn RAM như 4x)
-            opts.antialias = 2;
-            opts.screenshot = false; // Tắt preserveDrawingBuffer để tiết kiệm RAM
+            opts.antialias = 2; // Khử răng cưa 2x MSAA mịn màng
+            opts.screenshot = false;
             opts.powerPreference = "default";
-
-            // Giữ độ phân giải sắc nét 1.0 và 60 FPS
             opts.quality = Math.max(Number(opts.quality) || 1.0, 1.0);
             opts.maxFPS = 60;
             opts.limitFPS = false;
 
             const res = origCreate.call(this, opts);
 
-            // Tỉ lệ điểm ảnh lên tới 1.25x trên mobile (đảm bảo cực nét trên màn hình Retina iPhone)
             const layer = this.layer[opts.layerID];
             if (layer) {
                 const targetRatio = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : Math.min(window.devicePixelRatio || 1, 1.5);
-                if (layer.renderer) {
-                    layer.renderer.setPixelRatio(targetRatio);
-                }
-                if (layer.composer) {
-                    layer.composer.setPixelRatio(targetRatio);
-                }
+                if (layer.renderer) layer.renderer.setPixelRatio(targetRatio);
+                if (layer.composer) layer.composer.setPixelRatio(targetRatio);
 
-                // Cập nhật hook pixelRatioUpdate để duy trì độ nét 1.25x mượt mà
                 if (layer.pixelRatioUpdate) {
                     const origPRUpdate = layer.pixelRatioUpdate;
                     layer.pixelRatioUpdate = function (force) {
@@ -159,18 +184,20 @@
                     };
                 }
             }
-
             return res;
         };
 
-        // 5. Hook VRoid.three.load để áp dụng Texture HD + Mipmaps
+        // Hook VRoid.three.load: CHỈ tối ưu model1 (Yui), BẢO VỆ NGUYÊN VẸN bero, chin, L, R, danmen!
         const origLoad = V3.load;
         V3.load = function (modelID, storage, callback, wait, maker, opts) {
             const wrappedCb = function () {
                 try {
                     const m = V3.model[modelID];
-                    if (m && m.vrm && m.vrm.scene) {
+                    if (modelID === 'model1' && m && m.vrm && m.vrm.scene) {
                         optimizeModelMesh(m.vrm.scene);
+                    } else if (m && m.vrm && m.vrm.scene) {
+                        // Đối với tool (L, R, bero, chin), đảm bảo opacity và visibility luôn sẵn sàng
+                        ensureToolModelVisible(m.vrm.scene);
                     }
                 } catch (err) {
                     console.warn('[VRM Optimizer] Lỗi tối ưu VRM model:', err);
@@ -180,7 +207,48 @@
             return origLoad.call(this, modelID, storage, wrappedCb, wait, maker, opts);
         };
 
-        // 6. Hook VRoid.three.obj3D_load cho các vật phẩm 3D GLB
+        // Hook VRoid.three.emotion: Chặn lỗi Hide khiến công cụ biến mất hoàn toàn
+        const origEmotion = V3.emotion;
+        V3.emotion = function (i, e, t, o, r, n, a, s, c, l) {
+            if (c && (c === "LeftHandHide" || c === "RightHandHide" || c === "BeroHide" || c === "ChinHide")) {
+                let num = Number(l);
+                if (isNaN(num) || num === undefined || num === null) num = 0;
+                // Giới hạn độ ẩn tối đa 0.4 (vẫn nhìn thấy rõ 60% thay vì tàng hình hoàn toàn)
+                if (num > 0.4) num = 0.2;
+                l = num;
+            }
+            return origEmotion.call(this, i, e, t, o, r, n, a, s, c, l);
+        };
+
+        // Hook osawariStartEvent: Khi bắt đầu hành động, đảm bảo mô hình bàn tay/lưỡi/dương vật lập tức hiện rõ
+        const origStartEventHook = () => {
+            if (V3.osawariStartEvent && !V3.osawariStartEvent._isHooked) {
+                const origStart = V3.osawariStartEvent;
+                V3.osawariStartEvent = function (t, i) {
+                    const res = origStart.call(this, t, i);
+                    try {
+                        const toolIds = ['L', 'R', 'bero', 'chin'];
+                        for (const tid of toolIds) {
+                            const tm = V3.model?.[tid]?.vrm?.scene;
+                            if (tm && tm.visible) {
+                                ensureToolModelVisible(tm);
+                            }
+                        }
+                    } catch (e) {}
+                    return res;
+                };
+                V3.osawariStartEvent._isHooked = true;
+            }
+        };
+
+        // Kích hoạt hook osawariStartEvent
+        origStartEventHook();
+        const hookCheckInterval = setInterval(() => {
+            origStartEventHook();
+            if (V3.osawariStartEvent?._isHooked) clearInterval(hookCheckInterval);
+        }, 1000);
+
+        // Hook VRoid.three.obj3D_load cho các vật phẩm 3D GLB
         if (V3.obj3D_load) {
             const origObj3DLoad = V3.obj3D_load;
             V3.obj3D_load = function (opts, cb) {
@@ -199,7 +267,7 @@
             };
         }
 
-        // 7. Khôi phục WebGL Context khi bị ngắt quãng
+        // Khôi phục WebGL Context khi bị ngắt quãng
         V3.restore = function () {
             console.warn('[VRoid WebGL] WebGL context bị gián đoạn.');
             document.getElementById("VRoid_loading_mask2")?.remove();
