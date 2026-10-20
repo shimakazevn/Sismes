@@ -185,17 +185,49 @@
         console.log('[CDN Interceptor] ✅ Đã gắn thành công TyranoScript Audio Tag Hooks.');
     }
 
-    if (document.readyState === 'loading') {
+    function hookHowler() {
+        if (window.Howl && !window.Howl.__sismesWrapped) {
+            const OrigHowl = window.Howl;
+            const SafeHowl = function (opts) {
+                if (opts && opts.src) {
+                    if (Array.isArray(opts.src)) {
+                        opts.src = opts.src.map(s => window.resolveCDNUrl(s));
+                    } else if (typeof opts.src === 'string') {
+                        opts.src = window.resolveCDNUrl(opts.src);
+                    }
+                }
+                try {
+                    return new OrigHowl(opts);
+                } catch (err) {
+                    console.warn('[CDN Interceptor] Howl caught safely:', err);
+                    return {
+                        play: () => 0,
+                        stop: () => {},
+                        pause: () => {},
+                        volume: () => 1,
+                        fade: () => {},
+                        unload: () => {},
+                        on: () => {},
+                        once: () => {}
+                    };
+                }
+            };
+            SafeHowl.prototype = OrigHowl.prototype;
+            SafeHowl.__sismesWrapped = true;
+            window.Howl = SafeHowl;
+        }
+    }
+if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
             hookParseStorage();
-            installTyranoAudioHooks();
+            installTyranoAudioHooks(); hookHowler();
         });
     } else {
         hookParseStorage();
-        installTyranoAudioHooks();
+        installTyranoAudioHooks(); hookHowler();
     }
     setTimeout(() => {
         hookParseStorage();
-        installTyranoAudioHooks();
+        installTyranoAudioHooks(); hookHowler();
     }, 500);
 })();
