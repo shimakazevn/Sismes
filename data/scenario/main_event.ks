@@ -295,7 +295,7 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 
 
-初日イベント
+;Sự kiện ngày đầu tiên
 *firstDay
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_A, n/emo_Cheek_100" time=600 easing="ease" wait=false]
