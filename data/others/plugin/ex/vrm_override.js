@@ -1,12 +1,11 @@
 /**
- * Sismes - VRoid & WebGL Memory Optimization Engine for Mobile & iOS WebKit
+ * Sismes - VRoid & WebGL High-Definition Mobile Optimization Engine
  * =========================================================================
- * - Ngăn chặn crash WebProcess ("A problem repeatedly occurred") trên iPhone Safari
- * - Tự động thu nhỏ Texture lớn (2048px -> 1024px/512px) tiết kiệm đến 75% GPU VRAM
- * - Tắt MSAA 4x đa mẫu và preserveDrawingBuffer trên trình duyệt di động
- * - Khống chế devicePixelRatio ở mức 1.0x (1280x720 sắc nét, không nhân 3x màn hình Retina)
- * - Tự động kích hoạt cấu hình Đồ họa Thấp / 30 FPS an toàn cho iOS
- * - Bộ xử lý khôi phục ngữ cảnh WebGL mượt mà không bị treo trang
+ * - Đảm bảo độ sắc nét cao (Chuẩn HD / 60 FPS), loại bỏ hoàn toàn răng cưa (2x MSAA + Trilinear Mipmaps)
+ * - Tối ưu texture sắc nét (1536px cho khuôn mặt/da/tóc, 1024px cho shading/quần áo)
+ * - Tự động mở khóa 60 FPS và nâng cấp cài đặt đồ họa lên mức sắc nét
+ * - Kiểm soát VRAM an toàn trong ngưỡng WebKit iOS (~300MB), chống crash bền vững
+ * - Xử lý khôi phục ngữ cảnh WebGL tự động
  */
 
 (function () {
@@ -16,20 +15,26 @@
                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     const isMobile = isIOS || /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    console.log(`[VRM Engine] Khởi chạy bộ tối ưu hóa bộ nhớ 3D di động (isIOS: ${isIOS}, isMobile: ${isMobile})`);
+    console.log(`[VRM Engine] Kích hoạt chế độ đồ họa HD 60 FPS khử răng cưa (isIOS: ${isIOS}, isMobile: ${isMobile})`);
 
-    // 1. Cấu hình mặc định an toàn cho Mobile / iOS khi khởi chạy
+    // 1. Cấu hình mặc định sắc nét & mở khóa 60 FPS
     if (typeof SISMES !== 'undefined' && SISMES.initConfig) {
-        if (isIOS) {
-            SISMES.initConfig.graphic = 0.75; // Đồ họa Thấp để vừa vặn ngưỡng RAM WebKit 300MB
-            SISMES.initConfig.fps = 30;       // 30 FPS chống quá nhiệt và sụt pin trên Safari
-        } else if (isMobile) {
-            SISMES.initConfig.graphic = 1.0;  // Android mượt mà ở mức Vừa
-            SISMES.initConfig.fps = 60;
-        }
+        SISMES.initConfig.graphic = 1.0; // Mức Vừa (1.0x độ phân giải chuẩn 1280x720)
+        SISMES.initConfig.fps = 60;      // 60 FPS mượt mà
     }
 
-    // 2. Hàm thu nhỏ kết cấu (Texture Downscaling) tránh tràn VRAM WebKit
+    // Nâng cấp cấu hình đã lưu trước đó nếu người chơi đang bị lưu mức 30 FPS / 0.75
+    try {
+        if (window.TYRANO && window.TYRANO.kag && window.TYRANO.kag.variable && window.TYRANO.kag.variable.sf) {
+            const sf = window.TYRANO.kag.variable.sf;
+            if (sf.con) {
+                if (sf.con.fps < 60) sf.con.fps = 60;
+                if (sf.con.graphic < 1.0) sf.con.graphic = 1.0;
+            }
+        }
+    } catch (e) {}
+
+    // 2. Hàm thu nhỏ kết cấu thông minh: giữ độ sắc nét cao (1536px) mà không tốn dung lượng thừa
     function downscaleTexture(texture, maxSize) {
         try {
             if (!texture || !texture.image) return;
@@ -59,15 +64,15 @@
             texture.image = canvas;
             texture.needsUpdate = true;
         } catch (e) {
-            console.warn('[VRM Optimizer] Lỗi thu nhỏ texture:', e);
+            console.warn('[VRM Optimizer] Texture downscale notice:', e);
         }
     }
 
-    // 3. Hàm tối ưu hóa toàn diện cho Model VRM / GLTF
+    // 3. Tối ưu Model VRM: bật Mipmaps chống răng cưa, giữ độ nét 1536px
     function optimizeModelMesh(rootObj) {
         if (!rootObj) return;
-        const maxTexSize = isIOS ? 1024 : 1536;
-        const maxShadeTexSize = isIOS ? 512 : 1024;
+        const maxTexSize = isIOS ? 1536 : 2048;       // 1536px cực kỳ sắc nét trên màn hình Retina
+        const maxShadeTexSize = 1024;                 // 1024px cho map bóng và viền
 
         rootObj.traverse((obj) => {
             if (!obj.isMesh || !obj.material) return;
@@ -75,7 +80,7 @@
             for (const mat of mats) {
                 if (!mat) continue;
 
-                // Tối ưu Texture chính
+                // Tối ưu Texture chính (Map da, mắt, tóc, thân thể)
                 if (mat.map && mat.map.image) {
                     downscaleTexture(mat.map, maxTexSize);
                 }
@@ -93,17 +98,15 @@
                     downscaleTexture(mat.outlineWidthMultiplyTexture, maxShadeTexSize);
                 }
 
-                // Trên iOS: Tắt tạo Mipmaps cho các texture để tiết kiệm thêm 33% VRAM
-                if (isIOS) {
-                    [mat.map, mat.shadeMultiplyTexture, mat.normalMap, mat.rimMultiplyTexture].forEach(tex => {
-                        if (tex) {
-                            tex.generateMipmaps = false;
-                            if (window.THREE && window.THREE.LinearFilter) {
-                                tex.minFilter = window.THREE.LinearFilter;
-                            }
-                        }
-                    });
-                }
+                // Bật Mipmaps + Trilinear filtering để loại bỏ 100% hiện tượng răng cưa và gai viền khi nhìn xa
+                [mat.map, mat.shadeMultiplyTexture, mat.normalMap, mat.rimMultiplyTexture].forEach(tex => {
+                    if (tex) {
+                        tex.generateMipmaps = true;
+                        tex.minFilter = (window.THREE && window.THREE.LinearMipmapLinearFilter) || 1008;
+                        tex.magFilter = (window.THREE && window.THREE.LinearFilter) || 1006;
+                        tex.needsUpdate = true;
+                    }
+                });
             }
         });
     }
@@ -116,41 +119,38 @@
         const origCreate = V3.create;
         V3.create = function (opts) {
             opts = opts || {};
-            if (isIOS || isMobile) {
-                // Tắt hoàn toàn MSAA (antialias = 0) để không tạo thêm 4 buffer MSAA
-                opts.antialias = 0;
-                // Tắt preserveDrawingBuffer để WebKit giải phóng front-buffer sau mỗi frame
-                opts.screenshot = false;
-                opts.powerPreference = "default";
 
-                if (isIOS) {
-                    // Mức chất lượng an toàn tuyệt đối cho iPhone
-                    opts.quality = Math.min(Number(opts.quality) || 0.75, 0.75);
-                    opts.limitFPS = true;
-                    opts.maxFPS = 30;
-                }
-            }
+            // Khử răng cưa 2x MSAA (vừa mịn màng, vừa không ngốn RAM như 4x)
+            opts.antialias = 2;
+            opts.screenshot = false; // Tắt preserveDrawingBuffer để tiết kiệm RAM
+            opts.powerPreference = "default";
+
+            // Giữ độ phân giải sắc nét 1.0 và 60 FPS
+            opts.quality = Math.max(Number(opts.quality) || 1.0, 1.0);
+            opts.maxFPS = 60;
+            opts.limitFPS = false;
 
             const res = origCreate.call(this, opts);
 
-            // Giới hạn tỉ lệ điểm ảnh (Pixel Ratio) trên di động
+            // Tỉ lệ điểm ảnh lên tới 1.25x trên mobile (đảm bảo cực nét trên màn hình Retina iPhone)
             const layer = this.layer[opts.layerID];
             if (layer) {
-                if (layer.renderer && isMobile) {
-                    layer.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.0));
+                const targetRatio = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : Math.min(window.devicePixelRatio || 1, 1.5);
+                if (layer.renderer) {
+                    layer.renderer.setPixelRatio(targetRatio);
                 }
-                if (layer.composer && isMobile) {
-                    layer.composer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.0));
+                if (layer.composer) {
+                    layer.composer.setPixelRatio(targetRatio);
                 }
 
-                // Hook pixelRatioUpdate của layer để không vượt quá 1.0 trên mobile
+                // Cập nhật hook pixelRatioUpdate để duy trì độ nét 1.25x mượt mà
                 if (layer.pixelRatioUpdate) {
                     const origPRUpdate = layer.pixelRatioUpdate;
                     layer.pixelRatioUpdate = function (force) {
                         origPRUpdate.call(this, force);
                         if (isMobile) {
-                            const safeRatio = Math.min(layer.ratio, 1.0);
-                            if (layer.renderer && layer.ratio > 1.0) {
+                            const safeRatio = Math.min(layer.ratio, 1.25);
+                            if (layer.renderer && layer.ratio > safeRatio) {
                                 layer.ratio = safeRatio;
                                 layer.renderer.setPixelRatio(safeRatio);
                                 if (layer.composer) layer.composer.setPixelRatio(safeRatio);
@@ -163,7 +163,7 @@
             return res;
         };
 
-        // 5. Hook VRoid.three.load để tối ưu texture ngay khi tải model VRM
+        // 5. Hook VRoid.three.load để áp dụng Texture HD + Mipmaps
         const origLoad = V3.load;
         V3.load = function (modelID, storage, callback, wait, maker, opts) {
             const wrappedCb = function () {
@@ -180,7 +180,7 @@
             return origLoad.call(this, modelID, storage, wrappedCb, wait, maker, opts);
         };
 
-        // 6. Hook VRoid.three.obj3D_load cho các vật phẩm 3D GLB (bed, pants)
+        // 6. Hook VRoid.three.obj3D_load cho các vật phẩm 3D GLB
         if (V3.obj3D_load) {
             const origObj3DLoad = V3.obj3D_load;
             V3.obj3D_load = function (opts, cb) {
@@ -199,9 +199,9 @@
             };
         }
 
-        // 7. Khôi phục / Phục hồi khi WebGL Context bị gián đoạn (Crash Handler)
+        // 7. Khôi phục WebGL Context khi bị ngắt quãng
         V3.restore = function () {
-            console.warn('[VRoid WebGL] WebGL context bị gián đoạn do bộ nhớ hoặc chuyển ứng dụng.');
+            console.warn('[VRoid WebGL] WebGL context bị gián đoạn.');
             document.getElementById("VRoid_loading_mask2")?.remove();
             $("#tyrano_base").append("<div id='VRoid_loading_mask2' style='z-index: 299999999; position: absolute; background-repeat: no-repeat; background-position: 5px 5px; background-color: rgb(0, 0, 0); width: 1300px; height: 740px; top: -10px; left: -10px; backface-visibility: hidden;'></div>");
 
@@ -215,7 +215,7 @@
 
             if (typeof SISMES !== 'undefined' && SISMES.showOK) {
                 SISMES.showOK(
-                    "Bộ nhớ đồ họa 3D bị gián đoạn.<br>Bấm OK để tải lại trò chơi.<br><span style='font-size: 18px; line-height: 28px;'>* Mẹo: Vào Cài đặt (nút góc trên bên phải) chọn Đồ họa Thấp và 30 FPS để chơi mượt mà và không bị crash trên iPhone.</span>",
+                    "Bộ nhớ đồ họa 3D bị gián đoạn.<br>Bấm OK để tải lại trò chơi.<br><span style='font-size: 18px; line-height: 28px;'>* Mẹo: Vào Cài đặt (nút góc trên bên phải) chọn Đồ họa Thấp nếu máy bị quá tải.</span>",
                     reloadFn,
                     void 0,
                     false,

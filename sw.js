@@ -1,5 +1,5 @@
 // Sismes Progressive Web App Service Worker
-const CACHE_NAME = 'sismes-pwa-v2';
+const CACHE_NAME = 'sismes-pwa-v3';
 
 const CORE_ASSETS = [
   './',
