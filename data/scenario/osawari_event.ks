@@ -54,8 +54,8 @@
 	[VRoid_emo modelID="model1" emoID="lookDown" emoval=1 time=600 easing="ease" wait=false diff=true]
 
 
-	あっ……なんで……？[r]
-	……ぁっ……ぅんっ……からだが……へんだよぉ……
+	A…… tại sao chứ……?[r]
+	……A…… ưn…… cơ thể em…… lạ quá à……
 
 	[else]
 
@@ -75,25 +75,25 @@
 	[VRoid_emo modelID="model1" emoID="Fcl_ALL_Sorrow" emoval=0.3 time=600 easing="ease" wait=false diff=true]
 	
 	[if exp="tf.result === 1"]
-	……どうして……？　おにいちゃん……[r]
-	こんなの……やだぉ……
+	……Tại sao chứ……? Anh hai……[r]
+	Chuyện thế này…… em sợ lắm……
 
 	[elsif exp="tf.result === 2"]
-	……おねがい……もうやめてよぉ……
-	兄妹で……ダメだよ……っ
+	……Em xin anh…… dừng lại đi mà……
+	Chúng ta là anh em mà…… không được đâu……
 
 	[elsif exp="tf.result === 3"]
-	……なんで……なんで……？[r]
-	やだ……おにいちゃん……やだよぉ……
+	……Tại sao chứ…… tại sao……?[r]
+	Đừng mà…… anh hai…… đừng làm thế mà……
 
 
 	[elsif exp="tf.result === 4"]
-	……いやだっ……いやだよぉ……[r]
-	もうこんなの……いやぁ……っ
+	……Không muốn đâu…… em sợ lắm mà……[r]
+	Chuyện thế này…… dừng lại đi mà……
 
 	[else]
-	……うそだよね？[r]
-	おにいちゃん……なんで……？
+	……Là nói dối đúng không anh?[r]
+	Anh hai…… tại sao lại làm vậy……?
 
 	[endif]
 

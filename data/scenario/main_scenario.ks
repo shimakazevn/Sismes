@@ -12,28 +12,28 @@
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
+#Em gái
 
 Em muốn hỏi ý kiến anh một chút... Em chơi thử tựa game này có được không anh...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_01_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-えっと……月額制だし、オンラインのゲームだから[r]
-一応おにいちゃんに確認しておいた方がいいかなって……[p]
+Dạ thì…… Trò này thu phí hàng tháng, lại còn là game online nữa nên[r]
+Em nghĩ mình nên hỏi ý kiến anh hai trước xem sao……[p]
 
 
 #
-妹のいっているゲームはその昔[r]
-俺がハマったことのあるＭＭＯだった[p]
+Trò chơi mà em gái đang nhắc tới chính là tựa MMO[r]
+ngày xưa tôi từng cày cuốc say mê một thời[p]
 
-月額制ではあるけど、ガチャみたいな課金要素もないし[r]
-お小遣いの範囲だろうから問題ないと伝える[p]
+Dù là game đóng phí tháng, nhưng nó không có yếu tố nạp gacha hút máu,[r]
+và tiền nạp cũng nằm trong giới hạn tiền tiêu vặt nên tôi bảo em cứ thoải mái[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
-#妹
-やった！[r]
-ありがとう、おにいちゃん！
+#Em gái
+Tuyệt quá![r]
+Cảm ơn anh hai nhiều nhé!
 
 [glink text="Nhưng không được làm xáo trộn<br>giờ giấc sinh hoạt đâu đấy!" target="shinrai_11_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -49,15 +49,15 @@ Vâng ạ![p]
 #
 Đã bao lâu kể từ ngày em gái bắt đầu tự nhốt mình trong phòng rồi nhỉ...[p]
 
-いつでも社会復帰できるように[r]
-生活時間を守り、それなりの勉強をすると約束している[p]
+Để có thể tái hòa nhập với xã hội bất cứ lúc nào,[r]
+em gái đã hứa sẽ giữ nếp sinh hoạt điều độ và học tập chăm chỉ[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
 
-#妹
-ちゃんと今まで通りお勉強はするし[r]
-１０時にはお布団に入るよ[p]
+#Em gái
+Em vẫn sẽ học bài chăm chỉ như mọi khi mà,[r]
+với lại cứ đúng 10 giờ tối là em sẽ đi ngủ ngay[p]
 
 [layopt layer="message" visible=false]
 #
@@ -94,24 +94,24 @@ Vâng ạ![p]
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_07_A" time=600 easing="ease" wait=false]
 
 [layopt layer="message" visible=true]
-#妹
+#Em gái
 
 Dạ? Việc học ạ...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A" time=600 easing="ease" wait=false]
 
-うん、ちゃんとしてるよ[r]
-約束は守ってるよ[p]
+Dạ, em vẫn học hành nghiêm túc lắm nha,[r]
+em luôn giữ đúng lời hứa mà[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_C" time=600 easing="ease" wait=false]
 
-でも……[r]
-実は結構わからないところがあって……[p]
+Nhưng mà……[r]
+Thật ra có nhiều chỗ em không hiểu lắm……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_04_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-おにいちゃん、お仕事の邪魔じゃなかったら[r]
-たまにお勉強教えてほしいな……
+Nếu không phiền công việc của anh hai thì,[r]
+thỉnh thoảng anh kèm em học bài một chút được không ạ……
 
 [glink text="Lúc nào cũng được cả" target="shinrai_20_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -124,8 +124,8 @@ Thật ạ? Tuyệt quá đi mất![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_B" time=600 easing="ease" wait=false]
 
-さすがにゲームで知り合った人に[r]
-お勉強教えてもらうわけにはいかないしねー
+Chứ ai lại đi nhờ người quen trong game[r]
+kèm học cho mình bao giờ đâu anh nhỉ
 
 
 
@@ -140,8 +140,8 @@ Dạ? À, ừm thì... chỉ có một người thôi ạ...?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" time=600 easing="ease" wait=false]
 
-でもやっぱり他の人はちょっと怖いから……[r]
-その人以外とは全然話してないかな[p]
+Nhưng mà em vẫn thấy hơi sợ người lạ……[r]
+Nên ngoài người đó ra thì em chẳng nói chuyện với ai khác cả[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_01_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
@@ -149,8 +149,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-そ、そんなことよりお勉強……！[r]
-優しく教えてね、おにいちゃん！[p]
+Th-Thôi, chuyện đó để sau, lo học bài trước đã……![r]
+Anh nhớ dạy em nhẹ nhàng thôi đấy nhé, anh hai![p]
 
 [layopt layer="message" visible=false]
 #
@@ -159,8 +159,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [wait time=1000]
 [layopt layer="message" visible=true]
-※以降、妹の信頼が２０以上ある状態で[r]
-コミュニケーションから「勉強」が選べるようになります[p]
+※ Từ giờ trở đi, khi độ Tin cậy của em gái đạt từ 20 trở lên,[r]
+bạn có thể chọn mục 「Kèm học」 trong phần Giao tiếp[p]
 
 [layopt layer="message" visible=false]
 [bg storage="heya.png" time=500 position="center"]
@@ -188,8 +188,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
-おにいちゃんってもうオンラインゲームしないの？
+#Em gái
+Anh hai dạo này không còn chơi game online nữa hả anh?
 
 
 [glink text="Anh không có thời gian cày đâu" target="shinrai_40_1" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -199,23 +199,23 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_01_B" time=600 easing="ease" wait=false]
 
-そっか[r]
-おにいちゃんも一回ハマると抜け出せないタイプだもんね[p]
+Vậy hả anh[r]
+Anh hai cũng thuộc tuýp người một khi đã mê là dứt không ra mà nhỉ[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_00_A" time=600 easing="ease" wait=false]
 
-でもお仕事ばっかりだし、[r]
-お勉強も見て貰ってるし……[p]
+Nhưng mà anh suốt ngày chỉ cắm đầu vào công việc,[r]
+rồi lại còn phải kèm em học bài nữa……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_01_B, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-たまには息抜きで一緒に[r]
-オンラインじゃないゲームしようよ[p]
+Thỉnh thoảng đổi gió xả hơi một chút,[r]
+hai anh em mình cùng chơi game gì đó offline đi anh[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_01_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-あ、でもおにいちゃん強いから[r]
-協力系のゲームがいいな
+A, nhưng mà anh hai chơi giỏi lắm, nên[r]
+mình chơi game phối hợp đồng đội đi nha anh
 
 [glink text="Được rồi" target="shinrai_40_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -224,8 +224,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_01_B, n/emo_Cheek_100" time=600 easing="easeOutQuint" wait=false]
 
-うん！[r]
-おにいちゃんとのゲーム久しぶりだから楽しみ！[p]
+Vâng ạ![r]
+Lâu lắm rồi mới lại được chơi game cùng anh hai, em háo hức quá![p]
 
 
 [layopt layer="message" visible=false]
@@ -235,8 +235,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [wait time=1000]
 [layopt layer="message" visible=true]
-※以降、妹の信頼が４０以上ある状態で[r]
-コミュニケーションから「ゲーム」が選べるようになります[p]
+※ Từ giờ trở đi, khi độ Tin cậy của em gái đạt từ 40 trở lên,[r]
+bạn có thể chọn mục 「Chơi game」 trong phần Giao tiếp[p]
 
 [layopt layer="message" visible=false]
 [bg storage="heya.png" time=500 position="center"]
@@ -263,9 +263,9 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
+#Em gái
 
-おにいちゃん最近ちゃんと寝れてる？
+Dạo này anh hai ngủ có ngon giấc không đấy ạ?
 
 [glink text="Anh ngủ đủ giấc mà" target="shinrai_60_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -274,8 +274,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_A" time=600 easing="ease" wait=false]
 
-本当？　前よりもお仕事頑張ってるみたいだし[r]
-朝すごい眠そうなときあるからちょっと心配だよ
+Thật không đó? Dạo này thấy anh chăm chỉ làm việc hơn trước,[r]
+buổi sáng trông anh buồn ngủ lắm nên em thấy lo lo á
 
 
 [glink text="Còn em thì sao,<br>có chơi game quá đà không đấy?" target="shinrai_60_2" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -285,28 +285,28 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_00_B" time=600 easing="ease" wait=false]
 
-えっ？　大丈夫だよ[r]
-ほら、ちゃんと１０時にはお布団入ってるでしょ？[p]
+Hở? Em thì không sao đâu mà[r]
+Anh thấy đấy, em luôn lên giường đi ngủ đúng 10 giờ còn gì?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_04_A, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-いつも一緒にゲームしてる人もね[r]
-朝が早いとかで１０時には落ちちゃうんだ[p]
+Người hay chơi game chung với em cũng thế á,[r]
+người ta bảo phải dậy sớm nên tầm 10 giờ là thoát game rồi[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_04_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-おにいちゃんみたいに[r]
-本当はお仕事忙しい人なのかな？[p]
+Chắc là người ta cũng bận rộn với công việc[r]
+giống như anh hai chăng?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-あんまり自分のこと話さないから[r]
-よくわからないんだよね[p]
+Người đó ít khi kể về bản thân lắm,[r]
+nên em cũng chẳng biết rõ nữa[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-……そう言えばわたしって[r]
-逆に色々話しすぎちゃってる気がしてきた……
+……Nhắc mới thấy, hình như ngược lại[r]
+em lại kể lể quá nhiều chuyện của mình rồi thì phải……
 
 [glink text="Phải cẩn thận thông tin cá nhân đấy" target="shinrai_60_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -315,8 +315,8 @@ Không hiểu sao... em thấy người ấy rất dễ nói chuyện...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_00_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-う、うん[r]
-その辺は多分……だいじょう……ぶ？[p]
+D-Dạ vâng[r]
+Mấy chuyện đó chắc…… không…… sao đâu nhỉ?[p]
 
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_02_A" time=600 easing="ease" wait=false]
@@ -325,13 +325,13 @@ M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
-ほら、おにいちゃんに倒れられたら[r]
-わたし何にもできないから……[p]
+Đấy anh xem, nếu mà anh hai ngã bệnh ra đó[r]
+thì một mình em chẳng biết xoay xở thế nào đâu……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_01_A, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
-そうだっ！　これからは寝る前に[r]
-おにいちゃんにマッサージしてあげる！
+A đúng rồi! Từ giờ trở đi, trước khi đi ngủ[r]
+em sẽ mát-xa lưng cho anh hai nhé!
 
 [glink text="Mát-xa á?" target="shinrai_60_4" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -341,8 +341,8 @@ M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_01_B, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
-うん！[r]
-日頃のお礼にそれくらいさせてよ[p]
+Vâng ạ![r]
+Để em làm chừng đó việc để đền đáp công ơn anh chăm sóc em bấy lâu chứ[p]
 
 
 
@@ -353,8 +353,8 @@ M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 
 [wait time=1000]
 [layopt layer="message" visible=true]
-※以降、妹の信頼が６０以上ある状態で[r]
-２２時を迎えると体力が少し回復します[p]
+※ Từ giờ trở đi, khi độ Tin cậy của em gái đạt từ 60 trở lên,[r]
+mỗi khi bước sang 22:00, thể lực của bạn sẽ được hồi phục một phần[p]
 
 [layopt layer="message" visible=false]
 [bg storage="heya.png" time=500 position="center"]
@@ -380,8 +380,8 @@ M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
-おにいちゃ～ん！
+#Em gái
+Anh hai ơiiii～!
 
 [glink text="Có chuyện gì thế em?" target="shinrai_80_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -390,8 +390,8 @@ M-Mà chuyện đó tính sau, lo cho anh trai trước đã![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_01_A, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-うんっ！[r]
-呼んでみただけ！
+Hì hì![r]
+Em gọi thử xem anh có ở đó không thôi!
 
 [glink text="Dạo này tâm trạng em tốt ghê nhỉ" target="shinrai_80_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -404,8 +404,8 @@ Em thấy mình bắt đầu chơi tựa game đó là quyết định đúng đ
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_04_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-なんかね、毎日が楽しくって……[r]
-時間が経つのも、早く感じてね……！
+Tự nhiên em thấy ngày nào cũng vui hết trơn á……[r]
+Cảm giác thời gian trôi qua nhanh thật luôn……![p]
 
 
 [glink text="Thế thì tốt quá rồi" target="shinrai_80_3" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -415,8 +415,8 @@ Em thấy mình bắt đầu chơi tựa game đó là quyết định đúng đ
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-うん！　おにいちゃんがプレイしていいよって[r]
-言ってくれたおかげだよ、ありがと[p]
+Vâng! Tất cả là nhờ anh hai đã cho phép em chơi game đó,[r]
+cảm ơn anh hai nhiều nha[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_04_A, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
@@ -424,8 +424,8 @@ Cũng không hẳn là để báo đáp đâu nhưng mà...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_01_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-おにいちゃんのお仕事で[r]
-手伝えることがあったらなんでも言ってね[p]
+Trong công việc của anh hai,[r]
+có việc gì em phụ giúp được thì anh cứ nói với em nhé[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_01_A, n/emo_Cheek_075" time=600 easing="easeOutQuint" wait=false]
 
@@ -439,8 +439,8 @@ Chỉ cần em có thể góp sức giúp ích được cho anh, em sẽ cố g�
 
 [wait time=1000]
 [layopt layer="message" visible=true]
-※以降、妹の信頼が８０以上ある状態で[r]
-仕事を行うと、体力の消費が少し抑えられます[p]
+※ Từ giờ trở đi, khi độ Tin cậy của em gái đạt từ 80 trở lên,[r]
+khi bạn làm việc, lượng thể lực tiêu hao sẽ được giảm bớt[p]
 
 [layopt layer="message" visible=false]
 [bg storage="heya.png" time=500 position="center"]
@@ -466,7 +466,7 @@ Chỉ cần em có thể góp sức giúp ích được cho anh, em sẽ cố g�
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
+#Em gái
 ……
 
 [glink text="Trông em có vẻ không được vui nhỉ?" target="shinrai_100_1" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -476,18 +476,18 @@ Chỉ cần em có thể góp sức giúp ích được cho anh, em sẽ cố g�
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_A" time=600 easing="ease" wait=false]
 
-うん、仲の良かった人が[r]
-突然アカウント削除しちゃったみたいで……[p]
+Dạ…… cái người bạn chơi thân với em ấy,[r]
+tự nhiên lại xóa tài khoản mất tiêu rồi……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
-その人、昨日まで何も言ってなかったのに突然だったから[r]
-すごいショックなんだよ……[p]
+Hôm qua người đó còn chưa hề nói gì hết mà đùng một cái biến mất,[r]
+làm em sốc quá chừng luôn……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_03_A, n/emo_tears_100" time=600 easing="ease" wait=false]
 
-もしかして、わたししつこかった……？[r]
-実は迷惑かけてたのかなぁ……
+Có khi nào là do em bám người quá không ta……?[r]
+Liệu em có làm phiền người ta không nhỉ……
 
 [glink text="Hai đứa thân thiết đến thế cơ à?" target="shinrai_100_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -500,22 +500,22 @@ Chỉ cần em có thể góp sức giúp ích được cho anh, em sẽ cố g�
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_A, n/emo_tears_090" time=600 easing="ease" wait=false]
 
-でね、ゲームのメールボックスに[r]
-一通だけメッセージが残ってたの[p]
+Rồi thì, trong hòm thư của game,[r]
+người đó có để lại một tin nhắn duy nhất[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_03_C, n/emo_tears_090" time=600 easing="ease" wait=false]
 
-『この世界で君だけが鮮やかに感じられた[r]
-_　君の色で、君の声で、いつか終わりがくるまで……』って[p]
+『Trong thế giới này, em là điều duy nhất mang lại sắc màu rực rỡ.[r]
+_　Bằng sắc màu của em, bằng giọng nói của em, cho tới ngày hồi kết đến……』[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_02_A, n/emo_tears_090, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-なにこれ？　謎解き……？？[r]
-もー、意味わかんないよぉ……[p]
+Cái gì thế này? Câu đố mật mã sao……??[r]
+Trời ơi, chẳng hiểu nổi người ta muốn nói gì hết trơn á……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B, n/emo_tears_100, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-やっぱり男のひとってよくわかんないなぁ……
+Đúng là con trai khó hiểu thật đấy……
 
 
 [glink text="Không lẽ... em thích người ta rồi à?" target="shinrai_100_3" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -525,27 +525,27 @@ _　君の色で、君の声で、いつか終わりがくるまで……』っ�
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_07_A, n/emo_tears_090, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-えっ！？　ええっ！！？[r]
-す、好きとか……っ！　そういうのじゃ……！[p]
+Hả!? Hả hảaa!!?[r]
+Th-Thích á……! Đâu có chuyện đó đâu chứ……![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_03_A, n/emo_tears_090, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
 Ch-Chắc là... không có đâu ạ...[p]
 
-ゲーム、凄い上手な人だったから[r]
-かっこいいなーとは思ったけど……っ[p]
+Người ta chơi game siêu đỉnh luôn,[r]
+nên em thấy ngầu thật đấy nhưng mà……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_B, n/emo_Sekimen_100" time=600 easing="ease" wait=false]
 
 V-Với lại em cũng chẳng hiểu mấy chuyện yêu đương đó đâu...[p]
 
-男の子とか……女の子とか……？[r]
-そういうの全然わかんないから……[p]
+Con trai hay…… con gái sao……?[r]
+Mấy chuyện tình cảm đó em hoàn toàn chẳng hiểu gì cả……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_03_C, n/emo_Sekimen_100" time=600 easing="ease" wait=false]
 
-ねぇ？　おにいちゃん[r]
-わたしって男の人から見たらどう見えるの……？
+Nè anh? Anh hai ơi,[r]
+trong mắt người đàn ông khác thì trông em thế nào nhỉ……?
 
 
 [glink text="Dù sao thì anh vẫn là anh trai của em mà" target="shinrai_100_4" color="btn_black" size=24 width="300" x=840 y=350 ]
@@ -555,33 +555,33 @@ V-Với lại em cũng chẳng hiểu mấy chuyện yêu đương đó đâu...
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-そうだよね、おにいちゃんから見たわたしは[r]
-妹でしかないよね……ごめん、変なこと言って[p]
+Đúng rồi anh nhỉ, trong mắt anh hai thì em[r]
+cũng chỉ là đứa em gái mà thôi…… Xin lỗi anh nhé, tự nhiên em lại nói mấy câu kỳ quặc[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_03_C, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-あーあ！[r]
-なんか本当にあのゲームやる気なくなっちゃったな……[p]
+Haizz![r]
+Tự nhiên em chẳng còn chút hứng thú nào để chơi cái game đó nữa rồi……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_00_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-ちょっと気持ちが整理できるまで[r]
-一回あのゲームから離れようと思う！[p]
+Chắc là đợi đến khi tâm trạng ổn định lại,[r]
+em sẽ tạm nghỉ chơi một thời gian luôn![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-これからはその空いた時間で[r]
-おにいちゃんのお仕事もっと手伝ってもいい？[p]
+Từ giờ trở đi, khoảng thời gian rảnh rỗi đó[r]
+em phụ giúp công việc cho anh hai nhiều hơn được không anh?[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_02_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-なんか悲しい気持ち通り越して[r]
-ちょっとムカムカしてきたっ！[p]
+Không hiểu sao vượt qua cảm giác buồn bã rồi,[r]
+giờ em thấy bực mình khó chịu ghê luôn á![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_02_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-ひとりでいるとまた考え込みそうだから[r]
-おにいちゃんのお仕事で気を紛らわせたい！
+Cứ ở một mình là em lại suy nghĩ vẩn vơ mất,[r]
+nên em muốn phụ anh làm việc để giải tỏa tâm trạng!
 
 [glink text="Anh sẽ bắt em làm việc<br>như trâu như ngựa luôn đấy nhé" target="shinrai_100_5" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -594,8 +594,8 @@ Trời ạ, anh trai thật là...[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_B, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-やっぱりおにいちゃんと[r]
-話しているときが一番気楽でいいね[p]
+Quả nhiên những lúc được nói chuyện với anh hai[r]
+là thoải mái và yên bình nhất anh nhỉ[p]
 
 
 [layopt layer="message" visible=false]
@@ -606,8 +606,8 @@ Trời ạ, anh trai thật là...[p]
 [wait time=1000]
 [layopt layer="message" visible=true]
 
-※以降、妹の信頼が１００ある状態で[r]
-仕事を行うと、お金が稼ぎやすくなります。[p]
+※ Từ giờ trở đi, khi độ Tin cậy của em gái đạt mức 100,[r]
+khi bạn làm việc, số tiền kiếm được sẽ tăng lên đáng kể.[p]
 
 [layopt layer="message" visible=false]
 [bg storage="heya.png" time=500 position="center"]

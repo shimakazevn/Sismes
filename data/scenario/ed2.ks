@@ -71,10 +71,10 @@
 
 
 
-#妹
+#Em gái
 [layopt layer="message" visible=true]
-んっ……うんっ……あぁっ……[r]
-ぅんっ……ふぅっ……っ！
+Ưm…… ưn…… a a……[r]
+Ưn…… phù…… ư……!
 
 [fadeinse storage="koui/koui_b_1.wav" buf=4 loop=true time=10000]
 [fadeinse storage="h/aegi_mouth0_level1.wav" buf=2 loop=true time=10000]
@@ -244,8 +244,8 @@ Anh trai......? A...... đừng mà...... ưm......
 [wait time=1000]
 
 [layopt layer="message" visible=true]
-あぁぁ……ぃゃ……いやぁ……[r]
-おにいちゃん……なんでぇ……っ
+A a…… k-không…… đừng mà……[r]
+Anh hai…… tại sao chứ…… hức
 
 [wait time=1000]
 

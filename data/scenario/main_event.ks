@@ -59,7 +59,7 @@
 
 	[VRoid_layer_show layerID="VRoid" time=600 wait=true]
 	[layopt layer="message" visible=true]
-	#妹
+	#Em gái
 	Chào buổi sáng anh trai nhé![p]
 
 
@@ -73,7 +73,7 @@
 
 
 	[layopt layer="message" visible=true]
-	#妹
+	#Em gái
 	......Anh trai, buổi sáng tốt lành...[p]
 
 [endif]
@@ -84,7 +84,7 @@
 *return_ohayou_event
 
 ;各条件達成時にイベント発生
-;初日イベント
+;Sự kiện ngày đầu
 [jump target="firstDay" cond="SISMES.savedata.time.date === 1 && !SISMES.savedata.event.firstDay"]
 
 
@@ -166,10 +166,10 @@
 
 		[VRoid_layer_show layerID="VRoid" time=600 wait=true]
 		[layopt layer="message" visible=true]
-		#妹
+		#Em gái
 
-		んっ……と。はい！　マッサージおしまいっ[r]
-		今日もおつかれさまです[p]
+		Ưm…… Xong rồi! Mát-xa xong rồi nè[r]
+		Hôm nay anh cũng vất vả rồi ạ[p]
 
 
 		[iscript]
@@ -194,12 +194,12 @@
 
 		[VRoid_layer_show layerID="VRoid" time=600 wait=true]
 		[layopt layer="message" visible=true]
-		#妹
+		#Em gái
 
 	[endif]
 
 
-おやすみー、おにいちゃん[p]
+Chúc anh hai ngủ ngon nhé[p]
 [layopt layer="message" visible=false]
 #
 [VRoid_layer_hide layerID="VRoid" time=600 wait=true]
@@ -243,7 +243,7 @@
 [glink_config show_time=0]
 
 [iscript]
-	document.querySelector(".commu_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>体力：20</div>");
+	document.querySelector(".commu_1")?.insertAdjacentHTML("beforeend", "<div class='selectHP'>Thể lực: 20</div>");
 [endscript]
 
 [s][s][s][s][s]
@@ -300,8 +300,8 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_A, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
-あ、そうだっ、おにいちゃん[r]
-ちょっとあとで相談があるんだけど……
+A, đúng rồi, anh hai ơi[r]
+Lát nữa em có chuyện này muốn hỏi ý anh một chút……
 
 [glink text="Có chuyện gì thế?" target="firstDay2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -310,8 +310,8 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A" time=600 easing="ease" wait=false]
 
-おにいちゃんの都合のいい時で大丈夫だから！[r]
-あとでちょっとお話させて？[p]
+Lúc nào anh tiện cũng được hết á![r]
+Lát nữa cho em nói chuyện một lát nhé?[p]
 
 
 
@@ -335,9 +335,9 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B" time=600 wait=false]
 
-（…………そういえば昨日の夜……）[p]
+（…………Nhắc mới nhớ, đêm hôm qua……）[p]
 
-（おにいちゃん、わたしになにしてたの……？）[p]
+（Anh hai đã làm gì mình thế nhỉ……？）[p]
 
 
 [jump target="end_ohayou_event"]
@@ -354,13 +354,13 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-#妹
-……おはよう[p]
+#Em gái
+……Chào buổi sáng anh[p]
 
 [VRoid_emo modelID="model1" emo=""n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
-えっと……わたしは忘れるから[r]
-昨日みたいなのはもうやめて欲しいな[p]
+Ưm…… Chuyện đó em sẽ quên đi[r]
+Nên những chuyện như hôm qua, em mong anh đừng lặp lại nữa nhé[p]
 
 [jump target="end_ohayou_event"]
 [s][s][s][s][s]
@@ -370,8 +370,8 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 *minus
 
 [layopt layer="message" visible=true]
-……妹が部屋から出てこない[r]
-鍵をかけて閉じこもっているようだ[p]
+……Em gái không chịu ra khỏi phòng[r]
+Có vẻ con bé đã khóa trái cửa và nhốt mình bên trong[p]
 
 [jump target="end_ohayou_event"]
 [s][s][s][s][s]
@@ -387,9 +387,9 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
 
-（……なんか体がむずむずする……？）[p]
+（……Sao người mình cứ bồn chồn ngứa ngáy thế nhỉ……？）[p]
 
-（なんだろう……？　熱あるのかな……？）[p]
+（Sao vậy ta……？ Mình bị sốt chăng……？）[p]
 
 
 [iscript]
@@ -411,11 +411,11 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（やだっ……！　おパンツ濡れちゃってる……）[p]
+（Thôi chết……！ Quần lót bị ướt mất rồi……）[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_B, n/emo_Sekimen_075" diff=true time=600 easing="ease" wait=false]
 
-（お漏らしじゃ……ないよね？）[p]
+（Không phải là…… mình tè dầm đấy chứ？）[p]
 
 
 [iscript]
@@ -434,9 +434,9 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（……気のせいかな。あたまがふわふわする……）[p]
+（……Chắc là tưởng tượng thôi. Đầu óc cứ lâng lâng……）[p]
 
-（……寝汗でからだがベトベト……シャワー浴びよ……）[p]
+（……Mồ hôi trộm làm người dính dấp quá…… Đi tắm vòi sen thôi……）[p]
 
 
 [iscript]
@@ -453,12 +453,12 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_07_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（……えっ！？[r]
-なんでこんなにおパンツ濡れてるの……？？）[p]
+（……Hả！？[r]
+Sao quần lót lại ướt sũng thế này……？？）[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（うそ……お洗濯しなきゃ……）[p]
+（Không thể nào…… Phải đi giặt ngay mới được……）[p]
 
 [iscript]
 	SISMES.savedata.ohaEvent.hatsuRenzokuIki = 2;
@@ -474,9 +474,9 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（……お布団凄く濡れちゃってた……）[p]
+（……Đệm giường bị ướt nhiều quá……）[p]
 
-（どうしよう……おにいちゃんにバレないよね……？）[p]
+（Làm sao bây giờ…… Mong là không bị anh hai thấy……）[p]
 
 [iscript]
 	SISMES.savedata.ohaEvent.hatsuShiohuki = 2;
@@ -492,14 +492,14 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
-（……いたっ！？）[p]
+（……Đau quá！？）[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-（……お腹の奥が痛い……？）[p]
+（……Tận sâu trong bụng nhức buốt thế này……？）[p]
 
 
-（……うーん……生理そろそろだっけ？）[p]
+（……Ưm…… Sắp đến ngày "đèn đỏ" rồi chăng？）[p]
 
 
 [iscript]
@@ -516,10 +516,10 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-（……あれっ？……わたしなにか臭う？）[p]
+（……Ủa？……Người mình có mùi gì lạ thế này？）[p]
 
 
-（……昨日ちゃんとお風呂入ったよね……？）[p]
+（……Hôm qua mình tắm rửa kỹ càng rồi mà nhỉ……？）[p]
 
 
 
@@ -539,10 +539,10 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-（……んっ、なにか喉に絡みつくような……）[p]
+（……Ưm, cảm giác như có thứ gì nhờn nhợn vướng ở cổ họng……）[p]
 
 
-（……風邪かなぁ。うがいしよう……）[p]
+（……Bị cảm rồi sao ta. Đi súc miệng thôi……）[p]
 
 
 
@@ -560,11 +560,11 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_pose modelID="model1" pose="n/pose_02" emo="n/emo_pose_07_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-（……！？　お尻からなにか垂れてるような……？）[p]
+（……！？ Hình như có thứ gì đó đang rỉ ra từ mông mình……？）[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-（……病気……？　とかじゃないよね？）[p]
+（……Không phải là…… mắc bệnh gì đấy chứ？）[p]
 
 
 [iscript]
@@ -586,10 +586,10 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_A, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-（……どうしよう……[r]
-おまたからなにか出てきた気がする）[p]
+（……Làm sao bây giờ……[r]
+Cảm giác như có thứ gì đó vừa chảy ra từ hạ bộ）[p]
 
-（……おりもの……？　にしては多い気がするけど……）[p]
+（……Khí hư sao……？ Nhưng mà nhiều thế này thì lạ thật……）[p]
 
 
 [iscript]
@@ -608,13 +608,13 @@ Ngày mai thử lên mạng tìm xem có thứ gì dùng được không vậy..
 
 （…………？）[p]
 
-（……なにか変な感じがする……？）[p]
+（……Có một cảm giác thật kỳ lạ……？）[p]
 
-（お腹の中からあったかくなるような不思議な感じ……）[p]
+（Cảm giác ấm áp lạ thường lan tỏa từ sâu trong bụng……）[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_04_A, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
-（……今日はなにかいいことがあるのかも？）[p]
+（……Hôm nay chắc sẽ có chuyện gì tốt lành xảy ra chăng？）[p]
 
 [iscript]
 	SISMES.savedata.ohaEvent.hatsuNinshin = 2;

@@ -36,7 +36,7 @@ for (const [fileName, entries] of Object.entries(scenarioData)) {
     for (const entry of entries) {
         if (entry.translated && entry.translated.trim() !== '') {
             if (content.includes(entry.raw)) {
-                content = content.replace(entry.raw, entry.translated);
+                content = content.replace(entry.raw, () => entry.translated);
                 totalReplaced++;
                 fileModified = true;
             }

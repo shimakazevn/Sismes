@@ -18,11 +18,11 @@
 [wait time=1000]
 
 [layopt layer="message" visible=true]
-――コンコンッ[p]
+――Cốc cốc[p]
 
 
-#妹
-おにいちゃん、入ってもいい？
+#Em gái
+Anh hai ơi, em vào được không?
 
 [glink text="Cứ vào đi" target="ed1_1" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -33,7 +33,7 @@
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 [layopt layer="message" visible=true]
-お邪魔しまーす……
+Em xin phép vào nha……
 
 [glink text="Có chuyện gì thế em?" target="ed1_2" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -42,8 +42,8 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_04_A" time=600 easing="ease" wait=false]
 
-あ、うん[r]
-おにいちゃんに伝えたいことがあって……[p]
+A, vâng[r]
+Em có điều này muốn nói với anh hai……[p]
 
 
 [VRoid_pose modelID="model1" pose="n/pose_02" time=600 easing="ease" wait=false]
@@ -52,8 +52,8 @@
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_04_B, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-本当はあのオンラインゲーム、[r]
-おにいちゃんに相談する前から始めてたんだ
+Thật ra thì trò chơi online đó,[r]
+Em đã bắt đầu chơi từ trước khi hỏi ý anh hai rồi.
 
 [glink text="Vậy à..." target="ed1_3" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -62,32 +62,32 @@
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_04_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-トライアル期間でお金もかからないから[r]
-おにいちゃんには言わなかったんだけど……[p]
+Vì đang trong thời gian chơi thử không tốn tiền,[r]
+Nên em đã không nói trước với anh……[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-本当はゲームなんかしてる場合じゃないって[r]
-わかってるんだけどね、やっぱりお外は怖くて……[p]
+Em biết rõ là mình không nên lông bông chơi game như thế,[r]
+Nhưng bước ra ngoài xã hội đối với em vẫn thật đáng sợ……[p]
 
 [VRoid_emo modelID="model1" emo="n/emo_pose_03_C, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-ゲームでなら誰かと話すことができるかなって……[r]
-そこから少しずつ人に慣れて、お外が怖くなくなるかなって[p]
+Em từng nghĩ nếu ở trong game, có lẽ mình có thể trò chuyện được với ai đó……[r]
+Rồi từ đó sẽ quen dần với mọi người, và không còn sợ ra ngoài nữa[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_03" emo="n/emo_pose_03_B" time=600 easing="ease" wait=false]
 
-でも、そんなに甘くなかったね[r]
-結局余計にわからなくなって怖くなっちゃった[p]
+Thế nhưng, mọi chuyện đâu có dễ dàng như vậy nhỉ[r]
+Rốt cuộc em lại càng thêm bối rối và sợ hãi hơn[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_04" emo="n/emo_pose_04_A, n/emo_Cheek_050" time=600 easing="ease" wait=false]
 
-だけど、わたしもおにいちゃんみたいに[r]
-お家の中で働けるように、ちゃんとお勉強頑張るから……[p]
+Nhưng mà, em cũng muốn được giống như anh hai,[r]
+Có thể làm việc tại nhà, nên em sẽ cố gắng chăm chỉ học hành……[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_04_B, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
-ずっと支えててくれると嬉しいな……
+Nếu anh hai có thể luôn ở bên cạnh nâng đỡ em thì em sẽ vui lắm……
 
 [glink text="Cứ tin ở anh" target="ed1_4" color="btn_black" size=24 width="300" x=840 y=350 ]
 [s][s][s][s][s]
@@ -100,8 +100,8 @@ Dạ vâng...![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_06" emo="n/emo_pose_01_A, n/emo_Sekimen_050" time=600 easing="easeOutQuint" wait=false]
 
-不束な妹ですが[r]
-これからもよろしくお願いします……！[p]
+Dù em là đứa em gái còn nhiều vụng về,[r]
+Nhưng từ nay về sau mong anh hãy tiếp tục chiếu cố cho em nhé……![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_00" emo="n/emo_pose_04_A, n/emo_Sekimen_050" time=600 easing="ease" wait=false]
 
@@ -109,13 +109,13 @@ Dạ vâng...![p]
 
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_04_B, n/emo_Sekimen_075" time=600 easing="ease" wait=false]
 
-これが一番言いたかったんだ[r]
-あははっ……なんか改まって言うと照れるね[p]
+Đó là điều em muốn nói với anh nhất đấy[r]
+A haha…… Tự nhiên nói trang trọng thế này ngượng ghê[p]
 
 [VRoid_pose modelID="model1" pose="n/pose_01" emo="n/emo_pose_01_A, n/emo_Cheek_075" time=600 easing="ease" wait=false]
 
-それじゃあ、わたし自分のお部屋に戻るね？[r]
-お仕事で手伝えることがあったらいつでも言ってね？[p]
+Vậy thì, em xin phép về lại phòng mình nhé?[r]
+Trong công việc nếu có gì em giúp được thì anh cứ bảo em bất cứ lúc nào nha?[p]
 [layopt layer="message" visible=false]
 #
 [VRoid_layer_hide layerID="VRoid" time=600 wait=true]
@@ -148,8 +148,8 @@ Dạ vâng...![p]
 
 [layopt layer="message" visible=true]
 
-――この歪な[ruby text="兄" y=8]関[ruby text="妹" y=8]係が壊れるまで[r]
-ずっと…………ずっと…………[l]
+――Cho đến khi mối quan hệ [ruby text="anh" y=8]này[ruby text="em" y=8] méo mó này sụp đổ……[r]
+Mãi mãi………… mãi mãi…………[l]
 
 [mask time=5000]
 [layopt layer="message" visible=false]

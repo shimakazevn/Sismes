@@ -36,8 +36,8 @@ _　Trong căn phòng tĩnh mịch, chỉ có tiếng gõ phím vô hồn đều
 
 _　Căn nhà này giờ đây chỉ còn lại hai anh em tôi nương tựa vào nhau。[l]Cách một bức tường là căn phòng của bố mẹ, nơi không gian dường như ngưng đọng kể từ khi họ qua đời vài năm trước, và ngay sát cạnh đó là phòng của em gái tôi。[p]
 
-_　こうやってパソコン相手に無心で手を動かすにはうってつけの環境と言えば聞こえはいいかもしれない。[l][r]
-_　――ふーっ、と一息つき、キーボードから手を放し、代わりにコーヒーカップへ伸ばす。[l]仕事が一段落ついてしまった。[p]
+_　Nói một cách hoa mỹ thì môi trường này quả là lý tưởng để toàn tâm toàn ý gõ phím bên chiếc máy tính.[l][r]
+_　――Phù, tôi thở dài một hơi nhẹ nhõm, buông tay khỏi bàn phím và với lấy tách cà phê.[l]Công việc cuối cùng cũng tạm thời xong một chặng.[p]
 
 _　Mỗi khi có chút thời gian rảnh rỗi để suy nghĩ, nỗi bất an về một tương lai mờ mịt phía trước lại ùa về bủa vây lấy tôi。[p]
 
@@ -59,11 +59,11 @@ _　Chẳng hẳn là tuyệt vọng đến cùng cực。[l]Nhưng cũng chẳn
 
 _　――Cạch。[p]
 
-_　静まり返った部屋に、遠くでドアの開く音がかすかに響いた。[l][r]
-_　そのおかげで際限のない思考から引き戻された俺は、モニターの端に映し出された時刻に視線を落とす。[p]
+_　Trong căn phòng tĩnh mịch, từ đằng xa bỗng vang lên tiếng cửa mở nhè nhẹ.[l][r]
+_　Nhờ âm thanh ấy kéo tôi ra khỏi dòng suy nghĩ miên man, tôi đưa mắt nhìn xuống góc màn hình để xem giờ.[p]
 
-_　……そろそろ昼飯の時間だった。[l]妹はお腹が減って出てきたのだろう。[l][r]
-_　俺も何か適当なものを腹に入れるため、部屋の外へ足を向けた。[p]
+_　……Đã đến giờ ăn trưa rồi.[l]Chắc là em gái tôi thấy đói nên mới chịu bước ra ngoài.[l][r]
+_　Tôi cũng định kiếm chút gì đó bỏ bụng nên cất bước đi ra khỏi phòng.[p]
 
 [bg storage="rouka.png" time=1000 position="center"]
 
@@ -74,17 +74,17 @@ _　Con bé có thói quen xuề xòa là chỉ mặc mỗi chiếc áo phông k
 
 [bg storage="kuro.png" time=1000]
 
-_　ローテーブルの上にちょこんと置かれたノートパソコンからは聞き覚えのある音楽が流れていた。[l][r]
-_　……それは昔、やり込んでいたオンラインゲームだった。[p]
-_　有名メーカーが運営するＭＭＯ。プレイする時間がなくなり、もう何年もログインしていない。[l][r]
-_　そう言えば最近また大型アップデートが来たとかＷｅｂ広告で見掛けた気がする。[p]
+_　Từ chiếc máy tính xách tay đặt ngay ngắn trên bàn trà thấp ở phòng khách, một giai điệu quen thuộc đang vang lên.[l][r]
+_　……Đó là bản nhạc nền của tựa game online mà ngày trước tôi từng một thời say mê.[p]
+_　Một tựa MMO được vận hành bởi một nhà phát hành danh tiếng. Kể từ khi không còn thời gian rảnh, tôi đã không đăng nhập vào đó suốt bao năm nay.[l][r]
+_　Nhắc mới nhớ, dạo gần đây hình như tôi có thoáng thấy quảng cáo trên web bảo rằng game vừa có một bản cập nhật lớn.[p]
 
-_　そんなことより妹がオンラインゲーム？[l][r]
-_　引き籠ってから他者との交流をできる限り避けていた妹が？[p]
+_　Nhưng điều đáng nói hơn cả là tại sao em gái tôi lại chơi game online?[l][r]
+_　Đứa em gái kể từ khi thu mình trong phòng kín đã luôn tránh tiếp xúc với người ngoài hết mức có thể cơ mà?[p]
 
 _　Chưa kịp nghĩ ngợi gì thêm, đôi chân tôi đã tự động bước về phía chiếc máy tính xách tay。[p]
-_　……その画面には間違いなく俺の知っているゲームが映し出されており、中央には初心者マークのアイコンが付いたキャラクターが鎮座していた。[p]
-_　もしかしたら誰かの配信画面が映っているだけとも考えたが、キャラクターを動かさない範囲で操作するときちんとゲームが反応を示した。[p]
+_　……Màn hình lúc này hiển thị chính xác thế giới game mà tôi từng biết, và ở ngay trung tâm là một nhân vật có gắn huy hiệu tân thủ đang đứng yên đó.[p]
+_　Tôi từng thoáng nghĩ hay con bé chỉ đang xem livestream của ai đó thôi, nhưng khi tôi thử khẽ chạm vào điều khiển thì nhân vật lập tức phản hồi.[p]
 
 
 [bg storage="living.png" time=1000 position="center"]
@@ -92,13 +92,13 @@ _　もしかしたら誰かの配信画面が映っているだけとも考え�
 
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
-「あ、おにいちゃんもカップ麺食べる？　今お湯沸かすよー」[l][r][r]
+「A, anh hai cũng ăn mì ly luôn không? Để em đun nước sôi cho nha~」[l][r][r]
 
-_　キッチンから顔を出す妹。ああ、と短い返事をする。[p]
+_　Em gái tôi thò đầu ra từ gian bếp. Tôi chỉ đáp lại ngắn gọn một tiếng 「Ờ」.[p]
 
 [VRoid_layer_hide layerID="VRoid" time=600 wait=true]
 
-_　――そのまま一緒にカップ麺を食べたが、妹からはゲームの話は出てこなかった。[p]
+_　――Sau đó, hai anh em cùng ngồi ăn mì ly, nhưng con bé tuyệt nhiên không hề đả động gì tới chuyện game gủng.[p]
 
 
 
@@ -108,134 +108,134 @@ _　――そのまま一緒にカップ麺を食べたが、妹からはゲー�
 [bg storage="heya.png" time=1000 position="center"]
 
 
-_　午後の仕事に意識を向けることは難しかった。[l][r]
-_　妹の心情の変化を読み取れなかったことが、どうにも心に引っかかっていた。[p]
+_　Buổi chiều hôm ấy, tôi chẳng thể nào tập trung nổi vào công việc.[l][r]
+_　Việc không nắm bắt được sự thay đổi trong tâm lý của em gái cứ như chiếc gai mắc trong lòng tôi.[p]
 
-_　こちらから聞き出しても良かったのではないかと考えを巡らせるも、さすがに過保護すぎないか、過干渉ではないかという思考に足止めされた。[p]
+_　Tôi đã nghĩ đến việc chủ động gặng hỏi con bé, nhưng rồi lại ngập ngừng vì sợ mình quá bảo bọc, quá can thiệp vào đời tư của nó.[p]
 
-_　……とはいえ、気になるものは気になる。[p]
+_　……Dẫu vậy, một khi đã bận tâm thì lòng dạ cứ bồn chồn không yên.[p]
 
-_　そんな状態のまま二時間ほどが過ぎ、このままでは仕事に手が付かないと判断した俺は、あのゲームのダウンロードを始めた。[p]
-_　長年のアップデートを重ねて膨れ上がったゲームクライアントのダウンロードには時間がかかる。[l]家の回線はそれほど速くないことも相まって、何も手につかない虚無の時間だけが流れた。[p]
-_　そしてダウンロードとインストールが終わり、ログイン画面まで辿り着いた頃には既に日が傾こうとしていた。[p]
+_　Cứ thế loay hoay suốt gần hai tiếng đồng hồ, nhận thấy cứ đà này thì chẳng thể làm việc được, tôi bèn bắt đầu tải tựa game đó về.[p]
+_　Bản cài đặt của một tựa game trải qua nhiều năm cập nhật đã phình to đáng kể và tốn rất nhiều thời gian để tải.[l]Cộng thêm đường truyền mạng ở nhà cũng chẳng nhanh nhẹn gì, khiến khoảng thời gian chờ đợi trở nên dài đằng đẵng và trống rỗng.[p]
+_　Khi quá trình tải và cài đặt hoàn tất, bước tới được màn hình đăng nhập thì trời cũng đã ngả về chiều.[p]
 
-_　昔ゲームをしていた頃のＩＤやパスワードは大体同じものを使っていたこともあり、ログイン自体は問題なくできそうだった。[l]しかし……[p]
+_　ID và mật khẩu từ hồi còn chơi game tôi vốn quen dùng chung một kiểu, nên việc đăng nhập có lẽ không thành vấn đề.[l]Thế nhưng……[p]
 
-_　――『このアカウントは、サービス契約状態が「契約なし」になっているため、プレイすることができません』[p]
+_　――『Tài khoản này hiện đang ở trạng thái "Hết hạn hợp đồng dịch vụ", không thể tham gia trò chơi』[p]
 
-_　そうだった。[l]そもそもこのゲームは月額課金制だった。[l]そこで妹がゲームの話題に触れなかった理由についてさらにわからなくなる。[p]
-_　妹には毎月少額ではあるがお小遣いを与えている。好きに使っていいとは言っているが、妹はこの家の経済状況を気にしているためかほとんど使おうとしなかった。[p]
-_　それでも何かに金を使うときは、まず俺に相談してくる。[l]ましてこれは月額制だ。[l]妹の性格なら、必ず俺にこのゲームのことを伝えるだろう。[p]
+_　Phải rồi.[l]Ngay từ đầu trò chơi này vốn vận hành theo hình thức thu phí theo tháng.[l]Điều đó lại càng khiến tôi thêm thắc mắc vì sao con bé không hề nhắc tới chuyện này.[p]
+_　Hàng tháng tôi vẫn đưa cho em gái một khoản tiền tiêu vặt nhỏ. Dù tôi luôn bảo con bé cứ thoải mái tiêu xài theo ý thích, nhưng vì lo cho hoàn cảnh kinh tế gia đình nên con bé hầu như chẳng bao giờ dám đụng đến.[p]
+_　Dù vậy, mỗi khi cần dùng tiền vào việc gì, bao giờ con bé cũng hỏi ý kiến tôi trước.[l]Huống hồ đây lại là phí duy trì hàng tháng.[l]Với tính cách của em gái, chắc chắn con bé sẽ phải nói cho tôi biết về tựa game này chứ.[p]
 
-_　ひとまず最短の一か月分だけ課金処理を済ませ、もう一度ログインを実行する。[p]
+_　Trước mắt, tôi thanh toán gói cước ngắn nhất là một tháng, rồi thực hiện đăng nhập lại một lần nữa.[p]
 
-_　今度は無事キャラクター選択画面に進み、数年ぶりにゲームアバターに再会する。[l][r]
-_　ヘッドホンから流れるＢＧＭに懐かしさを覚えながら、ゲームを開始した。[p]
+_　Lần này thuận lợi tiến vào màn hình chọn nhân vật, gặp lại hình bóng nhân vật ảo của mình sau nhiều năm xa cách.[l][r]
+_　Giai điệu BGM phát ra từ tai nghe khơi gợi lại biết bao kỷ niệm xưa cũ, và rồi tôi bắt đầu trò chơi.[p]
 
-_　ローディング画面が表示され、ワールドマップに切り替わると同時に戦闘ＢＧＭへと変わった。[p]
-_　どうやら敵の出現するフィールドのど真ん中で最後にログアウトしていたようだ。[l]しかし、このフィールドの敵のレベルはそこまで高くない。[p]
-_　ほどほどにやり込んでいた俺は、焦らずに近くの敵を倒そうとカメラを操作すると、昼間に見た初心者マークを付けたキャラクターが敵を大量に引き連れて逃げ回っていた。[p]
+_　Màn hình tải dữ liệu hiện lên, ngay khi chuyển cảnh sang bản đồ thế giới thì nhạc nền chiến đấu lập tức vang lên dồn dập.[p]
+_　Có vẻ như lần đăng xuất cuối cùng ngày xưa, tôi đã để nhân vật đứng ngay giữa một bãi quái vật.[l]Tuy nhiên, cấp độ quái ở khu vực này không cao cho lắm.[p]
+_　Vốn là người từng cày cuốc kha khá, tôi bình tĩnh xoay góc nhìn camera để dọn dẹp lũ quái gần đó, thì bất ngờ bắt gặp nhân vật có gắn huy hiệu tân thủ hồi trưa đang hớt hải bỏ chạy trước một đàn quái bu đông nghẹt.[p]
 
-_　……一先ず片っ端からトレインされている敵を倒す。[l][r]
-_　久しぶりだったためもあり、多少操作に難があったが妹のＨＰバーが空になる前には殲滅することができた。[p]
-
-
-_　妹が俺の前に移動してくる。[l]……が、なにも話さない。[l]ただ近くをちょこまかと巡回している。[l][r]
-_　もしかしてチャットの仕方すらわからないのだろうか？　と思い、見ようによっては煽っているようにも感じる妹に操作方法を教えた。[p]
+_　……Trước mắt, tôi xông vào tiêu diệt từng con quái đang đuổi theo con bé.[l][r]
+_　Lâu ngày không chơi nên thao tác có phần đôi chút gượng gạo, nhưng tôi đã kịp quét sạch lũ quái trước khi thanh máu của em gái tụt về số 0.[p]
 
 
-『ありがとうございます！』[l][r][r]
+_　Em gái điều khiển nhân vật chạy đến đứng trước mặt tôi.[l]……Thế nhưng, con bé chẳng nói chẳng rằng câu nào.[l]Chỉ lăng xăng chạy quanh nhân vật của tôi như muốn nói điều gì đó.[l][r]
+_　Không lẽ con bé còn chẳng biết cách dùng khung chat sao? Nghĩ vậy, nhìn hành động của con bé trông có vẻ như đang trêu ngươi, tôi liền hướng dẫn cho con bé cách thao tác chat.[p]
 
-_　お礼の言葉を貰う。[l]どうやらこのゲームを始めたばかりで、よくわからない間にこの状況になったらしい。[p]
-_　それから近くの安全な街まで連れて行き、何をすればいいかと聞かれたり、こちらから色々と教えたりしているうちに時間が過ぎていった。[p]
+
+『Em cảm ơn anh rất nhiều ạ!』[l][r][r]
+
+_　Tôi nhận được lời cảm ơn từ con bé.[l]Có vẻ như con bé mới chỉ vừa chập chững bước vào game, trong lúc ngơ ngác chưa hiểu gì thì bị rơi vào tình cảnh hiểm nghèo đó.[p]
+_　Sau đó, tôi dẫn con bé về một thị trấn an toàn gần đó. Trong lúc con bé hỏi cần phải làm gì tiếp theo và tôi tận tình chỉ dẫn từng ly từng tí, thời gian cứ thế trôi đi.[p]
 
 
 [bg storage="kuro.png" time=1000 position="center"]
 
 
-_　そんな出来事から一週間が過ぎようとしていた。[l][r]
-_　その間、仕事の隙間を縫ってはゲームにログインし、妹と遊んでいるうちに色々と気付いたことがあった。[p]
+_　Thấm thoát một tuần lễ đã trôi qua kể từ sự việc hôm ấy.[l][r]
+_　Suốt quãng thời gian đó, tranh thủ những lúc rảnh rỗi giữa giờ làm việc, tôi lại đăng nhập vào game chơi cùng em gái, và nhận ra được nhiều điều.[p]
 
 _　Điều đầu tiên là, con bé gõ phím nhắn tin cực kỳ nhanh。[l]Có khi còn nhanh hơn cả tôi nữa。[p]
 _　Lúc gặng hỏi thì con bé bảo là lúc rảnh rỗi thường hay chơi mấy trò tập gõ phím để giết thời gian。[l]...Chuyện này thì đúng là trước giờ tôi không hề hay biết。[p]
 
-_　それと思ったよりも他人への振る舞いができている。[l]むしろ自然なほどだ。[l][r]
-_　他者との交流を何年も避けていたであろう妹が、意外なほどコミュニケーションが上手かった。[p]
+_　Hơn nữa, cách con bé ứng xử với người khác cũng tốt hơn tôi tưởng nhiều.[l]Thậm chí có thể nói là rất đỗi tự nhiên.[l][r]
+_　Một đứa em gái tưởng chừng như đã cô lập bản thân, tránh né giao tiếp với xã hội suốt bao năm trời, vậy mà lại có khả năng trò chuyện khéo léo đến bất ngờ.[p]
 
 
-_　ちなみに妹はまだ目の前のキャラクターの中に俺がいることを知らない。[l][r]
-_　兄というフィルターがない方が話せることもあるのではないかと思い、隠し続けている。[p]
+_　Nhân tiện nói thêm, em gái tôi vẫn hoàn toàn không hay biết người đang điều khiển nhân vật trước mặt nó chính là anh trai mình.[l][r]
+_　Tôi nghĩ rằng nếu không có lăng kính "anh trai" ngăn cách, có lẽ con bé sẽ cởi mở giãi bày được nhiều điều hơn, nên tôi vẫn tiếp tục giấu kín thân phận.[p]
 
 
-_　……だがそれも今日で終わりだ。[p]
-_　妹はこのゲームに無料のトライアル期間があると知って始めたらしい。[l]それが今日の２４時に終わる。[l][r]
-_　それを聞いた時は、なるほどそれで俺に相談することもなく始めたのかと納得した。[p]
+_　……Nhưng chuỗi ngày này cũng sẽ kết thúc vào hôm nay.[p]
+_　Nghe đâu em gái tôi biết trò này có đợt chơi thử miễn phí nên mới bắt đầu chơi.[l]Và đợt trải nghiệm đó sẽ kết thúc vào đúng 24 giờ đêm nay.[l][r]
+_　Khi nghe được điều đó, tôi mới vỡ lẽ ra lý do vì sao con bé lại tự ý chơi game mà không hề hỏi ý kiến tôi trước.[p]
 
 
 [bg storage="heya.png" time=1000 position="center"]
 
-_　時計は２１時を回ろうとしていた。[l][r]
-_　トライアル期間が２４時に終わるとはいえ、生活時間を崩さずにいる妹のタイムリミットは２２時だ。[p]
+_　Đồng hồ đã điểm gần 21 giờ.[l][r]
+_　Dù thời gian chơi thử kéo dài đến 24 giờ, nhưng để giữ đúng nếp sinh hoạt điều độ, giờ giới nghiêm của em gái tôi là 22 giờ.[p]
 
-『あ、あの……最後にちゃんとお礼を言わせてください』[l][r][r]
+『A, chuyện là…… Trước khi chia tay, em muốn được cảm ơn anh đàng hoàng ạ』[l][r][r]
 
 _　Dù tôi có bảo là không cần dùng kính ngữ khách sáo đâu, nhưng rốt cuộc con bé vẫn giữ cách nói chuyện lễ phép ấy cho đến tận phút cuối。[p]
 
-_　少しの間があり、チャット欄に表示された文字に我が目を疑った。[l][r][r]
+_　Im ắng một thoáng, những dòng chữ hiện lên trên khung chat khiến tôi không thể tin vào mắt mình.[l][r][r]
 
-『直接伝えたいので……えっと、ボイスチャットしてもいいですか？』[p]
+『Vì em muốn trực tiếp nói với anh…… Ừm thì, em bật Voice Chat được không anh?』[p]
 
-_　このゲームではパーティーを組むと、そのパーティー内でボイスチャットができる。[l][r]
-_　妹の真意が全く分からないまま、俺にはマイクがないからと咄嗟に嘘をつき、それでもいいならと伝える。[p]
+_　Trong tựa game này, khi lập tổ đội với nhau thì các thành viên có thể trò chuyện trực tiếp qua voice chat.[l][r]
+_　Trong lúc hoàn toàn chưa hiểu dụng ý của con bé là gì, tôi vội vã viện cớ nói dối rằng mình không có mic, rồi nhắn nếu em không phiền thì cứ nói đi.[p]
 
 _　Sau một thoáng ngập ngừng, từ chiếc tai nghe phát ra vài tiếng sột soạt rè rè, và rồi――[p]
 
 
-「あ……あの……聴こえていますか？」[l][r][r]
+「A…… Alo…… Anh có nghe thấy em nói không ạ?」[l][r][r]
 
 _　Một giọng nói trong trẻo, khẽ khàng truyền thẳng vào tai tôi。[p]
 
 
-_　普段から聞き慣れているはずのその声は、俺の知っている妹の、俺の知らない妹の声だった。[p]
+_　Thanh âm mà đáng lẽ ra tôi đã nghe đến quen tai mỗi ngày, vừa là giọng nói của đứa em gái tôi quen thuộc, nhưng lại vừa là giọng của một đứa em gái hoàn toàn xa lạ đối với tôi.[p]
 
-「もっ……もしかするとこれで最後かもしれないので……ちゃんとお礼が言いたくて……」[l][r][r]
+「C-Có thể đây sẽ là lần cuối cùng hai đứa mình gặp nhau…… Nên em muốn được nói lời cảm ơn anh thật lòng……」[l][r][r]
 
-「あと、ごめんなさい……おにいちゃんにボイスチャットしてるの気付かれると恥ずかしいから……小声になっちゃいます」[p]
+「Với lại, em xin lỗi nhé…… Nếu để anh hai phát hiện em đang nói chuyện voice chat thì ngượng chết mất…… Nên em phải nói nhỏ thế này thôi」[p]
 
-_　できる限り小さな声を拾うようにマイクを近づけているのか、吐息混じりの声がヘッドホンから直接脳を揺さぶってきた。[p]
-_　普段とは違う妹の声……。[l]それを聴く度に俺の中の何かが熱を帯び、昂ってくるのを感じる……。[p]
+_　Có lẽ vì con bé kề sát miệng vào mic để thu được âm thanh nhỏ nhất, nên từng hơi thở hòa lẫn trong giọng nói truyền thẳng qua tai nghe khiến tâm can tôi rung chuyển dữ dội.[p]
+_　Một giọng nói hoàn toàn khác hẳn thường ngày của em gái……[l]Mỗi khi nghe thanh âm ấy, tôi lại cảm thấy có thứ gì đó bên trong mình đang rạo rực, nóng bừng và trỗi dậy mãnh liệt……[p]
 
-「本当はトライアルだけで終わろうと思ってたんですけど……」[l][r][r]
+「Thật lòng thì em từng nghĩ chỉ chơi thử cho biết thôi rồi sẽ nghỉ ngay……」[l][r][r]
 
-_　実はこの一週間で気になっていたことはあった。[p]
-_　妹は俺のキャラクターに……その先にいる者に好意を持っているんじゃないかと。[l][r]
-_　そして好意は、友達へのものではなく、異性へ向けたものではないかと。[p]
+_　Thực ra trong suốt một tuần qua, có một điều luôn khiến tôi bận lòng suy nghĩ.[p]
+_　Liệu có phải em gái đang dành tình cảm cho nhân vật của tôi…… cho người đang ở phía bên kia màn hình hay không.[l][r]
+_　Và tình cảm đó, không phải là tình bạn đơn thuần, mà là tình cảm dành cho một người khác giới.[p]
 
-_　そんなわけないかとも思っていたし、もしそうであっても色恋沙汰に耐性を持っていない妹なら逆に納得もしていたが、今の妹の声を聴いて確信めいた何かが脳裏をよぎった。[p]
-_　恐らく無自覚であろう妹のその声からは、紛れもなく女のそれが漏れ出ていた。[l][r]
-_　今まで聞いたことない猫なで声を出す、そんな妹の性に、俺は言い知れぬ興奮を覚えていた。[p]
+_　Tôi từng nghĩ chuyện đó làm sao có thể xảy ra được, nhưng nếu là con bé vốn chẳng có chút đề kháng nào với chuyện yêu đương thì cũng không phải không có lý, thế nhưng khi nghe giọng nói của con bé lúc này, một linh cảm chắc chắn chợt lóe lên trong đầu tôi.[p]
+_　Từ giọng nói ngây thơ dường như không tự nhận thức được ấy, không nghi ngờ gì nữa, đang toát ra sức quyến rũ chết người của một người đàn bà.[l][r]
+_　Giọng điệu nũng nịu ngọt ngào như mèo con chưa từng nghe thấy bao giờ, nét nữ tính lạ lẫm ấy của em gái khiến tôi dâng trào một cảm giác hưng phấn khôn tả.[p]
 
-_　そんな目で妹を見たことはなかった。[l]少なくとも自分ではそう思っていたはずなのに……。[p]
+_　Tôi chưa từng nhìn em gái mình bằng ánh mắt đó bao giờ.[l]Ít nhất thì bản thân tôi vẫn luôn tự nhủ như vậy……[p]
 
-_　妹の口から媚薬のような声が漏れ出る度に、俺の息は荒くなり、気が付くと陰茎は痛いくらいに膨張していた。[p]
+_　Mỗi khi giọng nói ngọt ngào như liều thuốc mê ấy thốt ra từ bờ môi em gái, hơi thở của tôi lại càng dồn dập, và khi nhận ra thì hạ bộ đã cương cứng đến đau nhức.[p]
 
-_　その恐ろしく甘い声色を……吐息を鼓膜から浴びる度に忌避感は形を変え、気が付くと俺の手は自分自身を包み、上下へと動かしていた。[l][r]
-_　今まで経験したことのない、鮮烈で背徳的な感情に支配されていた。[p]
-
-
-「でも、続けるならおにいちゃんに相談した方がいいと思うから……」[l][r][r]
-
-_　もはやなにを話しているかは理解していなかった。ただ、『おにいちゃん』という言葉が響く度に、加速度的に俺の中で何かが壊れていった。[p]
-
-「それじゃあ……本当にありがとうございました……！　おやすみなさい……」[l][r][r]
-
-_　妹のアバターがログアウトして消えたモニターには、白濁した俺の罪悪感がどろりと張り付いていた。[p]
-_　欲望を一度吐き出してなお、反り立ったソレに手を添える。[l]妹への罪悪感も、自身への嫌悪感も、何もかも全てが今は麻薬のように強く背徳への依存を誘っていた。[p]
+_　Mỗi khi thứ thanh âm ngọt lịm đến đáng sợ kia…… từng hơi thở ấm áp rót thẳng vào màng nhĩ, sự kiêng dè trong tôi dần biến chất, và chẳng biết từ lúc nào bàn tay tôi đã nắm lấy thứ nam tính của mình, vuốt ve lên xuống nhịp nhàng.[l][r]
+_　Một cảm xúc mãnh liệt đầy tội lỗi và trái luân thường đạo lý mà tôi chưa từng nếm trải bao giờ đang hoàn toàn chiếm trọn lấy tâm trí.[p]
 
 
-_　――もっと……もっと妹の声が聴きたい。[l][r][r]
+「Nhưng mà, nếu muốn tiếp tục chơi thì em nghĩ mình nên bàn bạc với anh hai trước thì hơn……」[l][r][r]
 
-_　――もっと……妹を近くで味わいたい。[p]
+_　Lúc này tôi chẳng còn bận tâm con bé đang nói những gì nữa. Chỉ là, mỗi khi hai từ 『Anh hai』 vang lên, thứ gì đó bên trong tôi lại vụn vỡ với tốc độ không thể cứu vãn.[p]
+
+「Vậy thì…… Em thực sự cảm ơn anh nhiều lắm ạ……! Chúc anh ngủ ngon nhé……」[l][r][r]
+
+_　Sau khi hình bóng nhân vật của em gái đăng xuất biến mất khỏi màn hình, vết nhơ tội lỗi trắng đục của tôi cũng bắn tung tóe nhớp nháp bám chặt lên mặt kính.[p]
+_　Dù đã giải tỏa dục vọng một lần, tay tôi vẫn không rời khỏi thứ đang dựng đứng ngạo nghễ kia.[l]Cảm giác tội lỗi với em gái, sự ghê tởm chính bản thân mình, tất cả lúc này lại như một liều thuốc phiện đầy ma lực cuốn tôi chìm sâu vào cơn nghiện loạn luân tội lỗi.[p]
+
+
+_　――Tôi muốn…… muốn được nghe giọng nói của em gái nhiều hơn nữa.[l][r][r]
+
+_　――Tôi muốn…… được thưởng thức cơ thể của em gái ở khoảng cách thật gần.[p]
 
 
 
@@ -249,7 +249,7 @@ _　――もっと……妹を近くで味わいたい。[p]
 [VRoid_layer_show layerID="VRoid" time=600 wait=true]
 
 
-「おはよう、おにいちゃん」[l][r][r]
+「Chào buổi sáng anh hai」[l][r][r]
 
 [iscript]
 	$("#VRoid").addClass("fadeColor")
@@ -258,7 +258,7 @@ _　――もっと……妹を近くで味わいたい。[p]
 [VRoid_pose modelID="model1" pose="n/pose_05" emo="n/emo_pose_00_A, n/emo_Cheek_100" time=600 easing="ease" wait=false]
 
 
-「あ、そうだっ、おにいちゃん、ちょっとあとで相談があるんだけど……」
+「A, đúng rồi, anh hai ơi, lát nữa em có chuyện này muốn hỏi ý anh một chút……」
 
 [wait time=5000]
 
@@ -278,7 +278,7 @@ _　――もっと……妹を近くで味わいたい。[p]
 
 [position layer="message0" width=640 height=60 top=346 left=360 margint=0 marginl=0 marginr=0 marginb=0 opacity=255 page="fore"]
 
-――もっと……お[ruby text="妹" x=-14]前の[ruby text="メス"]色を感じさせてくれ。
+――Hãy để anh cảm nhận sâu sắc hơn nữa…… sắc màu [ruby text="giống cái"]nữ tính[ruby text="của em"] nơi em gái anh.
 
 [wait time=3000]
 [mask time=5000]

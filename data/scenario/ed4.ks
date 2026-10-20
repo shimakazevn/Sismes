@@ -14,12 +14,12 @@
 [layopt layer="message" visible=true]
 ......Rốt cuộc thì............[p]
 
-なんだかんだで『兄妹』を[r]
-続けていきたいんだよな、俺は……[p]
+Dù có thế nào đi chăng nữa, mối quan hệ "anh em" này...[r]
+mình vẫn muốn tiếp tục gìn giữ nó, đúng không nhỉ……[p]
 
 
-さて、と……[r]
-今日も仕事するか[p]
+Thôi nào……[r]
+Hôm nay lại tiếp tục làm việc thôi[p]
 [layopt layer="message" visible=false]
 
 [wait time=1000]
