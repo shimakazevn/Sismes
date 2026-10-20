@@ -569,12 +569,10 @@ body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textar
 	position:absolute;
 	z-index: 90;
 	top: 460px;
-	left: 810px;
+	left: 760px;
 	line-height: 30px;
 	font-size: 20px;
-	
 	pointer-events:none;
-
 	color:#fefefe;
 	text-shadow:
 		-1px -1px 0 #4b4b4b,
@@ -585,28 +583,28 @@ body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textar
 		 1px -1px 0 #4b4b4b,
 		 1px  0   0 #4b4b4b,
 		 1px  1px 0 #4b4b4b;
-
 	opacity: 0.8;
 }
 
 .KaihatsuName{
 	position:absolute;
 	z-index: 10;
-	left 0;
-	width: 4em;
+	left: 0;
+	width: 5.5em;
 	text-align:right;
+	white-space: nowrap;
 }
 
 .KaihatsuLevelLabel{
 	position:absolute;
 	z-index: 10;
-	left: 5em;
+	left: 6.2em;
 }
 
 .KaihatsuLevel{
 	position:absolute;
 	z-index: 10;
-	left: 6em;
+	left: 7.2em;
 	width: 2em;
 	text-align:right;
 }
@@ -621,7 +619,7 @@ body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textar
 	border:1px solid #fefefe;
 	box-sizing:border-box;
 	overflow:visible;
-	left:9em;
+	left:10em;
 	margin-top: 5px;
 	padding: 1px;
 }
