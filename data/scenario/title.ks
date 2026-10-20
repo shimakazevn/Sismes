@@ -57,13 +57,13 @@
 
 *select
 
-[glink color="btn_black" size=24 width="300" x=840 y=260 target="mode_select" text="はじめから" ]
-[glink color="btn_black" size=24 width="300" x=840 y=360 target="load" text="つづきから" ]
-[glink color="btn_black" size=24 width="300" x=840 y=460 target="free_mode" text="フリーモード" ]
-[glink color="btn_black" size=24 width="300" x=840 y=560 target="close" text="閉じる"]
+[glink color="btn_black" size=24 width="300" x=840 y=260 target="mode_select" text="Bắt đầu mới" ]
+[glink color="btn_black" size=24 width="300" x=840 y=360 target="load" text="Tiếp tục" ]
+[glink color="btn_black" size=24 width="300" x=840 y=460 target="free_mode" text="Chế độ Tự do" ]
+[glink color="btn_black" size=24 width="300" x=840 y=560 target="close" text="Thoát"]
 
 
-[glink color="btn_black" size=24 width="300" x=240 y=560 storage="zenjitsu.ks" target="start" text="前日譚" cond="sf.globalClear"]
+[glink color="btn_black" size=24 width="300" x=240 y=560 storage="zenjitsu.ks" target="start" text="Tiền truyện" cond="sf.globalClear"]
 
 [button name="sismes_config" width=50 x=1220 y=10 graphic="config.png" exp="sismes.config()" role="dummy"]
 

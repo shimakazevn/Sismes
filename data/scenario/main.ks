@@ -169,30 +169,30 @@
 
 [glink_config show_time=300]
 
-[glink color="btn_black"           size=24 width="200" x=840 y=260 target="commu"  text="コミュニケーション" cond="SISMES.savedata.status.shinrai >= 0"]
-[glink color="btn_black disableUI" size=24 width="200" x=840 y=260 target="select" text="コミュニケーション" cond="SISMES.savedata.status.shinrai < 0"]
+[glink color="btn_black"           size=24 width="200" x=840 y=260 target="commu"  text="Trò chuyện" cond="SISMES.savedata.status.shinrai >= 0"]
+[glink color="btn_black disableUI" size=24 width="200" x=840 y=260 target="select" text="Trò chuyện" cond="SISMES.savedata.status.shinrai < 0"]
 
-[glink color="btn_black" size=24 width="200" x=840 y=360 target="work" text="仕事" cond="SISMES.savedata.event.shinrai_11"]
-[glink color="btn_black" size=24 width="200" x=840 y=460 target="kyuukei" text="休憩" cond="SISMES.savedata.event.shinrai_11"]
+[glink color="btn_black" size=24 width="200" x=840 y=360 target="work" text="Làm việc" cond="SISMES.savedata.event.shinrai_11"]
+[glink color="btn_black" size=24 width="200" x=840 y=460 target="kyuukei" text="Nghỉ ngơi" cond="SISMES.savedata.event.shinrai_11"]
 
-[glink color="btn_black disableUI" size=24 width="200" x=840 y=360 target="select" text="仕事" cond="!SISMES.savedata.event.shinrai_11"]
-[glink color="btn_black disableUI" size=24 width="200" x=840 y=460 target="select" text="休憩" cond="!SISMES.savedata.event.shinrai_11"]
+[glink color="btn_black disableUI" size=24 width="200" x=840 y=360 target="select" text="Làm việc" cond="!SISMES.savedata.event.shinrai_11"]
+[glink color="btn_black disableUI" size=24 width="200" x=840 y=460 target="select" text="Nghỉ ngơi" cond="!SISMES.savedata.event.shinrai_11"]
 
 
-[glink color="btn_black" size=24 width="200" x=240 y=260 target="tsuhan" text="通販"]
-[glink color="btn_black" size=24 width="200" x=240 y=360 target="skill" text="スキル"]
-[glink color="btn_black" size=24 width="200" x=240 y=460 target="eroStatus" text="妹の様子"]
+[glink color="btn_black" size=24 width="200" x=240 y=260 target="tsuhan" text="Cửa hàng"]
+[glink color="btn_black" size=24 width="200" x=240 y=360 target="skill" text="Kỹ năng"]
+[glink color="btn_black" size=24 width="200" x=240 y=460 target="eroStatus" text="Xem em gái"]
 
 ;ぬいぐるみ実装した場合のレイアウト
 ;実装したらothers/img/mainMemo.pngも変更すること
 /*
-[glink color="btn_black" size=24 width="200" x=240 y=210 target="tsuhan" text="通販"]
+[glink color="btn_black" size=24 width="200" x=240 y=210 target="tsuhan" text="Cửa hàng"]
 
-[glink color="btn_black" size=24 width="200" x=240 y=310 target="skill" text="スキル"]
+[glink color="btn_black" size=24 width="200" x=240 y=310 target="skill" text="Kỹ năng"]
 
-[glink color="btn_black" size=24 width="200" x=240 y=410 target="camera" text="隠しカメラ" cond="SISMES.savedata.item['ぬいぐるみ']"]
+[glink color="btn_black" size=24 width="200" x=240 y=410 target="camera" text="Camera" cond="SISMES.savedata.item['ぬいぐるみ']"]
 
-[glink color="btn_black" size=24 width="200" x=240 y=510 target="eroStatus" text="妹の様子"]
+[glink color="btn_black" size=24 width="200" x=240 y=510 target="eroStatus" text="Xem em gái"]
 */
 
 
@@ -267,15 +267,15 @@
 
 [glink_config show_time=300]
 
-[glink color="btn_black commu_1" size=24 width="200" x=840 y=210 target="commu1" text="会話する"    cond="SISMES.savedata.status.hp >= 20"]
-[glink color="btn_black commu_2" size=24 width="200" x=840 y=310 target="commu2" text="勉強をみる"  cond="SISMES.savedata.event.shinrai_20 && SISMES.savedata.status.hp >= 30 && SISMES.savedata.status.shinrai >= 20"]
-[glink color="btn_black commu_3" size=24 width="200" x=840 y=410 target="commu3" text="ゲームする"  cond="SISMES.savedata.event.shinrai_40 && SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.shinrai >= 40"]
-[glink color="btn_black" size=24 width="200" x=840 y=510 target="select" text="戻る"]
+[glink color="btn_black commu_1" size=24 width="200" x=840 y=210 target="commu1" text="Nói chuyện"    cond="SISMES.savedata.status.hp >= 20"]
+[glink color="btn_black commu_2" size=24 width="200" x=840 y=310 target="commu2" text="Kèm học"  cond="SISMES.savedata.event.shinrai_20 && SISMES.savedata.status.hp >= 30 && SISMES.savedata.status.shinrai >= 20"]
+[glink color="btn_black commu_3" size=24 width="200" x=840 y=410 target="commu3" text="Chơi game"  cond="SISMES.savedata.event.shinrai_40 && SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.shinrai >= 40"]
+[glink color="btn_black" size=24 width="200" x=840 y=510 target="select" text="Quay lại"]
 
 
-[glink color="btn_black commu_1 disableUI" size=24 width="200" x=840 y=210 target="commu" text="会話する"    cond="SISMES.savedata.status.hp < 20"]
-[glink color="btn_black commu_2 disableUI" size=24 width="200" x=840 y=310 target="commu" text="勉強をみる"  cond="!SISMES.savedata.event.shinrai_20 || SISMES.savedata.status.hp < 30 || SISMES.savedata.status.shinrai < 20"]
-[glink color="btn_black commu_3 disableUI" size=24 width="200" x=840 y=410 target="commu" text="ゲームする"  cond="!SISMES.savedata.event.shinrai_40 || SISMES.savedata.status.hp < 40 || SISMES.savedata.status.shinrai < 40"]
+[glink color="btn_black commu_1 disableUI" size=24 width="200" x=840 y=210 target="commu" text="Nói chuyện"    cond="SISMES.savedata.status.hp < 20"]
+[glink color="btn_black commu_2 disableUI" size=24 width="200" x=840 y=310 target="commu" text="Kèm học"  cond="!SISMES.savedata.event.shinrai_20 || SISMES.savedata.status.hp < 30 || SISMES.savedata.status.shinrai < 20"]
+[glink color="btn_black commu_3 disableUI" size=24 width="200" x=840 y=410 target="commu" text="Chơi game"  cond="!SISMES.savedata.event.shinrai_40 || SISMES.savedata.status.hp < 40 || SISMES.savedata.status.shinrai < 40"]
 
 [glink_config show_time=0]
 
@@ -395,25 +395,25 @@
 
 [if exp="SISMES.savedata.status.shinrai < 80"]
 	;信頼80未満のとき
-	[glink color="btn_black work_1" size=24 width="200" x=840 y=210 target="work1" text="普通"    cond="SISMES.savedata.status.hp >= 25"]
-	[glink color="btn_black work_2" size=24 width="200" x=840 y=310 target="work2" text="本気"      cond="SISMES.savedata.status.hp >= 50 && SISMES.savedata.status.risei <= 80"]
-	[glink color="btn_black work_3" size=24 width="200" x=840 y=410 target="work3" text="全力"      cond="SISMES.savedata.status.hp >= 100 && SISMES.savedata.status.risei <= 60"]
+	[glink color="btn_black work_1" size=24 width="200" x=840 y=210 target="work1" text="Bình thường"    cond="SISMES.savedata.status.hp >= 25"]
+	[glink color="btn_black work_2" size=24 width="200" x=840 y=310 target="work2" text="Nghiêm túc"      cond="SISMES.savedata.status.hp >= 50 && SISMES.savedata.status.risei <= 80"]
+	[glink color="btn_black work_3" size=24 width="200" x=840 y=410 target="work3" text="Hết sức"      cond="SISMES.savedata.status.hp >= 100 && SISMES.savedata.status.risei <= 60"]
 
-	[glink color="btn_black work_1 disableUI" size=24 width="200" x=840 y=210 target="work" text="普通"  cond="SISMES.savedata.status.hp < 25"]
-	[glink color="btn_black work_2 disableUI" size=24 width="200" x=840 y=310 target="work" text="本気"    cond="SISMES.savedata.status.hp < 50  || SISMES.savedata.status.risei > 80"]
-	[glink color="btn_black work_3 disableUI" size=24 width="200" x=840 y=410 target="work" text="全力"    cond="SISMES.savedata.status.hp < 100 || SISMES.savedata.status.risei > 60"]
+	[glink color="btn_black work_1 disableUI" size=24 width="200" x=840 y=210 target="work" text="Bình thường"  cond="SISMES.savedata.status.hp < 25"]
+	[glink color="btn_black work_2 disableUI" size=24 width="200" x=840 y=310 target="work" text="Nghiêm túc"    cond="SISMES.savedata.status.hp < 50  || SISMES.savedata.status.risei > 80"]
+	[glink color="btn_black work_3 disableUI" size=24 width="200" x=840 y=410 target="work" text="Hết sức"    cond="SISMES.savedata.status.hp < 100 || SISMES.savedata.status.risei > 60"]
 [else]
 	;信頼80以上のとき
-	[glink color="btn_black work_1" size=24 width="200" x=840 y=210 target="work1" text="普通"    cond="SISMES.savedata.status.hp >= 20"]
-	[glink color="btn_black work_2" size=24 width="200" x=840 y=310 target="work2" text="本気"      cond="SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.risei <= 80"]
-	[glink color="btn_black work_3" size=24 width="200" x=840 y=410 target="work3" text="全力"      cond="SISMES.savedata.status.hp >= 80 && SISMES.savedata.status.risei <= 60"]
+	[glink color="btn_black work_1" size=24 width="200" x=840 y=210 target="work1" text="Bình thường"    cond="SISMES.savedata.status.hp >= 20"]
+	[glink color="btn_black work_2" size=24 width="200" x=840 y=310 target="work2" text="Nghiêm túc"      cond="SISMES.savedata.status.hp >= 40 && SISMES.savedata.status.risei <= 80"]
+	[glink color="btn_black work_3" size=24 width="200" x=840 y=410 target="work3" text="Hết sức"      cond="SISMES.savedata.status.hp >= 80 && SISMES.savedata.status.risei <= 60"]
 
-	[glink color="btn_black work_1 disableUI" size=24 width="200" x=840 y=210 target="work" text="普通"  cond="SISMES.savedata.status.hp < 20"]
-	[glink color="btn_black work_2 disableUI" size=24 width="200" x=840 y=310 target="work" text="本気"    cond="SISMES.savedata.status.hp < 40 || SISMES.savedata.status.risei > 80"]
-	[glink color="btn_black work_3 disableUI" size=24 width="200" x=840 y=410 target="work" text="全力"    cond="SISMES.savedata.status.hp < 80 || SISMES.savedata.status.risei > 60"]
+	[glink color="btn_black work_1 disableUI" size=24 width="200" x=840 y=210 target="work" text="Bình thường"  cond="SISMES.savedata.status.hp < 20"]
+	[glink color="btn_black work_2 disableUI" size=24 width="200" x=840 y=310 target="work" text="Nghiêm túc"    cond="SISMES.savedata.status.hp < 40 || SISMES.savedata.status.risei > 80"]
+	[glink color="btn_black work_3 disableUI" size=24 width="200" x=840 y=410 target="work" text="Hết sức"    cond="SISMES.savedata.status.hp < 80 || SISMES.savedata.status.risei > 60"]
 [endif]
 
-[glink color="btn_black" size=24 width="200" x=840 y=510 target="select" text="戻る"]
+[glink color="btn_black" size=24 width="200" x=840 y=510 target="select" text="Quay lại"]
 
 
 [glink_config show_time=0]
