@@ -15,7 +15,7 @@
 [bg storage="kuro.png" time=10]
 [wait time=1000]
 
-[font face="maboroshi"]
+[resetfont]
 
 ;[position layer="message0" width=800 height=500 top=110 left=240 margint=10 marginl=70 marginr=70 marginb=60 opacity=204 page="fore"]
 [position layer="message0" width=560 height=500 top=110 left=640 margint=30 marginl=40 marginr=40 marginb=60 opacity=204 page="fore"]
@@ -270,7 +270,7 @@ _　――Tôi muốn…… được thưởng thức cơ thể của em gái �
 [clearfix]
 
 
-[font face="maboroshi"]
+[resetfont]
 
 [wait time=1000]
 

@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 @charset "UTF-8";
 
+/* Map legacy font names to standard Vietnamese web fonts without downloading 16MB of Japanese fonts */
 @font-face {
-	font-family:"AlpenFontFree";
-	src:url("./AlpenFontFree.woff") format("woff");
-	font-weight:normal;font-style:normal;
+	font-family: "AlpenFontFree";
+	src: local("Nunito"), local("sans-serif");
+	font-weight: normal; font-style: normal;
 }
 
 @font-face {
-	font-family:"TekitouPoem";
-	src:url("./TekitouPoem.woff") format("woff");
-	font-weight:normal;font-style:normal;
+	font-family: "TekitouPoem";
+	src: local("Nunito"), local("sans-serif");
+	font-weight: normal; font-style: normal;
 }
 
 @font-face {
-	font-family:"maboroshi";
-	src:url("./maboroshi.woff") format("woff");
-	font-weight:normal;font-style:normal;
+	font-family: "maboroshi";
+	src: local("Nunito"), local("sans-serif");
+	font-weight: normal; font-style: normal;
 }
 
-body, .message_inner, .fixlayer, .chara_name_area, input, button, select, textarea {
-	font-family: 'Nunito', 'M PLUS Rounded 1c', AlpenFontFree, TekitouPoem, sans-serif !important;
+*, body, .message_inner, .message_inner *, .message_inner span, .current_span, .fixlayer, .chara_name_area, input, button, select, textarea {
+	font-family: 'Nunito', 'M PLUS Rounded 1c', sans-serif !important;
 }
 
 /* ============================================================
