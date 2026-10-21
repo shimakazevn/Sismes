@@ -14,6 +14,8 @@
     const audioBufferCache = new Map();
     const audioPromiseCache = new Map();
 
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
     let activeBgmSource = null;
     let activeBgmGainNode = null;
     let lastBgmScenarioVol = 0.8;
@@ -265,9 +267,18 @@
                     }
                 } catch(e) {}
 
-                if (audioBufferCache.size >= 8) {
-                    const oldestKey = audioBufferCache.keys().next().value;
-                    audioBufferCache.delete(oldestKey);
+                const maxCacheSize = isIOS ? 3 : 8;
+                if (audioBufferCache.size >= maxCacheSize) {
+                    let evictKey = null;
+                    if (isIOS) {
+                        for (const [k, b] of audioBufferCache.entries()) {
+                            if (b && b.duration > 20) { evictKey = k; break; }
+                        }
+                    }
+                    if (!evictKey) {
+                        evictKey = audioBufferCache.keys().next().value;
+                    }
+                    audioBufferCache.delete(evictKey);
                 }
                 audioBufferCache.set(cacheKey, decodedBuffer);
                 return decodedBuffer;
@@ -292,6 +303,15 @@
             if (activeBgmSource) {
                 try { activeBgmSource.stop(); } catch(e) {}
                 activeBgmSource = null;
+            }
+
+            if (isIOS) {
+                const newBgmKey = url.split('?')[0];
+                for (const [k, b] of audioBufferCache.entries()) {
+                    if (k !== newBgmKey && b && b.duration > 20) {
+                        audioBufferCache.delete(k);
+                    }
+                }
             }
 
             const audioBuffer = await decodeAudioFromUrl(url);

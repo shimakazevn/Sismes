@@ -54,10 +54,14 @@
     function downscaleTexture(texture, maxSize) {
         try {
             if (!texture || !texture.image) return;
+            if (texture._downscaledTo && texture._downscaledTo <= maxSize) return;
             const img = texture.image;
             const w = img.naturalWidth || img.videoWidth || img.width || 0;
             const h = img.naturalHeight || img.videoHeight || img.height || 0;
-            if (w <= maxSize && h <= maxSize) return;
+            if (w <= maxSize && h <= maxSize) {
+                texture._downscaledTo = Math.max(w, h);
+                return;
+            }
             if (w === 0 || h === 0) return;
 
             let targetW = w;
@@ -78,6 +82,7 @@
 
             ctx.drawImage(img, 0, 0, targetW, targetH);
             texture.image = canvas;
+            texture._downscaledTo = maxSize;
             texture.needsUpdate = true;
         } catch (e) {
             console.warn('[VRM Optimizer] Texture downscale notice:', e);
@@ -88,7 +93,8 @@
     function optimizeModelMesh(rootObj) {
         if (!rootObj) return;
         const maxTexSize = isIOS ? 1024 : 2048;
-        const maxShadeTexSize = 1024;
+        // Trên iOS Safari: giảm auxiliary textures (shade, normal, rim, outline) xuống 512px để tiết kiệm 75% VRAM tránh Jetsam
+        const maxShadeTexSize = isIOS ? 512 : 1024;
 
         rootObj.traverse((obj) => {
             if (!obj.isMesh || !obj.material) return;
@@ -165,7 +171,9 @@
 
             const layer = this.layer[opts.layerID];
             if (layer) {
-                const targetRatio = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : Math.min(window.devicePixelRatio || 1, 1.5);
+                // Trên iOS Safari: clamp pixelRatio chuẩn 1.0 (chuẩn HD 720p 1:1, tiết kiệm ~40% VRAM tránh Jetsam crash)
+                // Trên Android/PC: cho phép 1.25x hoặc 1.5x
+                const targetRatio = isIOS ? 1.0 : (isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : Math.min(window.devicePixelRatio || 1, 1.5));
                 if (layer.renderer) layer.renderer.setPixelRatio(targetRatio);
                 if (layer.composer) layer.composer.setPixelRatio(targetRatio);
 
@@ -173,12 +181,15 @@
                     const origPRUpdate = layer.pixelRatioUpdate;
                     layer.pixelRatioUpdate = function (force) {
                         origPRUpdate.call(this, force);
-                        if (isMobile) {
-                            const safeRatio = Math.min(layer.ratio, 1.25);
-                            if (layer.renderer && layer.ratio > safeRatio) {
-                                layer.ratio = safeRatio;
-                                layer.renderer.setPixelRatio(safeRatio);
-                                if (layer.composer) layer.composer.setPixelRatio(safeRatio);
+                        const safeRatio = isIOS ? 1.0 : (isMobile ? Math.min(layer.ratio, 1.25) : 1.5);
+                        if (layer.renderer && layer.ratio > safeRatio) {
+                            layer.ratio = safeRatio;
+                            layer.renderer.setPixelRatio(safeRatio);
+                            if (layer.composer) layer.composer.setPixelRatio(safeRatio);
+                        }
+                        if (layer.viewport) {
+                            for (const vp of Object.values(layer.viewport)) {
+                                if (vp && vp.composer) vp.composer.setPixelRatio(safeRatio);
                             }
                         }
                     };
