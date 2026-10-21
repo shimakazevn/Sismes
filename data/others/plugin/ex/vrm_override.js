@@ -306,37 +306,5 @@
                 }
             }
         };
-
-        // 6. Safeguard cho hệ thống tương tác chạm (Touch / Click Osawari) chống kẹt cờ disableOsawari trên Mobile & sau khi mở Cài đặt
-        function resetStickyOsawari() {
-            if (window.VRoid && window.VRoid.three) {
-                window.VRoid.three.disableOsawari = false;
-            }
-            if (window.SISMES) {
-                window.SISMES.isEventGuard = false;
-            }
-        }
-
-        document.addEventListener('touchstart', function (e) {
-            const target = e.target;
-            if (!target) return;
-            const isUI = target.closest && (
-                target.closest('.disableOsawari') || 
-                target.closest('#sismes_config') || 
-                target.closest('#showConfirmArea') || 
-                target.closest('.remodal')
-            );
-            if (!isUI) {
-                resetStickyOsawari();
-            }
-        }, { capture: true, passive: true });
-
-        document.addEventListener('touchend', function () {
-            setTimeout(resetStickyOsawari, 60);
-        }, { passive: true });
-
-        document.addEventListener('pointerup', function () {
-            setTimeout(resetStickyOsawari, 60);
-        }, { passive: true });
     }
 })();
