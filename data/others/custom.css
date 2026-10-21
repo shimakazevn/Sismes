@@ -154,7 +154,7 @@
 	top: 20px;
 	right: 20px;
 	width: 400px;
-	height: 440px;
+	height: 480px;
 	z-index: 299999999;
 	font-size: 24px;
 	animation-duration: 300ms;
@@ -166,12 +166,24 @@
 #sismes_config_close {
 	position: absolute;
 	padding: 0;
-	top: -10px;
-	right: -10px;
-	width: 30px;
-	height: 30px;
-	line-height:30px;
+	top: -12px;
+	right: -12px;
+	width: 44px;
+	height: 44px;
+	line-height: 40px;
 	text-align: center;
+	font-size: 26px;
+	border-radius: 50%;
+	cursor: pointer;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	z-index: 10;
+}
+
+.config_koui, .config_koe, .config_msg, .config_opa, .config_graphic, .config_fps, .config_danmen, #sismes_config_default, #sismes_config_full, #sismes_config_title, #sismes_config_pwa, #sismes_config_close_btn {
+	cursor: pointer;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
 }
 
 #sismes_config_inner{
